@@ -1,0 +1,62 @@
+[
+    {
+        "company_id": "CID_001",
+        "gst_avg_monthly_sales": 8755121.15,
+        "gst_growth_6m": 0.1853,
+        "itr_profit_margin": 0.1641,
+        "itr_leverage_proxy": 1.4413,
+        "bank_emi_bounce_count": 0,
+        "bank_avg_balance": 4371859.67,
+        "risk_label": 0
+    },
+    {
+        "company_id": "CID_002",
+        "gst_avg_monthly_sales": 10385731.95,
+        "gst_growth_6m": 0.1648,
+        "itr_profit_margin": 0.1351,
+        "itr_leverage_proxy": 1.1445,
+        "bank_emi_bounce_count": 1,
+        "bank_avg_balance": 4608256.69,
+        "risk_label": 0
+    },
+    {
+        "company_id": "CID_003",
+        "gst_avg_monthly_sales": 2200580.15,
+        "gst_growth_6m": 0.0113,
+        "itr_profit_margin": 0.0427,
+        "itr_leverage_proxy": 1.1315,
+        "bank_emi_bounce_count": 2,
+        "bank_avg_balance": 1417529.44,
+        "risk_label": 1
+    },
+    {
+        "company_id": "CID_004",
+        "gst_avg_monthly_sales": 3042947.37,
+        "gst_growth_6m": -0.0489,
+        "itr_profit_margin": 0.0489,
+        "itr_leverage_proxy": 1.4561,
+        "bank_emi_bounce_count": 1,
+        "bank_avg_balance": 1934603.22,
+        "risk_label": 1
+    },
+    {
+        "company_id": "CID_005",
+        "gst_avg_monthly_sales": 1204589.24,
+        "gst_growth_6m": -0.1254,
+        "itr_profit_margin": 0.0084,
+        "itr_leverage_proxy": 1.3965,
+        "bank_emi_bounce_count": 8,
+        "bank_avg_balance": 975944.43,
+        "risk_label": 2
+    },
+    {
+        "company_id": "CID_006",
+        "gst_avg_monthly_sales": 1447255.75,
+        "gst_growth_6m": -0.1813,
+        "itr_profit_margin": 0.0115,
+        "itr_leverage_proxy": 1.124,
+        "bank_emi_bounce_count": 3,
+        "bank_avg_balance": 1162475.94,
+        "risk_label": 2
+    }
+]
