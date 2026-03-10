@@ -56,9 +56,9 @@ def ai_pricing(risk_class: str, requested_amount: float):
     return p["status"], requested_amount * p["factor"], p["rate"], p["text"]
 
 # ─── INTERNAL COMPANY ENDPOINTS ───────────────────────────────────────────────
-@app.get("/")
-def read_root():
-    return {"message": "Intelli-Credit API is running"}
+# @app.get("/")
+# def read_root():
+#     return {"message": "Intelli-Credit API is running"}
 
 @app.get("/companies")
 def get_companies():
