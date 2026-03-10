@@ -1,0 +1,98 @@
+[
+    {
+        "company_id": "CID_001",
+        "assessment_year": "2023-24",
+        "total_income": 109036764.0,
+        "profit_after_tax": 14030582.0,
+        "depreciation": 3271103.0,
+        "net_worth": 49045678.0
+    },
+    {
+        "company_id": "CID_001",
+        "assessment_year": "2024-25",
+        "total_income": 110187533.0,
+        "profit_after_tax": 18077790.0,
+        "depreciation": 3305626.0,
+        "net_worth": 38224234.0
+    },
+    {
+        "company_id": "CID_002",
+        "assessment_year": "2023-24",
+        "total_income": 127741875.0,
+        "profit_after_tax": 21601280.0,
+        "depreciation": 3832256.0,
+        "net_worth": 53575707.0
+    },
+    {
+        "company_id": "CID_002",
+        "assessment_year": "2024-25",
+        "total_income": 120096762.0,
+        "profit_after_tax": 16224226.0,
+        "depreciation": 3602903.0,
+        "net_worth": 52467052.0
+    },
+    {
+        "company_id": "CID_003",
+        "assessment_year": "2023-24",
+        "total_income": 25232889.0,
+        "profit_after_tax": 1451026.0,
+        "depreciation": 756987.0,
+        "net_worth": 9937573.0
+    },
+    {
+        "company_id": "CID_003",
+        "assessment_year": "2024-25",
+        "total_income": 27190456.0,
+        "profit_after_tax": 1161209.0,
+        "depreciation": 815714.0,
+        "net_worth": 12015201.0
+    },
+    {
+        "company_id": "CID_004",
+        "assessment_year": "2023-24",
+        "total_income": 37329953.0,
+        "profit_after_tax": 1588898.0,
+        "depreciation": 1119899.0,
+        "net_worth": 13205827.0
+    },
+    {
+        "company_id": "CID_004",
+        "assessment_year": "2024-25",
+        "total_income": 34834856.0,
+        "profit_after_tax": 1702390.0,
+        "depreciation": 1045046.0,
+        "net_worth": 11962010.0
+    },
+    {
+        "company_id": "CID_005",
+        "assessment_year": "2023-24",
+        "total_income": 14746445.0,
+        "profit_after_tax": 169562.0,
+        "depreciation": 442393.0,
+        "net_worth": 6051894.0
+    },
+    {
+        "company_id": "CID_005",
+        "assessment_year": "2024-25",
+        "total_income": 15167541.0,
+        "profit_after_tax": 128063.0,
+        "depreciation": 455026.0,
+        "net_worth": 5430675.0
+    },
+    {
+        "company_id": "CID_006",
+        "assessment_year": "2023-24",
+        "total_income": 17548638.0,
+        "profit_after_tax": 171012.0,
+        "depreciation": 526459.0,
+        "net_worth": 6674802.0
+    },
+    {
+        "company_id": "CID_006",
+        "assessment_year": "2024-25",
+        "total_income": 18048710.0,
+        "profit_after_tax": 206967.0,
+        "depreciation": 541461.0,
+        "net_worth": 8029061.0
+    }
+]
