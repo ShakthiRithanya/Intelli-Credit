@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+pandas
+xgboost
+shap
+scikit-learn
+jinja2
+sqlite3
