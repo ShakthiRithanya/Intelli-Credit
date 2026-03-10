@@ -1,5 +1,9 @@
-// Detect if we are running locally or on a server
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const envValue = import.meta.env.VITE_API_BASE_URL;
 
-// If local, use the Dev backend (8000). If on Render, use the same domain ('').
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || (isLocal ? 'http://localhost:8000' : '');
+// If we are on a real domain (Render) but the env var says 'localhost', ignore the env var.
+const shouldIgnoreEnv = !isLocal && envValue?.includes('localhost');
+
+export const API_BASE_URL = (shouldIgnoreEnv || !envValue)
+    ? (isLocal ? 'http://localhost:8000' : '')
+    : envValue;
