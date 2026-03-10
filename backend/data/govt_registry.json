@@ -1,0 +1,6008 @@
+{
+    "CID_0001": {
+        "name": "Alpha Industries Group",
+        "sector": "Healthcare",
+        "gstin": "27XAKKE2568NZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0002": {
+        "name": "Eco Solutions Group",
+        "sector": "Manufacturing",
+        "gstin": "27ZEMWU3588IZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0003": {
+        "name": "Global Solutions Group",
+        "sector": "Education",
+        "gstin": "27LKSDK3635UZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0004": {
+        "name": "Alpha Tech Ltd",
+        "sector": "Automotive",
+        "gstin": "27MTCHR4638PZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0005": {
+        "name": "Classic Enterprises Ltd",
+        "sector": "Construction",
+        "gstin": "27VJHSY9358UZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0006": {
+        "name": "Eco Retail Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27BCPVF3986UZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0007": {
+        "name": "Universal Tech Services",
+        "sector": "Manufacturing",
+        "gstin": "27KWCMS9215DZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0008": {
+        "name": "Swift Solutions Corp",
+        "sector": "Construction",
+        "gstin": "27MVUCO8185RZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0009": {
+        "name": "Universal Agri Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27FLVRZ8242TZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0010": {
+        "name": "Modern Retail India",
+        "sector": "Agro-processing",
+        "gstin": "27OZBRB4466AZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0011": {
+        "name": "Swift Logistics India",
+        "sector": "Logistics",
+        "gstin": "27ECAVR6476MZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0012": {
+        "name": "Apex Constro Ltd",
+        "sector": "Healthcare",
+        "gstin": "27FNTIX5680SZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0013": {
+        "name": "Swift Logistics Ltd",
+        "sector": "Healthcare",
+        "gstin": "27KSXIQ4662CZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0014": {
+        "name": "Core Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27XQHIM1485OZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0015": {
+        "name": "Swift Solutions Services",
+        "sector": "Education",
+        "gstin": "27LKTNJ6142ZZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0016": {
+        "name": "Core Dynamics Ltd",
+        "sector": "Logistics",
+        "gstin": "27KVPKU5602SZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0017": {
+        "name": "Universal Agri Services",
+        "sector": "Healthcare",
+        "gstin": "27OOZOU9316OZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0018": {
+        "name": "Swift Tech Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27KUTAZ4435GZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0019": {
+        "name": "Zenith Systems Services",
+        "sector": "Construction",
+        "gstin": "27OGEPU9758GZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0020": {
+        "name": "Global Logistics Services",
+        "sector": "Retail",
+        "gstin": "27PMDZH4346AZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0021": {
+        "name": "Universal Agri Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27HJHEU1279JZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0022": {
+        "name": "Eco Tech Group",
+        "sector": "Education",
+        "gstin": "27DYOWA8675HZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0023": {
+        "name": "Universal Tech India",
+        "sector": "Retail",
+        "gstin": "27OHNCJ4230RZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0024": {
+        "name": "Swift Enterprises Services",
+        "sector": "Construction",
+        "gstin": "27VZMTF3221KZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0025": {
+        "name": "Universal Industries Group",
+        "sector": "Retail",
+        "gstin": "27GGMPJ3241XZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0026": {
+        "name": "Classic Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27RXMAG7032CZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0027": {
+        "name": "Eco Solutions Group",
+        "sector": "Retail",
+        "gstin": "27EPATT5309RZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0028": {
+        "name": "Swift Constro Corp",
+        "sector": "Chemicals",
+        "gstin": "27VKXCK7568UZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0029": {
+        "name": "Eco Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27LUUVV8838LZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0030": {
+        "name": "Swift Solutions India",
+        "sector": "Healthcare",
+        "gstin": "27SCIRV9247GZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0031": {
+        "name": "Apex Logistics Group",
+        "sector": "Agro-processing",
+        "gstin": "27PJJBV7978VZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0032": {
+        "name": "Universal Constro Services",
+        "sector": "Agro-processing",
+        "gstin": "27YGVBB8214QZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0033": {
+        "name": "Alpha Industries Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27PHQQF6173OZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0034": {
+        "name": "Apex Retail India",
+        "sector": "Education",
+        "gstin": "27FXEPB2546YZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0035": {
+        "name": "Apex Dynamics Services",
+        "sector": "Education",
+        "gstin": "27PGECF3279BZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0036": {
+        "name": "Swift Industries Group",
+        "sector": "Logistics",
+        "gstin": "27IQZCH9667VZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0037": {
+        "name": "Universal Solutions Services",
+        "sector": "Manufacturing",
+        "gstin": "27BSPTB2587KZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0038": {
+        "name": "Zenith Tech Group",
+        "sector": "Education",
+        "gstin": "27ZYOWB5310UZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0039": {
+        "name": "Universal Retail Corp",
+        "sector": "Chemicals",
+        "gstin": "27ESQPF3958NZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0040": {
+        "name": "Alpha Retail Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27ZDKVB3891XZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0041": {
+        "name": "Global Retail Services",
+        "sector": "Automotive",
+        "gstin": "27ZGHZM6962DZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0042": {
+        "name": "Global Constro Ltd",
+        "sector": "Retail",
+        "gstin": "27DWMHP1886TZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0043": {
+        "name": "Eco Tech Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27JWIMG6370VZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0044": {
+        "name": "Universal Enterprises Group",
+        "sector": "Agro-processing",
+        "gstin": "27WFDGO2718GZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0045": {
+        "name": "Apex Systems Services",
+        "sector": "Chemicals",
+        "gstin": "27OLWRS9916OZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0046": {
+        "name": "Zenith Constro Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27WVEMG2077JZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0047": {
+        "name": "Global Enterprises Group",
+        "sector": "Retail",
+        "gstin": "27SOLDZ6777HZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0048": {
+        "name": "Swift Industries Group",
+        "sector": "Chemicals",
+        "gstin": "27ZNKFL6321AZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0049": {
+        "name": "Core Industries Ltd",
+        "sector": "Construction",
+        "gstin": "27TMBAD9845GZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0050": {
+        "name": "Alpha Systems India",
+        "sector": "Manufacturing",
+        "gstin": "27WYBJA3986FZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0051": {
+        "name": "Modern Industries Corp",
+        "sector": "Chemicals",
+        "gstin": "27ZTPWZ3561OZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0052": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27XCNFM6009DZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0053": {
+        "name": "Zenith Logistics Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27BDCPX9792AZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0054": {
+        "name": "Classic Dynamics Services",
+        "sector": "Logistics",
+        "gstin": "27TQWED3530MZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0055": {
+        "name": "Eco Systems Ltd",
+        "sector": "Chemicals",
+        "gstin": "27BIMLV1071EZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0056": {
+        "name": "Core Tech India",
+        "sector": "Education",
+        "gstin": "27SQHIO7558DZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0057": {
+        "name": "Alpha Agri Ltd",
+        "sector": "Chemicals",
+        "gstin": "27KLATU9714LZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0058": {
+        "name": "Zenith Retail India",
+        "sector": "Construction",
+        "gstin": "27TUCID7695CZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0059": {
+        "name": "Universal Agri Ltd",
+        "sector": "Information Technology",
+        "gstin": "27WTFDH7850DZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0060": {
+        "name": "Universal Retail Group",
+        "sector": "Chemicals",
+        "gstin": "27CGSPY9439NZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0061": {
+        "name": "Global Retail Corp",
+        "sector": "Logistics",
+        "gstin": "27WTDRU2835NZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0062": {
+        "name": "Swift Agri Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27QNXVV4655FZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0063": {
+        "name": "Apex Industries Corp",
+        "sector": "Retail",
+        "gstin": "27HLQHC4753AZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0064": {
+        "name": "Zenith Agri Ltd",
+        "sector": "Education",
+        "gstin": "27PCJDI3085PZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0065": {
+        "name": "Universal Constro Ltd",
+        "sector": "Chemicals",
+        "gstin": "27ESZXT8008WZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0066": {
+        "name": "Alpha Agri Ltd",
+        "sector": "Retail",
+        "gstin": "27XFNQF9573PZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0067": {
+        "name": "Apex Constro Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27DBDLO2709QZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0068": {
+        "name": "Modern Retail Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27HYYKD9375BZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0069": {
+        "name": "Zenith Logistics Services",
+        "sector": "Manufacturing",
+        "gstin": "27QDTHO3388HZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0070": {
+        "name": "Eco Agri Corp",
+        "sector": "Construction",
+        "gstin": "27YAKUS4455HZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0071": {
+        "name": "Classic Retail Corp",
+        "sector": "Logistics",
+        "gstin": "27WYLEO3861JZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0072": {
+        "name": "Modern Tech Group",
+        "sector": "Information Technology",
+        "gstin": "27ZOVYJ9480BZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0073": {
+        "name": "Swift Dynamics Corp",
+        "sector": "Education",
+        "gstin": "27EKHWH8614FZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0074": {
+        "name": "Swift Industries Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27AWLHS5473PZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0075": {
+        "name": "Universal Tech Ltd",
+        "sector": "Logistics",
+        "gstin": "27ILTEY6770BZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0076": {
+        "name": "Apex Tech Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27XHHOT4790RZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0077": {
+        "name": "Alpha Dynamics India",
+        "sector": "Retail",
+        "gstin": "27TNODX5046UZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0078": {
+        "name": "Global Tech Group",
+        "sector": "Retail",
+        "gstin": "27KDEQT7909UZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0079": {
+        "name": "Apex Agri Group",
+        "sector": "Manufacturing",
+        "gstin": "27HWCDT4881NZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0080": {
+        "name": "Zenith Tech Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27JEWJH1556QZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0081": {
+        "name": "Apex Constro Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27VDYGU7291SZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0082": {
+        "name": "Zenith Systems India",
+        "sector": "Construction",
+        "gstin": "27LLNXS1133DZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0083": {
+        "name": "Zenith Dynamics Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27HZRUM4136MZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0084": {
+        "name": "Global Retail Ltd",
+        "sector": "Construction",
+        "gstin": "27ZADGH1533MZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0085": {
+        "name": "Swift Solutions Services",
+        "sector": "Education",
+        "gstin": "27IIBNB2591JZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0086": {
+        "name": "Swift Constro Corp",
+        "sector": "Logistics",
+        "gstin": "27TTLWO5235CZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0087": {
+        "name": "Eco Tech Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27HQQRY9804HZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0088": {
+        "name": "Eco Solutions India",
+        "sector": "Chemicals",
+        "gstin": "27GXIJU8199RZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0089": {
+        "name": "Apex Industries Ltd",
+        "sector": "Construction",
+        "gstin": "27OREOI1780JZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0090": {
+        "name": "Global Solutions Services",
+        "sector": "Chemicals",
+        "gstin": "27WMNQE2228KZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0091": {
+        "name": "Eco Dynamics Services",
+        "sector": "Agro-processing",
+        "gstin": "27HFCXC7494NZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0092": {
+        "name": "Modern Systems India",
+        "sector": "Education",
+        "gstin": "27IRYJO9818ZZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0093": {
+        "name": "Eco Solutions Corp",
+        "sector": "Agro-processing",
+        "gstin": "27VSFFV6623BZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0094": {
+        "name": "Zenith Agri India",
+        "sector": "Agro-processing",
+        "gstin": "27EELSL7190QZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0095": {
+        "name": "Zenith Logistics Services",
+        "sector": "Healthcare",
+        "gstin": "27CAYFQ6084UZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0096": {
+        "name": "Zenith Agri Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27GGPMS6465NZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0097": {
+        "name": "Core Agri Ltd",
+        "sector": "Logistics",
+        "gstin": "27ZQWAV7547BZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0098": {
+        "name": "Eco Solutions Services",
+        "sector": "Manufacturing",
+        "gstin": "27MBEGB2282BZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0099": {
+        "name": "Swift Retail Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27ZKUXC6110DZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0100": {
+        "name": "Zenith Retail India",
+        "sector": "Chemicals",
+        "gstin": "27SRPWR3022RZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0101": {
+        "name": "Zenith Industries Group",
+        "sector": "Automotive",
+        "gstin": "27WGSLZ9390JZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0102": {
+        "name": "Global Dynamics India",
+        "sector": "Education",
+        "gstin": "27PXTQZ9432RZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0103": {
+        "name": "Apex Dynamics India",
+        "sector": "Information Technology",
+        "gstin": "27KFWZQ2234AZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0104": {
+        "name": "Eco Enterprises Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27PQWVL1464TZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0105": {
+        "name": "Modern Industries India",
+        "sector": "Logistics",
+        "gstin": "27SLRNY7247JZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0106": {
+        "name": "Alpha Enterprises Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27EZFMK9832YZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0107": {
+        "name": "Modern Retail Group",
+        "sector": "Manufacturing",
+        "gstin": "27IWTUN7169GZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0108": {
+        "name": "Classic Tech Corp",
+        "sector": "Retail",
+        "gstin": "27BNJID2061XZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0109": {
+        "name": "Eco Constro Group",
+        "sector": "Healthcare",
+        "gstin": "27ZKCSK7361MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0110": {
+        "name": "Alpha Agri Services",
+        "sector": "Information Technology",
+        "gstin": "27MQQGY3988NZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0111": {
+        "name": "Eco Dynamics Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27OYJRV5068OZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0112": {
+        "name": "Apex Dynamics Ltd",
+        "sector": "Logistics",
+        "gstin": "27HSNRL2447CZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0113": {
+        "name": "Alpha Systems Group",
+        "sector": "Construction",
+        "gstin": "27WRMWB5070QZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0114": {
+        "name": "Eco Constro India",
+        "sector": "Agro-processing",
+        "gstin": "27POLSG4149RZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0115": {
+        "name": "Apex Retail Services",
+        "sector": "Automotive",
+        "gstin": "27DQHXG4348TZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0116": {
+        "name": "Modern Industries India",
+        "sector": "Healthcare",
+        "gstin": "27MYIQP7781ZZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0117": {
+        "name": "Zenith Logistics India",
+        "sector": "Education",
+        "gstin": "27DVPNT4271EZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0118": {
+        "name": "Classic Constro India",
+        "sector": "Information Technology",
+        "gstin": "27YFGSN4909WZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0119": {
+        "name": "Zenith Constro India",
+        "sector": "Automotive",
+        "gstin": "27RMQZM9362AZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0120": {
+        "name": "Classic Agri India",
+        "sector": "Information Technology",
+        "gstin": "27YBTXI2464CZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0121": {
+        "name": "Modern Tech Corp",
+        "sector": "Healthcare",
+        "gstin": "27DQBDK8560CZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0122": {
+        "name": "Universal Industries Ltd",
+        "sector": "Information Technology",
+        "gstin": "27FYYYJ1337BZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0123": {
+        "name": "Classic Solutions India",
+        "sector": "Logistics",
+        "gstin": "27FMOKU8479QZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0124": {
+        "name": "Classic Enterprises Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27USODX3124HZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0125": {
+        "name": "Alpha Industries Ltd",
+        "sector": "Chemicals",
+        "gstin": "27OBSMM2739FZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0126": {
+        "name": "Apex Tech India",
+        "sector": "Education",
+        "gstin": "27YMLCA6422UZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0127": {
+        "name": "Modern Solutions Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27BJOIJ6267KZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0128": {
+        "name": "Eco Enterprises India",
+        "sector": "Logistics",
+        "gstin": "27MJOEC3625EZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0129": {
+        "name": "Global Solutions Group",
+        "sector": "Chemicals",
+        "gstin": "27HDRZY3604NZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0130": {
+        "name": "Eco Industries Ltd",
+        "sector": "Education",
+        "gstin": "27IFFTO7373UZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0131": {
+        "name": "Core Agri Group",
+        "sector": "Construction",
+        "gstin": "27OWUQE7476XZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0132": {
+        "name": "Modern Solutions Services",
+        "sector": "Information Technology",
+        "gstin": "27LUNDL4800DZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0133": {
+        "name": "Alpha Industries Services",
+        "sector": "Logistics",
+        "gstin": "27HXFBS8480QZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0134": {
+        "name": "Eco Industries India",
+        "sector": "Automotive",
+        "gstin": "27IQJEM6511KZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0135": {
+        "name": "Swift Agri Group",
+        "sector": "Education",
+        "gstin": "27NRCFV3366WZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0136": {
+        "name": "Global Logistics India",
+        "sector": "Logistics",
+        "gstin": "27BOIFL7872QZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0137": {
+        "name": "Core Enterprises India",
+        "sector": "Education",
+        "gstin": "27SVDBD1077JZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0138": {
+        "name": "Swift Agri Corp",
+        "sector": "Chemicals",
+        "gstin": "27BLYGW2221VZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0139": {
+        "name": "Universal Industries Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27XMCCD4416SZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0140": {
+        "name": "Zenith Dynamics Group",
+        "sector": "Education",
+        "gstin": "27QBIDZ1259BZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0141": {
+        "name": "Eco Tech India",
+        "sector": "Construction",
+        "gstin": "27BNWFW3489VZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0142": {
+        "name": "Classic Constro Corp",
+        "sector": "Logistics",
+        "gstin": "27KKOTR3582UZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0143": {
+        "name": "Global Systems Services",
+        "sector": "Construction",
+        "gstin": "27LNNXA3230EZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0144": {
+        "name": "Modern Industries Corp",
+        "sector": "Chemicals",
+        "gstin": "27YJYUA9588HZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0145": {
+        "name": "Modern Enterprises India",
+        "sector": "Construction",
+        "gstin": "27CDRKX9948FZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0146": {
+        "name": "Classic Dynamics Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27DCNPU9262RZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0147": {
+        "name": "Universal Logistics Services",
+        "sector": "Construction",
+        "gstin": "27SLHBV1235QZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0148": {
+        "name": "Alpha Industries India",
+        "sector": "Chemicals",
+        "gstin": "27OMMEG8410EZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0149": {
+        "name": "Classic Tech Corp",
+        "sector": "Healthcare",
+        "gstin": "27SIWRF5764VZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0150": {
+        "name": "Zenith Agri Services",
+        "sector": "Construction",
+        "gstin": "27YCRKU4192VZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0151": {
+        "name": "Modern Solutions India",
+        "sector": "Automotive",
+        "gstin": "27NLEIM5340DZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0152": {
+        "name": "Apex Constro Group",
+        "sector": "Healthcare",
+        "gstin": "27ROTHZ1460ZZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0153": {
+        "name": "Eco Agri Group",
+        "sector": "Logistics",
+        "gstin": "27PPPXM3320KZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0154": {
+        "name": "Eco Enterprises Corp",
+        "sector": "Automotive",
+        "gstin": "27OFYCX6755EZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0155": {
+        "name": "Classic Solutions Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27IGISN7005TZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0156": {
+        "name": "Global Constro Services",
+        "sector": "Education",
+        "gstin": "27UFKPB4307XZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0157": {
+        "name": "Universal Logistics Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27IFBJU3212RZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0158": {
+        "name": "Zenith Industries Corp",
+        "sector": "Automotive",
+        "gstin": "27TRJUD4674EZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0159": {
+        "name": "Apex Logistics Corp",
+        "sector": "Chemicals",
+        "gstin": "27SMCQR9649VZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0160": {
+        "name": "Classic Tech Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27GTIBS4448SZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0161": {
+        "name": "Modern Dynamics Group",
+        "sector": "Agro-processing",
+        "gstin": "27FZDXY5782ZZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0162": {
+        "name": "Core Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27RNNXV2920BZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0163": {
+        "name": "Universal Retail Corp",
+        "sector": "Information Technology",
+        "gstin": "27UGVMZ8492SZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0164": {
+        "name": "Universal Systems Services",
+        "sector": "Chemicals",
+        "gstin": "27MBRBQ6567ZZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0165": {
+        "name": "Modern Agri Corp",
+        "sector": "Construction",
+        "gstin": "27BYNHG1744OZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0166": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27DCTHX8331KZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0167": {
+        "name": "Classic Agri Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27GRRQD8630LZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0168": {
+        "name": "Core Tech Ltd",
+        "sector": "Education",
+        "gstin": "27EJOLU6688MZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0169": {
+        "name": "Apex Enterprises Services",
+        "sector": "Agro-processing",
+        "gstin": "27GTABA1012CZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0170": {
+        "name": "Zenith Tech India",
+        "sector": "Education",
+        "gstin": "27GTIWC8020AZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0171": {
+        "name": "Zenith Industries Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27DEBIN9297MZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0172": {
+        "name": "Alpha Retail Corp",
+        "sector": "Construction",
+        "gstin": "27VRVQO3951DZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0173": {
+        "name": "Universal Dynamics Services",
+        "sector": "Education",
+        "gstin": "27HYCLI8547KZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0174": {
+        "name": "Zenith Agri India",
+        "sector": "Healthcare",
+        "gstin": "27FACEK6810AZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0175": {
+        "name": "Modern Tech Services",
+        "sector": "Logistics",
+        "gstin": "27THMWK5561SZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0176": {
+        "name": "Zenith Industries Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27XUJJI2227VZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0177": {
+        "name": "Apex Dynamics Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27RGQAX4636XZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0178": {
+        "name": "Classic Constro Ltd",
+        "sector": "Construction",
+        "gstin": "27XEHVK2222JZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0179": {
+        "name": "Zenith Industries Services",
+        "sector": "Retail",
+        "gstin": "27LWLJZ2572KZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0180": {
+        "name": "Modern Systems Ltd",
+        "sector": "Chemicals",
+        "gstin": "27CKBXS5080LZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0181": {
+        "name": "Core Logistics Services",
+        "sector": "Chemicals",
+        "gstin": "27NYGGL5730WZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0182": {
+        "name": "Global Dynamics Services",
+        "sector": "Information Technology",
+        "gstin": "27KAJSU9486GZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0183": {
+        "name": "Swift Agri Ltd",
+        "sector": "Chemicals",
+        "gstin": "27YYRZC6565JZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0184": {
+        "name": "Apex Solutions Corp",
+        "sector": "Manufacturing",
+        "gstin": "27YVDIO8134NZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0185": {
+        "name": "Modern Enterprises Group",
+        "sector": "Logistics",
+        "gstin": "27AWCEC9689AZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0186": {
+        "name": "Apex Solutions Corp",
+        "sector": "Construction",
+        "gstin": "27ITEBK8697DZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0187": {
+        "name": "Alpha Agri Services",
+        "sector": "Automotive",
+        "gstin": "27YOYBK8951KZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0188": {
+        "name": "Global Retail Ltd",
+        "sector": "Healthcare",
+        "gstin": "27MTTFG8830VZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0189": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27XPMJV1077VZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0190": {
+        "name": "Universal Enterprises Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27OLSNI9305MZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0191": {
+        "name": "Classic Logistics Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27XIIPO9120DZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0192": {
+        "name": "Core Logistics Corp",
+        "sector": "Chemicals",
+        "gstin": "27KEORL4137YZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0193": {
+        "name": "Classic Industries Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27XKPQG7329AZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0194": {
+        "name": "Universal Solutions Group",
+        "sector": "Construction",
+        "gstin": "27KANGV5206PZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0195": {
+        "name": "Core Tech Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27OVGPC8544SZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0196": {
+        "name": "Apex Systems Services",
+        "sector": "Agro-processing",
+        "gstin": "27SJYXH4717MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0197": {
+        "name": "Core Agri Corp",
+        "sector": "Construction",
+        "gstin": "27ZBVOF3140WZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0198": {
+        "name": "Core Constro Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27PWULY2957VZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0199": {
+        "name": "Apex Dynamics Ltd",
+        "sector": "Healthcare",
+        "gstin": "27SNACT9525LZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0200": {
+        "name": "Apex Retail Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27JOAMJ9056ZZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0201": {
+        "name": "Zenith Solutions India",
+        "sector": "Information Technology",
+        "gstin": "27LGEUG5566DZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0202": {
+        "name": "Core Industries Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27TNRJO3950LZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0203": {
+        "name": "Universal Enterprises India",
+        "sector": "Automotive",
+        "gstin": "27STVGH2028DZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0204": {
+        "name": "Modern Solutions Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27IDDHE8968YZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0205": {
+        "name": "Classic Systems India",
+        "sector": "Education",
+        "gstin": "27RGGBF6489AZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0206": {
+        "name": "Universal Dynamics Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27VUWNP5224PZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0207": {
+        "name": "Swift Dynamics Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27HCMTH9456SZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0208": {
+        "name": "Alpha Agri India",
+        "sector": "Chemicals",
+        "gstin": "27WIJOF6007TZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0209": {
+        "name": "Universal Agri Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27NJPNX1722LZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0210": {
+        "name": "Universal Systems Ltd",
+        "sector": "Automotive",
+        "gstin": "27UTULW7192UZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0211": {
+        "name": "Eco Logistics Corp",
+        "sector": "Chemicals",
+        "gstin": "27YDQNI3883QZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0212": {
+        "name": "Apex Dynamics Services",
+        "sector": "Automotive",
+        "gstin": "27CJCDA7035PZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0213": {
+        "name": "Modern Industries Ltd",
+        "sector": "Information Technology",
+        "gstin": "27UTELP8992ZZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0214": {
+        "name": "Eco Systems Group",
+        "sector": "Retail",
+        "gstin": "27XMXGI2941BZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0215": {
+        "name": "Global Agri Corp",
+        "sector": "Automotive",
+        "gstin": "27HJFXY4252PZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0216": {
+        "name": "Classic Logistics Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27OAMGE6472IZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0217": {
+        "name": "Core Agri Services",
+        "sector": "Manufacturing",
+        "gstin": "27DBIGM3674HZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0218": {
+        "name": "Apex Enterprises Services",
+        "sector": "Construction",
+        "gstin": "27QJFET3861UZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0219": {
+        "name": "Universal Constro Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27MUVEW7892DZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0220": {
+        "name": "Global Logistics Services",
+        "sector": "Automotive",
+        "gstin": "27NMTFQ8679IZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0221": {
+        "name": "Modern Tech India",
+        "sector": "Retail",
+        "gstin": "27CSPXY7215SZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0222": {
+        "name": "Alpha Tech Group",
+        "sector": "Information Technology",
+        "gstin": "27JDDAD1480ZZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0223": {
+        "name": "Eco Industries Ltd",
+        "sector": "Logistics",
+        "gstin": "27WZUJJ7192IZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0224": {
+        "name": "Zenith Retail India",
+        "sector": "Information Technology",
+        "gstin": "27UPDXJ3634DZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0225": {
+        "name": "Modern Solutions Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27KEUEA6551QZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0226": {
+        "name": "Alpha Solutions Corp",
+        "sector": "Automotive",
+        "gstin": "27HHANK6503TZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0227": {
+        "name": "Global Dynamics Group",
+        "sector": "Construction",
+        "gstin": "27MTRDT4127QZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0228": {
+        "name": "Zenith Systems Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27HZTWG1401WZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0229": {
+        "name": "Classic Solutions Services",
+        "sector": "Logistics",
+        "gstin": "27BRPTM2484AZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0230": {
+        "name": "Swift Industries Services",
+        "sector": "Information Technology",
+        "gstin": "27YAQUW4217SZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0231": {
+        "name": "Eco Tech Group",
+        "sector": "Agro-processing",
+        "gstin": "27ZDENM5243LZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0232": {
+        "name": "Modern Logistics Group",
+        "sector": "Education",
+        "gstin": "27ZPMGG9729YZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0233": {
+        "name": "Modern Dynamics Ltd",
+        "sector": "Chemicals",
+        "gstin": "27TFLJD7178FZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0234": {
+        "name": "Apex Tech Ltd",
+        "sector": "Logistics",
+        "gstin": "27PDFNN5734HZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0235": {
+        "name": "Global Systems Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27HTLNF7360GZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0236": {
+        "name": "Global Constro Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27BVNHA7628ZZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0237": {
+        "name": "Modern Solutions India",
+        "sector": "Retail",
+        "gstin": "27PUMXN5348SZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0238": {
+        "name": "Global Solutions Ltd",
+        "sector": "Chemicals",
+        "gstin": "27TZAYJ7289BZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0239": {
+        "name": "Zenith Retail Corp",
+        "sector": "Education",
+        "gstin": "27FMXAN5651KZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0240": {
+        "name": "Core Enterprises Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27UDWXO8923LZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0241": {
+        "name": "Swift Dynamics Corp",
+        "sector": "Construction",
+        "gstin": "27CCGPJ6799MZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0242": {
+        "name": "Apex Agri Corp",
+        "sector": "Retail",
+        "gstin": "27REJBZ6325QZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0243": {
+        "name": "Eco Dynamics India",
+        "sector": "Education",
+        "gstin": "27SXAZG9396MZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0244": {
+        "name": "Classic Solutions Services",
+        "sector": "Retail",
+        "gstin": "27LGGBB8215RZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0245": {
+        "name": "Core Retail Services",
+        "sector": "Information Technology",
+        "gstin": "27EKOEB6193AZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0246": {
+        "name": "Classic Retail Group",
+        "sector": "Healthcare",
+        "gstin": "27RTXMN2531BZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0247": {
+        "name": "Swift Constro Services",
+        "sector": "Automotive",
+        "gstin": "27WDNFF4504NZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0248": {
+        "name": "Swift Logistics Corp",
+        "sector": "Logistics",
+        "gstin": "27MBBCM4942DZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0249": {
+        "name": "Core Systems Services",
+        "sector": "Information Technology",
+        "gstin": "27XYLGB9147MZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0250": {
+        "name": "Core Enterprises Group",
+        "sector": "Education",
+        "gstin": "27HNQHB8181NZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0251": {
+        "name": "Global Industries Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27BYXLP4043HZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0252": {
+        "name": "Swift Systems India",
+        "sector": "Agro-processing",
+        "gstin": "27HYZOK3180GZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0253": {
+        "name": "Swift Solutions India",
+        "sector": "Construction",
+        "gstin": "27QHJAY5816NZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0254": {
+        "name": "Core Industries India",
+        "sector": "Retail",
+        "gstin": "27NVJHQ4472RZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0255": {
+        "name": "Core Solutions India",
+        "sector": "Retail",
+        "gstin": "27FEDFC3852PZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0256": {
+        "name": "Universal Industries Group",
+        "sector": "Information Technology",
+        "gstin": "27OMFHJ3897JZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0257": {
+        "name": "Alpha Tech Services",
+        "sector": "Automotive",
+        "gstin": "27KVEAQ2532XZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0258": {
+        "name": "Core Enterprises Ltd",
+        "sector": "Chemicals",
+        "gstin": "27FFANY6309RZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0259": {
+        "name": "Core Systems India",
+        "sector": "Automotive",
+        "gstin": "27UMYWF3908UZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0260": {
+        "name": "Apex Systems Corp",
+        "sector": "Information Technology",
+        "gstin": "27MTCZD7199AZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0261": {
+        "name": "Global Enterprises Services",
+        "sector": "Logistics",
+        "gstin": "27BMAQA3654LZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0262": {
+        "name": "Classic Solutions Services",
+        "sector": "Education",
+        "gstin": "27TIICR3754HZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0263": {
+        "name": "Modern Retail India",
+        "sector": "Information Technology",
+        "gstin": "27XKIKY5064SZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0264": {
+        "name": "Zenith Constro Group",
+        "sector": "Construction",
+        "gstin": "27ZKBKP8904TZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0265": {
+        "name": "Swift Enterprises Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27PPUBT9573XZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0266": {
+        "name": "Zenith Enterprises Group",
+        "sector": "Manufacturing",
+        "gstin": "27QXEMZ3314VZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0267": {
+        "name": "Swift Retail Services",
+        "sector": "Construction",
+        "gstin": "27BYRNM4225JZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0268": {
+        "name": "Modern Enterprises Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27HIOKI3841JZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0269": {
+        "name": "Alpha Retail Corp",
+        "sector": "Manufacturing",
+        "gstin": "27LHGVB9731LZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0270": {
+        "name": "Eco Constro India",
+        "sector": "Education",
+        "gstin": "27HXWOV8272FZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0271": {
+        "name": "Modern Dynamics India",
+        "sector": "Information Technology",
+        "gstin": "27DBMQW8512BZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0272": {
+        "name": "Universal Dynamics Corp",
+        "sector": "Agro-processing",
+        "gstin": "27AWBUH3655SZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0273": {
+        "name": "Eco Retail Ltd",
+        "sector": "Logistics",
+        "gstin": "27HNLVS1686HZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0274": {
+        "name": "Core Enterprises India",
+        "sector": "Automotive",
+        "gstin": "27ACBAI8701WZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0275": {
+        "name": "Alpha Constro Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27MBLLI4326SZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0276": {
+        "name": "Alpha Enterprises Ltd",
+        "sector": "Healthcare",
+        "gstin": "27EYQHG1269DZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0277": {
+        "name": "Apex Agri Services",
+        "sector": "Automotive",
+        "gstin": "27RWCAA8876SZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0278": {
+        "name": "Classic Retail Group",
+        "sector": "Healthcare",
+        "gstin": "27WWZJG7734CZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0279": {
+        "name": "Classic Systems Corp",
+        "sector": "Construction",
+        "gstin": "27EGGBR5388XZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0280": {
+        "name": "Classic Logistics Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27YXWZN8354RZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0281": {
+        "name": "Modern Dynamics Services",
+        "sector": "Education",
+        "gstin": "27RJMWJ5202MZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0282": {
+        "name": "Alpha Solutions Services",
+        "sector": "Logistics",
+        "gstin": "27OGNFL1467DZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0283": {
+        "name": "Eco Solutions India",
+        "sector": "Education",
+        "gstin": "27HSASC1674ZZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0284": {
+        "name": "Modern Constro India",
+        "sector": "Education",
+        "gstin": "27YAKHD1768MZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0285": {
+        "name": "Universal Tech Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27PMVST1351WZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0286": {
+        "name": "Global Agri Ltd",
+        "sector": "Chemicals",
+        "gstin": "27TVDCP9997FZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0287": {
+        "name": "Classic Retail India",
+        "sector": "Information Technology",
+        "gstin": "27XCBKK3013RZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0288": {
+        "name": "Core Constro India",
+        "sector": "Construction",
+        "gstin": "27TYDKU2070SZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0289": {
+        "name": "Classic Systems Group",
+        "sector": "Agro-processing",
+        "gstin": "27KNIRJ2865AZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0290": {
+        "name": "Core Dynamics Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27DLOBX3400GZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0291": {
+        "name": "Zenith Retail Ltd",
+        "sector": "Chemicals",
+        "gstin": "27FBEVP5189NZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0292": {
+        "name": "Global Constro Group",
+        "sector": "Construction",
+        "gstin": "27FFLCT9525WZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0293": {
+        "name": "Alpha Retail India",
+        "sector": "Information Technology",
+        "gstin": "27UWSOQ4289VZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0294": {
+        "name": "Apex Retail Group",
+        "sector": "Retail",
+        "gstin": "27LQGPP5045NZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0295": {
+        "name": "Eco Systems Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27ZHHUV5580PZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0296": {
+        "name": "Modern Retail India",
+        "sector": "Healthcare",
+        "gstin": "27PPYIW9062SZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0297": {
+        "name": "Modern Retail Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27DKLYW6309MZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0298": {
+        "name": "Alpha Systems Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27ATBYW1691ZZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0299": {
+        "name": "Alpha Solutions Group",
+        "sector": "Chemicals",
+        "gstin": "27OYKFF7079MZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0300": {
+        "name": "Alpha Constro Corp",
+        "sector": "Information Technology",
+        "gstin": "27NCXZU9388YZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0301": {
+        "name": "Eco Systems Ltd",
+        "sector": "Healthcare",
+        "gstin": "27FNXMA3588EZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0302": {
+        "name": "Eco Logistics Ltd",
+        "sector": "Education",
+        "gstin": "27ZAWPH5449EZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0303": {
+        "name": "Universal Enterprises Ltd",
+        "sector": "Chemicals",
+        "gstin": "27LLVZG4975TZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0304": {
+        "name": "Universal Solutions Group",
+        "sector": "Healthcare",
+        "gstin": "27AYIIG6080YZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0305": {
+        "name": "Zenith Dynamics Ltd",
+        "sector": "Retail",
+        "gstin": "27ZSOUW6417HZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0306": {
+        "name": "Apex Solutions India",
+        "sector": "Manufacturing",
+        "gstin": "27XQJTR5376EZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0307": {
+        "name": "Classic Systems Ltd",
+        "sector": "Healthcare",
+        "gstin": "27KUQYC8835RZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0308": {
+        "name": "Modern Industries Services",
+        "sector": "Agro-processing",
+        "gstin": "27IRQNP1089KZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0309": {
+        "name": "Alpha Dynamics India",
+        "sector": "Healthcare",
+        "gstin": "27OQZFV8490JZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0310": {
+        "name": "Modern Solutions India",
+        "sector": "Agro-processing",
+        "gstin": "27STUQU2395KZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0311": {
+        "name": "Apex Tech Services",
+        "sector": "Agro-processing",
+        "gstin": "27OYPDJ6055NZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0312": {
+        "name": "Zenith Retail India",
+        "sector": "Automotive",
+        "gstin": "27JIAAN7871NZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0313": {
+        "name": "Eco Industries Group",
+        "sector": "Information Technology",
+        "gstin": "27YJNVL9800CZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0314": {
+        "name": "Modern Tech Group",
+        "sector": "Information Technology",
+        "gstin": "27PEPIM7254FZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0315": {
+        "name": "Global Systems Corp",
+        "sector": "Healthcare",
+        "gstin": "27WOHAN7060LZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0316": {
+        "name": "Classic Solutions India",
+        "sector": "Manufacturing",
+        "gstin": "27UXKVS5723FZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0317": {
+        "name": "Universal Constro India",
+        "sector": "Automotive",
+        "gstin": "27VLJSD2365AZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0318": {
+        "name": "Swift Dynamics Services",
+        "sector": "Construction",
+        "gstin": "27HJXAF1436VZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0319": {
+        "name": "Eco Dynamics Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27JVAVU9899VZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0320": {
+        "name": "Apex Industries India",
+        "sector": "Healthcare",
+        "gstin": "27ERNEB6915TZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0321": {
+        "name": "Modern Industries India",
+        "sector": "Agro-processing",
+        "gstin": "27LMOTC7406BZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0322": {
+        "name": "Zenith Constro Ltd",
+        "sector": "Construction",
+        "gstin": "27LZXPL9854HZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0323": {
+        "name": "Core Retail Ltd",
+        "sector": "Retail",
+        "gstin": "27BNYVO4554EZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0324": {
+        "name": "Eco Retail Services",
+        "sector": "Construction",
+        "gstin": "27FDJIM3470SZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0325": {
+        "name": "Universal Retail Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27MDLPP4443GZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0326": {
+        "name": "Eco Logistics India",
+        "sector": "Retail",
+        "gstin": "27BZFYO1536VZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0327": {
+        "name": "Apex Tech India",
+        "sector": "Healthcare",
+        "gstin": "27KELYE9516GZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0328": {
+        "name": "Universal Industries Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27VIKKC4335HZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0329": {
+        "name": "Classic Constro Group",
+        "sector": "Construction",
+        "gstin": "27CIMMC4491TZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0330": {
+        "name": "Apex Systems Corp",
+        "sector": "Automotive",
+        "gstin": "27IIKCW8547KZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0331": {
+        "name": "Apex Dynamics India",
+        "sector": "Chemicals",
+        "gstin": "27ORZWC3866LZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0332": {
+        "name": "Classic Logistics Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27RONHX2578XZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0333": {
+        "name": "Modern Retail India",
+        "sector": "Automotive",
+        "gstin": "27FXWVA6273CZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0334": {
+        "name": "Global Logistics Services",
+        "sector": "Automotive",
+        "gstin": "27UYNXF1058DZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0335": {
+        "name": "Eco Tech Ltd",
+        "sector": "Education",
+        "gstin": "27BGQBF9040WZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0336": {
+        "name": "Global Tech Services",
+        "sector": "Retail",
+        "gstin": "27LCJYQ5034EZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0337": {
+        "name": "Core Tech Group",
+        "sector": "Information Technology",
+        "gstin": "27CWYJV8077IZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0338": {
+        "name": "Eco Solutions Group",
+        "sector": "Retail",
+        "gstin": "27MRTRU5688CZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0339": {
+        "name": "Zenith Logistics Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27FPRVW2704HZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0340": {
+        "name": "Classic Enterprises Group",
+        "sector": "Automotive",
+        "gstin": "27SXCLZ2753BZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0341": {
+        "name": "Classic Enterprises Services",
+        "sector": "Construction",
+        "gstin": "27YJTOR2902RZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0342": {
+        "name": "Universal Constro India",
+        "sector": "Automotive",
+        "gstin": "27OVYOH9165OZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0343": {
+        "name": "Classic Constro Services",
+        "sector": "Retail",
+        "gstin": "27HGZJK8306MZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0344": {
+        "name": "Core Solutions Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27ZHOZH1147PZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0345": {
+        "name": "Modern Dynamics Corp",
+        "sector": "Agro-processing",
+        "gstin": "27GRQPG2904TZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0346": {
+        "name": "Core Enterprises Group",
+        "sector": "Agro-processing",
+        "gstin": "27CSPAM4213DZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0347": {
+        "name": "Zenith Dynamics Group",
+        "sector": "Healthcare",
+        "gstin": "27VANTV8382DZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0348": {
+        "name": "Classic Logistics Group",
+        "sector": "Information Technology",
+        "gstin": "27EXZOG7811EZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0349": {
+        "name": "Global Dynamics India",
+        "sector": "Logistics",
+        "gstin": "27ZCCCE7080YZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0350": {
+        "name": "Core Enterprises Ltd",
+        "sector": "Education",
+        "gstin": "27MPGOF8841WZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0351": {
+        "name": "Eco Constro Services",
+        "sector": "Information Technology",
+        "gstin": "27CRSIC7257IZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0352": {
+        "name": "Global Dynamics Corp",
+        "sector": "Logistics",
+        "gstin": "27APCWC7402OZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0353": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27RVEMZ9548PZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0354": {
+        "name": "Eco Tech Ltd",
+        "sector": "Automotive",
+        "gstin": "27GMXYF8354UZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0355": {
+        "name": "Global Systems Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27VKWNG5421KZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0356": {
+        "name": "Universal Tech Group",
+        "sector": "Automotive",
+        "gstin": "27LTWLT5069FZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0357": {
+        "name": "Modern Agri Group",
+        "sector": "Education",
+        "gstin": "27HGOHR4951PZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0358": {
+        "name": "Classic Systems India",
+        "sector": "Agro-processing",
+        "gstin": "27KFZQY7622SZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0359": {
+        "name": "Global Dynamics India",
+        "sector": "Information Technology",
+        "gstin": "27YGZGE2732TZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0360": {
+        "name": "Alpha Solutions Ltd",
+        "sector": "Education",
+        "gstin": "27BIVPJ1917SZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0361": {
+        "name": "Zenith Constro Ltd",
+        "sector": "Chemicals",
+        "gstin": "27EDBQV3277JZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0362": {
+        "name": "Universal Enterprises Group",
+        "sector": "Agro-processing",
+        "gstin": "27HQXQG3684CZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0363": {
+        "name": "Swift Logistics Corp",
+        "sector": "Retail",
+        "gstin": "27LOGUE5669YZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0364": {
+        "name": "Zenith Agri India",
+        "sector": "Construction",
+        "gstin": "27SUHXO2702XZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0365": {
+        "name": "Universal Agri Services",
+        "sector": "Information Technology",
+        "gstin": "27JLUFH7255VZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0366": {
+        "name": "Core Tech Corp",
+        "sector": "Retail",
+        "gstin": "27PRLGZ8739AZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0367": {
+        "name": "Eco Logistics Group",
+        "sector": "Agro-processing",
+        "gstin": "27RKVCD8964ZZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0368": {
+        "name": "Global Solutions India",
+        "sector": "Manufacturing",
+        "gstin": "27YBDWX9757IZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0369": {
+        "name": "Universal Enterprises Services",
+        "sector": "Information Technology",
+        "gstin": "27WRHMS3183JZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0370": {
+        "name": "Swift Agri India",
+        "sector": "Healthcare",
+        "gstin": "27VXDPK6124CZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0371": {
+        "name": "Global Dynamics Ltd",
+        "sector": "Education",
+        "gstin": "27RKWTN8383RZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0372": {
+        "name": "Apex Logistics Corp",
+        "sector": "Education",
+        "gstin": "27PLFOW9424MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0373": {
+        "name": "Zenith Solutions India",
+        "sector": "Manufacturing",
+        "gstin": "27XYVLM1912YZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0374": {
+        "name": "Apex Solutions Corp",
+        "sector": "Construction",
+        "gstin": "27WZTOV9483GZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0375": {
+        "name": "Zenith Industries Services",
+        "sector": "Education",
+        "gstin": "27GGAZP3122NZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0376": {
+        "name": "Eco Systems Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27EGZLY9829JZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0377": {
+        "name": "Apex Industries Group",
+        "sector": "Retail",
+        "gstin": "27DMJNR3074BZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0378": {
+        "name": "Alpha Logistics Group",
+        "sector": "Agro-processing",
+        "gstin": "27KTXZZ3291LZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0379": {
+        "name": "Swift Constro India",
+        "sector": "Automotive",
+        "gstin": "27UQQBC7819QZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0380": {
+        "name": "Swift Constro Services",
+        "sector": "Logistics",
+        "gstin": "27ZJVWI5366HZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0381": {
+        "name": "Alpha Tech India",
+        "sector": "Construction",
+        "gstin": "27ECTSX7481IZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0382": {
+        "name": "Global Enterprises Group",
+        "sector": "Agro-processing",
+        "gstin": "27DYRBY5173TZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0383": {
+        "name": "Eco Systems Services",
+        "sector": "Agro-processing",
+        "gstin": "27XUSBQ3177JZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0384": {
+        "name": "Swift Retail Services",
+        "sector": "Information Technology",
+        "gstin": "27XGCOU2879HZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0385": {
+        "name": "Global Solutions Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27HTUYU9848XZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0386": {
+        "name": "Eco Industries Corp",
+        "sector": "Healthcare",
+        "gstin": "27RARAN2585PZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0387": {
+        "name": "Modern Agri Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27CJCPF4706SZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0388": {
+        "name": "Zenith Retail Corp",
+        "sector": "Automotive",
+        "gstin": "27SCIPI8697FZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0389": {
+        "name": "Global Retail India",
+        "sector": "Retail",
+        "gstin": "27FFNDY1478BZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0390": {
+        "name": "Swift Tech Services",
+        "sector": "Chemicals",
+        "gstin": "27KPWBB9034VZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0391": {
+        "name": "Zenith Retail Corp",
+        "sector": "Construction",
+        "gstin": "27SNVXH2233JZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0392": {
+        "name": "Classic Logistics Group",
+        "sector": "Logistics",
+        "gstin": "27OATLS6010TZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0393": {
+        "name": "Modern Enterprises Group",
+        "sector": "Retail",
+        "gstin": "27NQFTR4443AZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0394": {
+        "name": "Swift Systems Group",
+        "sector": "Retail",
+        "gstin": "27UFYNY1197FZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0395": {
+        "name": "Core Logistics Group",
+        "sector": "Chemicals",
+        "gstin": "27RLJCX8928BZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0396": {
+        "name": "Apex Agri Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27HCEZG9122KZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0397": {
+        "name": "Alpha Constro Services",
+        "sector": "Healthcare",
+        "gstin": "27DVIDG5599OZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0398": {
+        "name": "Eco Industries Group",
+        "sector": "Construction",
+        "gstin": "27SMMHZ1135TZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0399": {
+        "name": "Modern Logistics India",
+        "sector": "Healthcare",
+        "gstin": "27EJSEN7634ZZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0400": {
+        "name": "Alpha Agri India",
+        "sector": "Retail",
+        "gstin": "27RJFAI3969ZZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0401": {
+        "name": "Classic Agri Ltd",
+        "sector": "Information Technology",
+        "gstin": "27XMVQJ4785OZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0402": {
+        "name": "Alpha Constro India",
+        "sector": "Chemicals",
+        "gstin": "27RJQPV9026XZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0403": {
+        "name": "Swift Retail Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27BHELP2423OZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0404": {
+        "name": "Universal Constro India",
+        "sector": "Chemicals",
+        "gstin": "27TNJDP3584PZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0405": {
+        "name": "Universal Dynamics Group",
+        "sector": "Chemicals",
+        "gstin": "27YDMZM4703RZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0406": {
+        "name": "Swift Dynamics India",
+        "sector": "Retail",
+        "gstin": "27GGVLF1133OZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0407": {
+        "name": "Universal Industries Group",
+        "sector": "Information Technology",
+        "gstin": "27UYHFN1543ZZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0408": {
+        "name": "Swift Industries Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27XBLAQ3163GZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0409": {
+        "name": "Universal Dynamics Group",
+        "sector": "Construction",
+        "gstin": "27CUHHD5908EZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0410": {
+        "name": "Eco Logistics Corp",
+        "sector": "Education",
+        "gstin": "27ISWWA9462FZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0411": {
+        "name": "Apex Constro India",
+        "sector": "Construction",
+        "gstin": "27HBBQV6051ZZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0412": {
+        "name": "Alpha Tech Services",
+        "sector": "Retail",
+        "gstin": "27WWCQT4723YZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0413": {
+        "name": "Apex Enterprises Group",
+        "sector": "Automotive",
+        "gstin": "27AFXPF8404RZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0414": {
+        "name": "Zenith Systems Services",
+        "sector": "Construction",
+        "gstin": "27RNGSD5516DZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0415": {
+        "name": "Classic Tech Services",
+        "sector": "Agro-processing",
+        "gstin": "27NDPFJ4265EZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0416": {
+        "name": "Eco Solutions India",
+        "sector": "Information Technology",
+        "gstin": "27SEAUF7883BZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0417": {
+        "name": "Alpha Dynamics Services",
+        "sector": "Automotive",
+        "gstin": "27FFQIG9092DZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0418": {
+        "name": "Classic Dynamics Group",
+        "sector": "Chemicals",
+        "gstin": "27OPIKC3500MZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0419": {
+        "name": "Alpha Retail Corp",
+        "sector": "Agro-processing",
+        "gstin": "27CTJKY2322FZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0420": {
+        "name": "Apex Enterprises Ltd",
+        "sector": "Retail",
+        "gstin": "27VRQLN9911OZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0421": {
+        "name": "Eco Systems Ltd",
+        "sector": "Retail",
+        "gstin": "27XOTME8814UZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0422": {
+        "name": "Zenith Enterprises Ltd",
+        "sector": "Retail",
+        "gstin": "27PSOVA8136AZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0423": {
+        "name": "Eco Agri Corp",
+        "sector": "Education",
+        "gstin": "27ABBEX6672LZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0424": {
+        "name": "Zenith Solutions Ltd",
+        "sector": "Healthcare",
+        "gstin": "27QMIQR4935GZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0425": {
+        "name": "Apex Industries Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27WSWNU8443DZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0426": {
+        "name": "Eco Enterprises Corp",
+        "sector": "Chemicals",
+        "gstin": "27DTPKJ9032XZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0427": {
+        "name": "Global Industries Corp",
+        "sector": "Construction",
+        "gstin": "27EHQVJ8568HZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0428": {
+        "name": "Eco Agri India",
+        "sector": "Healthcare",
+        "gstin": "27OHBUX1407QZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0429": {
+        "name": "Classic Industries Services",
+        "sector": "Automotive",
+        "gstin": "27KSYPN3730LZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0430": {
+        "name": "Universal Dynamics Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27JGUZW7645GZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0431": {
+        "name": "Modern Constro India",
+        "sector": "Retail",
+        "gstin": "27NWAHH1578YZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0432": {
+        "name": "Universal Industries Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27QODJN9379RZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0433": {
+        "name": "Alpha Dynamics Corp",
+        "sector": "Retail",
+        "gstin": "27GFLGP1935UZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0434": {
+        "name": "Zenith Tech Group",
+        "sector": "Healthcare",
+        "gstin": "27YUTPI7541MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0435": {
+        "name": "Modern Constro Group",
+        "sector": "Chemicals",
+        "gstin": "27CAKVV6371VZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0436": {
+        "name": "Universal Tech Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27KWOST3176NZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0437": {
+        "name": "Apex Logistics India",
+        "sector": "Chemicals",
+        "gstin": "27EACHE8063VZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0438": {
+        "name": "Classic Industries Ltd",
+        "sector": "Education",
+        "gstin": "27LHBRF7281CZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0439": {
+        "name": "Zenith Tech Corp",
+        "sector": "Information Technology",
+        "gstin": "27BSFJB6643UZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0440": {
+        "name": "Universal Retail Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27RSALI1643QZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0441": {
+        "name": "Alpha Systems Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27SZJTA2599SZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0442": {
+        "name": "Apex Constro Services",
+        "sector": "Education",
+        "gstin": "27JVLPA7862HZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0443": {
+        "name": "Swift Enterprises Ltd",
+        "sector": "Information Technology",
+        "gstin": "27OLDXL2981SZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0444": {
+        "name": "Classic Logistics India",
+        "sector": "Retail",
+        "gstin": "27GFZKN8380XZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0445": {
+        "name": "Global Tech Ltd",
+        "sector": "Retail",
+        "gstin": "27WNKEB5028SZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0446": {
+        "name": "Classic Solutions Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27QPHCR3167YZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0447": {
+        "name": "Modern Industries Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27JEWYG3885OZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0448": {
+        "name": "Universal Enterprises Corp",
+        "sector": "Information Technology",
+        "gstin": "27ZJZFA3464XZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0449": {
+        "name": "Swift Retail Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27GJRZN2555EZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0450": {
+        "name": "Core Logistics Services",
+        "sector": "Information Technology",
+        "gstin": "27RJYMQ4647EZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0451": {
+        "name": "Core Dynamics Corp",
+        "sector": "Logistics",
+        "gstin": "27UHPPR5375ZZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0452": {
+        "name": "Classic Agri India",
+        "sector": "Manufacturing",
+        "gstin": "27ORDPY3202HZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0453": {
+        "name": "Core Industries Group",
+        "sector": "Construction",
+        "gstin": "27KCZEJ8978CZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0454": {
+        "name": "Core Systems India",
+        "sector": "Retail",
+        "gstin": "27HLGCM7768GZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0455": {
+        "name": "Classic Tech Corp",
+        "sector": "Logistics",
+        "gstin": "27WBVPU8363RZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0456": {
+        "name": "Alpha Constro Ltd",
+        "sector": "Retail",
+        "gstin": "27DZDJL5467GZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0457": {
+        "name": "Classic Tech Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27ACDOT6362JZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0458": {
+        "name": "Global Industries India",
+        "sector": "Construction",
+        "gstin": "27SXJES5574SZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0459": {
+        "name": "Apex Agri India",
+        "sector": "Education",
+        "gstin": "27OYCIU8622TZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0460": {
+        "name": "Apex Tech India",
+        "sector": "Education",
+        "gstin": "27FBWQV2378VZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0461": {
+        "name": "Universal Constro Corp",
+        "sector": "Logistics",
+        "gstin": "27MJDTP5186OZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0462": {
+        "name": "Classic Retail India",
+        "sector": "Logistics",
+        "gstin": "27AUWZA7977GZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0463": {
+        "name": "Eco Tech Services",
+        "sector": "Chemicals",
+        "gstin": "27NDADS2647QZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0464": {
+        "name": "Swift Industries Corp",
+        "sector": "Education",
+        "gstin": "27HDUFX7246VZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0465": {
+        "name": "Swift Solutions Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27SRHFD7854IZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0466": {
+        "name": "Classic Logistics Corp",
+        "sector": "Chemicals",
+        "gstin": "27JVZFL9437PZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0467": {
+        "name": "Alpha Retail India",
+        "sector": "Healthcare",
+        "gstin": "27VXGOJ8394DZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0468": {
+        "name": "Modern Constro Group",
+        "sector": "Information Technology",
+        "gstin": "27AFTXF4869LZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0469": {
+        "name": "Swift Systems India",
+        "sector": "Logistics",
+        "gstin": "27VVTRX1851AZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0470": {
+        "name": "Global Retail Ltd",
+        "sector": "Information Technology",
+        "gstin": "27TRSJT7981YZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0471": {
+        "name": "Apex Constro Services",
+        "sector": "Chemicals",
+        "gstin": "27BDRVW2456AZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0472": {
+        "name": "Global Tech Group",
+        "sector": "Education",
+        "gstin": "27MYCBD1287MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0473": {
+        "name": "Alpha Solutions Ltd",
+        "sector": "Construction",
+        "gstin": "27LMGBG9366HZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0474": {
+        "name": "Universal Constro Corp",
+        "sector": "Manufacturing",
+        "gstin": "27NAJGA9407GZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0475": {
+        "name": "Apex Tech Corp",
+        "sector": "Healthcare",
+        "gstin": "27ICFEH3113HZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0476": {
+        "name": "Alpha Solutions Services",
+        "sector": "Information Technology",
+        "gstin": "27ABDVP5880XZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0477": {
+        "name": "Classic Industries Ltd",
+        "sector": "Chemicals",
+        "gstin": "27ILIFJ8302WZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0478": {
+        "name": "Swift Enterprises Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27ZIFBN5552QZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0479": {
+        "name": "Alpha Retail Services",
+        "sector": "Chemicals",
+        "gstin": "27MCXNU2104AZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0480": {
+        "name": "Modern Retail Corp",
+        "sector": "Education",
+        "gstin": "27IVPSD7592WZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0481": {
+        "name": "Classic Agri Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27VUNWK7775AZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0482": {
+        "name": "Zenith Retail Group",
+        "sector": "Retail",
+        "gstin": "27EHBOU3785QZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0483": {
+        "name": "Modern Industries Group",
+        "sector": "Manufacturing",
+        "gstin": "27QNLMK6010CZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0484": {
+        "name": "Apex Agri Corp",
+        "sector": "Automotive",
+        "gstin": "27LFNQB9570BZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0485": {
+        "name": "Core Constro Corp",
+        "sector": "Retail",
+        "gstin": "27TQDHU2935TZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0486": {
+        "name": "Global Logistics Corp",
+        "sector": "Agro-processing",
+        "gstin": "27MZYDS8049AZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0487": {
+        "name": "Alpha Industries India",
+        "sector": "Construction",
+        "gstin": "27BWCVQ2839WZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0488": {
+        "name": "Apex Constro India",
+        "sector": "Chemicals",
+        "gstin": "27OGHKB8997TZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0489": {
+        "name": "Swift Enterprises Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27HVAOD4477PZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0490": {
+        "name": "Classic Logistics Ltd",
+        "sector": "Information Technology",
+        "gstin": "27HIYOO4447TZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0491": {
+        "name": "Apex Industries Corp",
+        "sector": "Healthcare",
+        "gstin": "27EDHJS6071BZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0492": {
+        "name": "Modern Dynamics Services",
+        "sector": "Automotive",
+        "gstin": "27UHSBF9386LZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0493": {
+        "name": "Modern Retail Ltd",
+        "sector": "Education",
+        "gstin": "27DREMS7687SZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0494": {
+        "name": "Modern Solutions Ltd",
+        "sector": "Information Technology",
+        "gstin": "27HQPHP1329DZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0495": {
+        "name": "Swift Industries Services",
+        "sector": "Agro-processing",
+        "gstin": "27UGFJB6780ZZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0496": {
+        "name": "Modern Dynamics India",
+        "sector": "Education",
+        "gstin": "27EIQJO4389NZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0497": {
+        "name": "Alpha Systems Services",
+        "sector": "Automotive",
+        "gstin": "27KXFAE3387FZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0498": {
+        "name": "Eco Enterprises Ltd",
+        "sector": "Retail",
+        "gstin": "27GOCXF6035VZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0499": {
+        "name": "Core Industries Services",
+        "sector": "Education",
+        "gstin": "27JFIBW4027OZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0500": {
+        "name": "Swift Dynamics Corp",
+        "sector": "Construction",
+        "gstin": "27ZGDFM8138YZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0501": {
+        "name": "Alpha Systems Ltd",
+        "sector": "Information Technology",
+        "gstin": "27AMEYH7311GZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0502": {
+        "name": "Universal Tech Corp",
+        "sector": "Construction",
+        "gstin": "27DCAJI6719FZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0503": {
+        "name": "Universal Industries Corp",
+        "sector": "Education",
+        "gstin": "27WWDZY8836MZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0504": {
+        "name": "Apex Agri Ltd",
+        "sector": "Automotive",
+        "gstin": "27ZKEVI3773WZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0505": {
+        "name": "Zenith Logistics Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27EJBTF8282FZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0506": {
+        "name": "Apex Retail Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27CGQOH2430YZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0507": {
+        "name": "Universal Constro Corp",
+        "sector": "Logistics",
+        "gstin": "27TJMZU8112JZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0508": {
+        "name": "Universal Retail Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27SLWZO8532LZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0509": {
+        "name": "Global Tech Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27KFSCR6515DZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0510": {
+        "name": "Modern Constro Services",
+        "sector": "Automotive",
+        "gstin": "27IWVZO6615CZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0511": {
+        "name": "Universal Systems Corp",
+        "sector": "Construction",
+        "gstin": "27JLIDR8077DZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0512": {
+        "name": "Global Industries India",
+        "sector": "Construction",
+        "gstin": "27IZJBG5907MZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0513": {
+        "name": "Global Enterprises Services",
+        "sector": "Manufacturing",
+        "gstin": "27DWTTV2769AZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0514": {
+        "name": "Alpha Solutions Corp",
+        "sector": "Automotive",
+        "gstin": "27UCFIQ3850OZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0515": {
+        "name": "Classic Agri Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27EIJLJ7679JZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0516": {
+        "name": "Apex Solutions Ltd",
+        "sector": "Chemicals",
+        "gstin": "27CYBMJ6621PZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0517": {
+        "name": "Zenith Logistics Services",
+        "sector": "Construction",
+        "gstin": "27JIHSB7687TZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0518": {
+        "name": "Global Systems Corp",
+        "sector": "Automotive",
+        "gstin": "27UHEWX3961ZZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0519": {
+        "name": "Alpha Dynamics Group",
+        "sector": "Logistics",
+        "gstin": "27ZFZVQ9528IZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0520": {
+        "name": "Swift Enterprises Ltd",
+        "sector": "Logistics",
+        "gstin": "27DDKVG3355KZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0521": {
+        "name": "Global Systems India",
+        "sector": "Logistics",
+        "gstin": "27RDGPY5534GZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0522": {
+        "name": "Swift Agri Group",
+        "sector": "Logistics",
+        "gstin": "27FLESP2575MZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0523": {
+        "name": "Alpha Solutions India",
+        "sector": "Healthcare",
+        "gstin": "27ANEWZ1186QZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0524": {
+        "name": "Apex Logistics Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27BFBCB8195IZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0525": {
+        "name": "Apex Agri Services",
+        "sector": "Healthcare",
+        "gstin": "27RLOYF5445GZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0526": {
+        "name": "Global Constro Group",
+        "sector": "Logistics",
+        "gstin": "27QFTEK6578OZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0527": {
+        "name": "Swift Logistics India",
+        "sector": "Construction",
+        "gstin": "27NKCQO8131VZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0528": {
+        "name": "Apex Logistics India",
+        "sector": "Manufacturing",
+        "gstin": "27ICRCE2947OZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0529": {
+        "name": "Alpha Solutions Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27MZNOT9712DZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0530": {
+        "name": "Alpha Logistics Services",
+        "sector": "Healthcare",
+        "gstin": "27WMVXQ1320AZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0531": {
+        "name": "Universal Enterprises Ltd",
+        "sector": "Information Technology",
+        "gstin": "27CRJVY6515XZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0532": {
+        "name": "Modern Solutions Ltd",
+        "sector": "Construction",
+        "gstin": "27LFTXI7919IZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0533": {
+        "name": "Modern Industries Ltd",
+        "sector": "Healthcare",
+        "gstin": "27UWTPP5069YZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0534": {
+        "name": "Alpha Industries Services",
+        "sector": "Healthcare",
+        "gstin": "27YMJNQ4511PZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0535": {
+        "name": "Alpha Solutions Group",
+        "sector": "Agro-processing",
+        "gstin": "27CSIKA8039VZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0536": {
+        "name": "Apex Industries India",
+        "sector": "Education",
+        "gstin": "27CLVYE8690MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0537": {
+        "name": "Core Logistics Corp",
+        "sector": "Logistics",
+        "gstin": "27HPZDI6704XZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0538": {
+        "name": "Eco Agri Corp",
+        "sector": "Agro-processing",
+        "gstin": "27VPEOI9617MZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0539": {
+        "name": "Apex Dynamics Group",
+        "sector": "Healthcare",
+        "gstin": "27XDAPW4832YZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0540": {
+        "name": "Eco Tech Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27OWHWK6821GZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0541": {
+        "name": "Apex Retail Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27ACGOL7192HZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0542": {
+        "name": "Apex Enterprises Services",
+        "sector": "Logistics",
+        "gstin": "27AIDGF6105GZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0543": {
+        "name": "Eco Industries Services",
+        "sector": "Construction",
+        "gstin": "27LCSGF5548LZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0544": {
+        "name": "Zenith Tech Services",
+        "sector": "Manufacturing",
+        "gstin": "27CQYVE2379RZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0545": {
+        "name": "Classic Retail Services",
+        "sector": "Healthcare",
+        "gstin": "27ZWVLY8515CZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0546": {
+        "name": "Alpha Solutions Corp",
+        "sector": "Education",
+        "gstin": "27LCBDF4659UZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0547": {
+        "name": "Alpha Constro Services",
+        "sector": "Construction",
+        "gstin": "27HXZYA8788YZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0548": {
+        "name": "Classic Agri Services",
+        "sector": "Education",
+        "gstin": "27NMXFD6680QZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0549": {
+        "name": "Modern Logistics Ltd",
+        "sector": "Automotive",
+        "gstin": "27XWRFM4892CZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0550": {
+        "name": "Eco Solutions Ltd",
+        "sector": "Automotive",
+        "gstin": "27TTVLN1662CZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0551": {
+        "name": "Classic Solutions India",
+        "sector": "Construction",
+        "gstin": "27TVHQP4240EZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0552": {
+        "name": "Global Industries Services",
+        "sector": "Healthcare",
+        "gstin": "27ZSOTB8340RZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0553": {
+        "name": "Zenith Systems Group",
+        "sector": "Manufacturing",
+        "gstin": "27LFYFD1426PZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0554": {
+        "name": "Classic Systems Ltd",
+        "sector": "Information Technology",
+        "gstin": "27YGMOS9178XZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0555": {
+        "name": "Modern Industries Services",
+        "sector": "Logistics",
+        "gstin": "27GSVDD1456TZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0556": {
+        "name": "Modern Agri Corp",
+        "sector": "Logistics",
+        "gstin": "27IDQVY9098DZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0557": {
+        "name": "Apex Agri India",
+        "sector": "Chemicals",
+        "gstin": "27AHKJN7930KZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0558": {
+        "name": "Core Agri India",
+        "sector": "Construction",
+        "gstin": "27PGXKZ5612MZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0559": {
+        "name": "Alpha Agri India",
+        "sector": "Logistics",
+        "gstin": "27XYCTD4847CZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0560": {
+        "name": "Apex Agri Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27FIDLJ4588ZZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0561": {
+        "name": "Alpha Industries Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27WZJMU5132FZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0562": {
+        "name": "Eco Solutions India",
+        "sector": "Information Technology",
+        "gstin": "27AFIGA7298JZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0563": {
+        "name": "Core Industries Corp",
+        "sector": "Automotive",
+        "gstin": "27CMESI5450ZZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0564": {
+        "name": "Zenith Retail Corp",
+        "sector": "Automotive",
+        "gstin": "27SFNON5796MZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0565": {
+        "name": "Universal Tech Ltd",
+        "sector": "Healthcare",
+        "gstin": "27KSHZR8674GZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0566": {
+        "name": "Apex Solutions Ltd",
+        "sector": "Education",
+        "gstin": "27PIOYN9016DZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0567": {
+        "name": "Apex Logistics Services",
+        "sector": "Information Technology",
+        "gstin": "27DBLRQ7785MZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0568": {
+        "name": "Universal Retail Services",
+        "sector": "Information Technology",
+        "gstin": "27MESUQ9164LZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0569": {
+        "name": "Swift Constro Group",
+        "sector": "Retail",
+        "gstin": "27YMOTL5720HZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0570": {
+        "name": "Apex Dynamics Ltd",
+        "sector": "Education",
+        "gstin": "27RNGQM4155IZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0571": {
+        "name": "Zenith Systems Services",
+        "sector": "Education",
+        "gstin": "27PGJXY5286HZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0572": {
+        "name": "Alpha Retail Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27ENMXS8103ZZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0573": {
+        "name": "Universal Dynamics India",
+        "sector": "Education",
+        "gstin": "27AJSDC6156VZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0574": {
+        "name": "Classic Solutions Group",
+        "sector": "Chemicals",
+        "gstin": "27EPPGC9117TZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0575": {
+        "name": "Global Enterprises India",
+        "sector": "Chemicals",
+        "gstin": "27CSFKQ8046PZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0576": {
+        "name": "Classic Dynamics Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27GITIM6179XZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0577": {
+        "name": "Classic Tech Ltd",
+        "sector": "Construction",
+        "gstin": "27VJTJK4317JZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0578": {
+        "name": "Zenith Tech Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27EVEUF8801SZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0579": {
+        "name": "Apex Systems Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27CNWIP7809MZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0580": {
+        "name": "Swift Agri Ltd",
+        "sector": "Automotive",
+        "gstin": "27RLAAN2961BZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0581": {
+        "name": "Zenith Constro Group",
+        "sector": "Healthcare",
+        "gstin": "27MBCGZ6059DZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0582": {
+        "name": "Global Dynamics Ltd",
+        "sector": "Chemicals",
+        "gstin": "27ODNBK2247ZZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0583": {
+        "name": "Alpha Systems India",
+        "sector": "Logistics",
+        "gstin": "27INAUO7044WZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0584": {
+        "name": "Alpha Enterprises Corp",
+        "sector": "Agro-processing",
+        "gstin": "27NMESP1398WZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0585": {
+        "name": "Swift Logistics Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27RZBSN3421ZZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0586": {
+        "name": "Classic Dynamics India",
+        "sector": "Automotive",
+        "gstin": "27MEASF8837FZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0587": {
+        "name": "Zenith Industries Ltd",
+        "sector": "Construction",
+        "gstin": "27YFNDZ3162KZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0588": {
+        "name": "Modern Retail Group",
+        "sector": "Healthcare",
+        "gstin": "27WBBMD3776MZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0589": {
+        "name": "Apex Enterprises Ltd",
+        "sector": "Healthcare",
+        "gstin": "27ZMFDP2634EZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0590": {
+        "name": "Core Enterprises Ltd",
+        "sector": "Education",
+        "gstin": "27DWCVP2292CZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0591": {
+        "name": "Alpha Industries Corp",
+        "sector": "Agro-processing",
+        "gstin": "27CPCOM2799WZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0592": {
+        "name": "Universal Enterprises Corp",
+        "sector": "Information Technology",
+        "gstin": "27JDCWH2914VZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0593": {
+        "name": "Universal Industries Group",
+        "sector": "Retail",
+        "gstin": "27ZXTZQ9395NZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0594": {
+        "name": "Core Retail Group",
+        "sector": "Education",
+        "gstin": "27FYNPA7742KZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0595": {
+        "name": "Modern Enterprises Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27CPQCY1857JZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0596": {
+        "name": "Swift Systems Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27TJTTQ6646MZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0597": {
+        "name": "Universal Logistics Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27EEMVU7790HZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0598": {
+        "name": "Swift Industries India",
+        "sector": "Manufacturing",
+        "gstin": "27DBWJJ8525HZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0599": {
+        "name": "Apex Logistics Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27PUHSL2850SZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0600": {
+        "name": "Modern Tech India",
+        "sector": "Logistics",
+        "gstin": "27UXUSE5466BZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0601": {
+        "name": "Core Logistics Services",
+        "sector": "Chemicals",
+        "gstin": "27WHFXF9204XZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0602": {
+        "name": "Core Industries Services",
+        "sector": "Information Technology",
+        "gstin": "27CGWRR5310HZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0603": {
+        "name": "Classic Industries Corp",
+        "sector": "Manufacturing",
+        "gstin": "27TDMWE3718VZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0604": {
+        "name": "Eco Constro Corp",
+        "sector": "Retail",
+        "gstin": "27EKJRI5212IZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0605": {
+        "name": "Swift Dynamics Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27HPGDP7283UZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0606": {
+        "name": "Core Agri Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27TBLIE8771JZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0607": {
+        "name": "Alpha Solutions Ltd",
+        "sector": "Healthcare",
+        "gstin": "27AXGNR7360RZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0608": {
+        "name": "Swift Retail Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27JMHGR8519EZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0609": {
+        "name": "Universal Retail Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27PTPTX1955GZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0610": {
+        "name": "Swift Industries India",
+        "sector": "Agro-processing",
+        "gstin": "27FDCAE1980HZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0611": {
+        "name": "Modern Retail Services",
+        "sector": "Education",
+        "gstin": "27NRQII2235QZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0612": {
+        "name": "Modern Enterprises Ltd",
+        "sector": "Retail",
+        "gstin": "27HZKFC3038OZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0613": {
+        "name": "Eco Agri India",
+        "sector": "Manufacturing",
+        "gstin": "27RPPNG9078IZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0614": {
+        "name": "Eco Industries Group",
+        "sector": "Manufacturing",
+        "gstin": "27YFSYS2900JZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0615": {
+        "name": "Classic Industries Corp",
+        "sector": "Logistics",
+        "gstin": "27AVGGF9119BZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0616": {
+        "name": "Zenith Agri India",
+        "sector": "Logistics",
+        "gstin": "27PHJVU5766KZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0617": {
+        "name": "Classic Systems Corp",
+        "sector": "Education",
+        "gstin": "27YIYJE3686UZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0618": {
+        "name": "Apex Logistics Group",
+        "sector": "Chemicals",
+        "gstin": "27BWLOI6747EZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0619": {
+        "name": "Swift Agri Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27VLKKA6964JZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0620": {
+        "name": "Universal Enterprises India",
+        "sector": "Construction",
+        "gstin": "27SKRLK3614NZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0621": {
+        "name": "Alpha Logistics Group",
+        "sector": "Healthcare",
+        "gstin": "27JVNHG1954NZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0622": {
+        "name": "Apex Systems Services",
+        "sector": "Healthcare",
+        "gstin": "27XQDJO4508QZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0623": {
+        "name": "Apex Systems Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27BBNSJ2251RZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0624": {
+        "name": "Modern Enterprises Ltd",
+        "sector": "Chemicals",
+        "gstin": "27LPZVH7269LZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0625": {
+        "name": "Alpha Dynamics Group",
+        "sector": "Education",
+        "gstin": "27OGVSW6999FZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0626": {
+        "name": "Eco Dynamics India",
+        "sector": "Education",
+        "gstin": "27NQAQM5625TZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0627": {
+        "name": "Eco Agri Ltd",
+        "sector": "Healthcare",
+        "gstin": "27NXXUM3984XZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0628": {
+        "name": "Core Systems Ltd",
+        "sector": "Logistics",
+        "gstin": "27ONVRN3944XZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0629": {
+        "name": "Alpha Constro Services",
+        "sector": "Agro-processing",
+        "gstin": "27VNHCG4711RZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0630": {
+        "name": "Global Tech India",
+        "sector": "Construction",
+        "gstin": "27RTHSW7535ZZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0631": {
+        "name": "Apex Industries Group",
+        "sector": "Manufacturing",
+        "gstin": "27ICDPC2645RZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0632": {
+        "name": "Global Industries Group",
+        "sector": "Information Technology",
+        "gstin": "27HLHIZ3010GZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0633": {
+        "name": "Apex Dynamics Group",
+        "sector": "Automotive",
+        "gstin": "27UODUU2154BZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0634": {
+        "name": "Classic Logistics Group",
+        "sector": "Automotive",
+        "gstin": "27QOBDW3846LZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0635": {
+        "name": "Modern Constro Group",
+        "sector": "Retail",
+        "gstin": "27KOSSA5399VZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0636": {
+        "name": "Alpha Enterprises Ltd",
+        "sector": "Education",
+        "gstin": "27ZWLXB3683LZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0637": {
+        "name": "Zenith Solutions India",
+        "sector": "Retail",
+        "gstin": "27CRPEQ2031EZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0638": {
+        "name": "Swift Logistics India",
+        "sector": "Chemicals",
+        "gstin": "27KRSNB1101SZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0639": {
+        "name": "Swift Retail Group",
+        "sector": "Retail",
+        "gstin": "27CWPQO1589RZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0640": {
+        "name": "Core Systems Ltd",
+        "sector": "Logistics",
+        "gstin": "27RIUUU3572TZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0641": {
+        "name": "Universal Logistics Corp",
+        "sector": "Education",
+        "gstin": "27ZMZOP1245YZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0642": {
+        "name": "Eco Enterprises Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27RAZOJ7966UZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0643": {
+        "name": "Eco Industries Corp",
+        "sector": "Logistics",
+        "gstin": "27NJWKT4271YZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0644": {
+        "name": "Modern Industries Corp",
+        "sector": "Construction",
+        "gstin": "27ERGXS3260EZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0645": {
+        "name": "Eco Industries Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27FQZEK7852LZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0646": {
+        "name": "Core Enterprises Corp",
+        "sector": "Agro-processing",
+        "gstin": "27CJMXZ7070BZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0647": {
+        "name": "Zenith Industries Group",
+        "sector": "Automotive",
+        "gstin": "27JEJRK4510HZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0648": {
+        "name": "Eco Retail Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27GHWKT3506RZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0649": {
+        "name": "Apex Solutions Ltd",
+        "sector": "Education",
+        "gstin": "27ROAGQ2912VZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0650": {
+        "name": "Universal Constro Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27RDQCK5274GZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0651": {
+        "name": "Core Logistics Group",
+        "sector": "Agro-processing",
+        "gstin": "27HGBGA2631TZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0652": {
+        "name": "Alpha Agri Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27OFZGW6886GZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0653": {
+        "name": "Swift Tech India",
+        "sector": "Retail",
+        "gstin": "27ZWLCC4353DZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0654": {
+        "name": "Eco Constro India",
+        "sector": "Education",
+        "gstin": "27HYWZB2621DZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0655": {
+        "name": "Alpha Systems Group",
+        "sector": "Automotive",
+        "gstin": "27ANXDR8312EZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0656": {
+        "name": "Swift Constro Ltd",
+        "sector": "Education",
+        "gstin": "27IOVBI8631JZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0657": {
+        "name": "Universal Agri Group",
+        "sector": "Retail",
+        "gstin": "27OAIVM8832XZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0658": {
+        "name": "Classic Constro Ltd",
+        "sector": "Retail",
+        "gstin": "27ZNEDM8745QZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0659": {
+        "name": "Apex Logistics Corp",
+        "sector": "Construction",
+        "gstin": "27TMGVQ9048IZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0660": {
+        "name": "Modern Solutions India",
+        "sector": "Chemicals",
+        "gstin": "27CZJUI9198UZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0661": {
+        "name": "Universal Tech Group",
+        "sector": "Retail",
+        "gstin": "27UMVRG3719ZZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0662": {
+        "name": "Universal Systems Ltd",
+        "sector": "Retail",
+        "gstin": "27HOOQY4978QZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0663": {
+        "name": "Apex Constro Group",
+        "sector": "Chemicals",
+        "gstin": "27NISKR1461QZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0664": {
+        "name": "Eco Retail Corp",
+        "sector": "Manufacturing",
+        "gstin": "27VHUSA7764NZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0665": {
+        "name": "Core Dynamics Services",
+        "sector": "Retail",
+        "gstin": "27ATSNY2620XZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0666": {
+        "name": "Global Tech Services",
+        "sector": "Automotive",
+        "gstin": "27UPECZ4539OZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0667": {
+        "name": "Global Constro Corp",
+        "sector": "Manufacturing",
+        "gstin": "27RWGLI6538AZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0668": {
+        "name": "Swift Enterprises Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27PEEZS5720ZZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0669": {
+        "name": "Core Tech Ltd",
+        "sector": "Chemicals",
+        "gstin": "27JXCIW3003IZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0670": {
+        "name": "Swift Systems Services",
+        "sector": "Education",
+        "gstin": "27APZVA4418ZZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0671": {
+        "name": "Modern Systems Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27NUFIA9418FZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0672": {
+        "name": "Global Systems India",
+        "sector": "Chemicals",
+        "gstin": "27ODLNB3083GZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0673": {
+        "name": "Alpha Logistics India",
+        "sector": "Education",
+        "gstin": "27VWJTD4565RZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0674": {
+        "name": "Classic Dynamics Group",
+        "sector": "Information Technology",
+        "gstin": "27RYTCP6445PZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0675": {
+        "name": "Apex Enterprises Services",
+        "sector": "Education",
+        "gstin": "27HYDHB7110AZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0676": {
+        "name": "Global Constro Corp",
+        "sector": "Chemicals",
+        "gstin": "27ZRYAI5494KZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0677": {
+        "name": "Swift Dynamics Group",
+        "sector": "Retail",
+        "gstin": "27VBXWF5689ZZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0678": {
+        "name": "Universal Agri Corp",
+        "sector": "Retail",
+        "gstin": "27AJHBR1293TZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0679": {
+        "name": "Zenith Dynamics Group",
+        "sector": "Construction",
+        "gstin": "27TLEWI1042LZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0680": {
+        "name": "Modern Enterprises India",
+        "sector": "Logistics",
+        "gstin": "27ZNBNC8285VZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0681": {
+        "name": "Eco Systems Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27RPKGQ5037SZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0682": {
+        "name": "Swift Constro Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27QCMEO9821MZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0683": {
+        "name": "Eco Agri Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27QPQFT9763LZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0684": {
+        "name": "Alpha Solutions Ltd",
+        "sector": "Information Technology",
+        "gstin": "27KDRAV9052RZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0685": {
+        "name": "Global Industries Corp",
+        "sector": "Agro-processing",
+        "gstin": "27KNNXL2510UZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0686": {
+        "name": "Alpha Enterprises India",
+        "sector": "Information Technology",
+        "gstin": "27EUROU1806GZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0687": {
+        "name": "Classic Dynamics India",
+        "sector": "Healthcare",
+        "gstin": "27DOVWI1331LZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0688": {
+        "name": "Zenith Logistics Ltd",
+        "sector": "Chemicals",
+        "gstin": "27YEWFS6601AZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0689": {
+        "name": "Swift Industries Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27BWOMR4414KZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0690": {
+        "name": "Alpha Systems Services",
+        "sector": "Information Technology",
+        "gstin": "27JRYNN9154ZZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0691": {
+        "name": "Global Systems Corp",
+        "sector": "Healthcare",
+        "gstin": "27KCDYA9449KZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0692": {
+        "name": "Alpha Logistics India",
+        "sector": "Retail",
+        "gstin": "27RHFZO2044UZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0693": {
+        "name": "Apex Logistics India",
+        "sector": "Education",
+        "gstin": "27XFMMI1543BZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0694": {
+        "name": "Classic Industries Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27DENQI6357TZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0695": {
+        "name": "Universal Industries Group",
+        "sector": "Automotive",
+        "gstin": "27PHMKV8122KZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0696": {
+        "name": "Apex Agri Services",
+        "sector": "Agro-processing",
+        "gstin": "27BMTKQ5596WZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0697": {
+        "name": "Global Enterprises Services",
+        "sector": "Information Technology",
+        "gstin": "27WZLNL4090UZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0698": {
+        "name": "Core Agri Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27OAGTV4721JZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0699": {
+        "name": "Classic Tech Group",
+        "sector": "Retail",
+        "gstin": "27IQAUN6751WZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0700": {
+        "name": "Universal Solutions Corp",
+        "sector": "Construction",
+        "gstin": "27IZXBO9728XZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0701": {
+        "name": "Zenith Enterprises Group",
+        "sector": "Chemicals",
+        "gstin": "27OUUZI7023JZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0702": {
+        "name": "Global Logistics Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27NXKAS6960KZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0703": {
+        "name": "Core Tech Group",
+        "sector": "Healthcare",
+        "gstin": "27XKILI1451IZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0704": {
+        "name": "Apex Logistics Services",
+        "sector": "Construction",
+        "gstin": "27QPPYZ3788GZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0705": {
+        "name": "Zenith Logistics Group",
+        "sector": "Education",
+        "gstin": "27WPWGJ3540EZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0706": {
+        "name": "Universal Systems Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27NBODT7072KZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0707": {
+        "name": "Eco Dynamics Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27VKNPU6975MZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0708": {
+        "name": "Swift Industries Corp",
+        "sector": "Retail",
+        "gstin": "27SFEBP1325HZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0709": {
+        "name": "Apex Agri Corp",
+        "sector": "Automotive",
+        "gstin": "27XVHXW2922SZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0710": {
+        "name": "Classic Tech Corp",
+        "sector": "Retail",
+        "gstin": "27SYTBD3288TZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0711": {
+        "name": "Core Industries Group",
+        "sector": "Healthcare",
+        "gstin": "27JQVRH3493VZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0712": {
+        "name": "Zenith Enterprises India",
+        "sector": "Manufacturing",
+        "gstin": "27EBFVG8458AZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0713": {
+        "name": "Universal Constro Group",
+        "sector": "Automotive",
+        "gstin": "27PIDRI4074MZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0714": {
+        "name": "Eco Tech Ltd",
+        "sector": "Logistics",
+        "gstin": "27CLFEH9842SZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0715": {
+        "name": "Classic Logistics Group",
+        "sector": "Retail",
+        "gstin": "27GEFIU4430QZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0716": {
+        "name": "Core Industries India",
+        "sector": "Information Technology",
+        "gstin": "27AXJXX8741VZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0717": {
+        "name": "Global Constro Services",
+        "sector": "Manufacturing",
+        "gstin": "27YLWXG9438OZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0718": {
+        "name": "Zenith Tech Services",
+        "sector": "Information Technology",
+        "gstin": "27VLMOC8967BZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0719": {
+        "name": "Eco Tech Corp",
+        "sector": "Education",
+        "gstin": "27CIFNJ6165ZZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0720": {
+        "name": "Zenith Systems India",
+        "sector": "Agro-processing",
+        "gstin": "27VHDZB3110AZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0721": {
+        "name": "Apex Tech Services",
+        "sector": "Automotive",
+        "gstin": "27EAWAN7790SZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0722": {
+        "name": "Alpha Enterprises Corp",
+        "sector": "Agro-processing",
+        "gstin": "27WORCV2316IZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0723": {
+        "name": "Eco Dynamics Corp",
+        "sector": "Information Technology",
+        "gstin": "27TJUCD3437BZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0724": {
+        "name": "Zenith Logistics Services",
+        "sector": "Information Technology",
+        "gstin": "27PQEND9807SZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0725": {
+        "name": "Global Retail Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27GQYPT8188GZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0726": {
+        "name": "Core Agri Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27XCGOB2049BZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0727": {
+        "name": "Eco Retail Services",
+        "sector": "Manufacturing",
+        "gstin": "27HPZNN2767GZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0728": {
+        "name": "Alpha Enterprises Services",
+        "sector": "Automotive",
+        "gstin": "27ZSROA2089TZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0729": {
+        "name": "Universal Constro Services",
+        "sector": "Chemicals",
+        "gstin": "27ROSZH7352WZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0730": {
+        "name": "Eco Dynamics Services",
+        "sector": "Construction",
+        "gstin": "27AEOAR9846GZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0731": {
+        "name": "Global Systems Services",
+        "sector": "Agro-processing",
+        "gstin": "27VPLMJ6768AZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0732": {
+        "name": "Zenith Industries India",
+        "sector": "Agro-processing",
+        "gstin": "27BSVUN2843XZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0733": {
+        "name": "Classic Tech Services",
+        "sector": "Construction",
+        "gstin": "27NFXUO5577SZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0734": {
+        "name": "Global Enterprises Group",
+        "sector": "Information Technology",
+        "gstin": "27AJMPG4686TZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0735": {
+        "name": "Classic Enterprises Ltd",
+        "sector": "Automotive",
+        "gstin": "27VYTKF1658GZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0736": {
+        "name": "Zenith Systems Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27GQSDR9008FZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0737": {
+        "name": "Swift Constro Services",
+        "sector": "Construction",
+        "gstin": "27PIHKT1925HZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0738": {
+        "name": "Alpha Logistics India",
+        "sector": "Chemicals",
+        "gstin": "27ZUFQQ9918JZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0739": {
+        "name": "Classic Dynamics India",
+        "sector": "Construction",
+        "gstin": "27UVLVN7123CZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0740": {
+        "name": "Zenith Agri India",
+        "sector": "Agro-processing",
+        "gstin": "27UEPJL6310OZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0741": {
+        "name": "Classic Systems Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27HJSWB8435IZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0742": {
+        "name": "Swift Systems Group",
+        "sector": "Healthcare",
+        "gstin": "27ELCWU3514PZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0743": {
+        "name": "Modern Dynamics Corp",
+        "sector": "Manufacturing",
+        "gstin": "27CGOLC1845PZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0744": {
+        "name": "Universal Solutions Corp",
+        "sector": "Logistics",
+        "gstin": "27NOKKX9997SZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0745": {
+        "name": "Eco Constro Ltd",
+        "sector": "Healthcare",
+        "gstin": "27YZTSE1797UZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0746": {
+        "name": "Modern Retail Ltd",
+        "sector": "Healthcare",
+        "gstin": "27AOAPJ8572OZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0747": {
+        "name": "Alpha Dynamics Services",
+        "sector": "Logistics",
+        "gstin": "27BZMYP3476QZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0748": {
+        "name": "Global Systems India",
+        "sector": "Agro-processing",
+        "gstin": "27FNSXZ2238CZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0749": {
+        "name": "Eco Industries Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27IHBII3439ZZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0750": {
+        "name": "Global Agri Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27GYTMF2512MZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0751": {
+        "name": "Alpha Logistics India",
+        "sector": "Construction",
+        "gstin": "27QMCHY3907HZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0752": {
+        "name": "Zenith Logistics Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27PSIMT4970SZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0753": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27ODRGN7673DZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0754": {
+        "name": "Universal Enterprises India",
+        "sector": "Education",
+        "gstin": "27UZSHD6051SZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0755": {
+        "name": "Universal Retail India",
+        "sector": "Retail",
+        "gstin": "27NLMKD7234MZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0756": {
+        "name": "Universal Enterprises Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27XILQC7873DZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0757": {
+        "name": "Core Constro Group",
+        "sector": "Healthcare",
+        "gstin": "27TEVDD2692UZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0758": {
+        "name": "Eco Dynamics Group",
+        "sector": "Automotive",
+        "gstin": "27YJOEO8144MZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0759": {
+        "name": "Eco Dynamics Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27CSHVK2066ZZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0760": {
+        "name": "Alpha Systems Group",
+        "sector": "Manufacturing",
+        "gstin": "27DEXYU4558GZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0761": {
+        "name": "Eco Industries India",
+        "sector": "Logistics",
+        "gstin": "27KRJYO5259OZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0762": {
+        "name": "Universal Dynamics Services",
+        "sector": "Agro-processing",
+        "gstin": "27GOGFU4428NZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0763": {
+        "name": "Global Tech Services",
+        "sector": "Agro-processing",
+        "gstin": "27VRHLC8149FZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0764": {
+        "name": "Global Retail Ltd",
+        "sector": "Chemicals",
+        "gstin": "27KICGE3970OZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0765": {
+        "name": "Zenith Agri Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27LTXTW9691VZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0766": {
+        "name": "Zenith Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27JRXQX8318DZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0767": {
+        "name": "Classic Retail India",
+        "sector": "Healthcare",
+        "gstin": "27VKPCF2853MZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0768": {
+        "name": "Universal Tech Corp",
+        "sector": "Education",
+        "gstin": "27LGURL7506AZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0769": {
+        "name": "Core Logistics Group",
+        "sector": "Automotive",
+        "gstin": "27OVCAD7262SZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0770": {
+        "name": "Apex Logistics India",
+        "sector": "Manufacturing",
+        "gstin": "27FWIZV3635XZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0771": {
+        "name": "Modern Constro India",
+        "sector": "Logistics",
+        "gstin": "27NFADZ1782NZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0772": {
+        "name": "Universal Logistics India",
+        "sector": "Construction",
+        "gstin": "27VZWSW7554OZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0773": {
+        "name": "Zenith Solutions Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27DDPAE1348KZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0774": {
+        "name": "Modern Systems Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27RHMRB5158RZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0775": {
+        "name": "Apex Tech Corp",
+        "sector": "Chemicals",
+        "gstin": "27ESXGX9739EZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0776": {
+        "name": "Core Constro Corp",
+        "sector": "Automotive",
+        "gstin": "27OYOXK5992SZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0777": {
+        "name": "Swift Retail India",
+        "sector": "Logistics",
+        "gstin": "27AWFBO9270NZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0778": {
+        "name": "Zenith Agri Group",
+        "sector": "Construction",
+        "gstin": "27QZAFE1888PZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0779": {
+        "name": "Apex Dynamics Group",
+        "sector": "Manufacturing",
+        "gstin": "27DGNJG5496UZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0780": {
+        "name": "Apex Solutions India",
+        "sector": "Agro-processing",
+        "gstin": "27PKWPQ7779VZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0781": {
+        "name": "Alpha Systems Services",
+        "sector": "Retail",
+        "gstin": "27WCKGF8635FZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0782": {
+        "name": "Swift Logistics India",
+        "sector": "Education",
+        "gstin": "27VFLWM3506HZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0783": {
+        "name": "Classic Tech Services",
+        "sector": "Chemicals",
+        "gstin": "27IRCFN8357EZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0784": {
+        "name": "Universal Constro Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27MBWTR6265TZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0785": {
+        "name": "Apex Agri Corp",
+        "sector": "Education",
+        "gstin": "27FMGBH8795ZZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0786": {
+        "name": "Apex Enterprises Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27AEWMC4880NZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0787": {
+        "name": "Classic Enterprises Services",
+        "sector": "Retail",
+        "gstin": "27MURIY7665BZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0788": {
+        "name": "Swift Systems Corp",
+        "sector": "Retail",
+        "gstin": "27KYAOB7131YZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0789": {
+        "name": "Core Agri Group",
+        "sector": "Education",
+        "gstin": "27FLWIJ5469WZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0790": {
+        "name": "Zenith Agri Group",
+        "sector": "Manufacturing",
+        "gstin": "27VXLSM8903MZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0791": {
+        "name": "Zenith Dynamics Corp",
+        "sector": "Healthcare",
+        "gstin": "27IPSDI6907PZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0792": {
+        "name": "Core Retail Group",
+        "sector": "Information Technology",
+        "gstin": "27CMENU4420PZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0793": {
+        "name": "Alpha Systems Ltd",
+        "sector": "Information Technology",
+        "gstin": "27YXPIE7660IZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0794": {
+        "name": "Modern Industries Services",
+        "sector": "Chemicals",
+        "gstin": "27LGYUK7504QZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0795": {
+        "name": "Core Logistics Corp",
+        "sector": "Agro-processing",
+        "gstin": "27EPXKO5186IZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0796": {
+        "name": "Classic Logistics Ltd",
+        "sector": "Logistics",
+        "gstin": "27ZTBVF1398VZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0797": {
+        "name": "Universal Solutions Group",
+        "sector": "Manufacturing",
+        "gstin": "27HCOYN8684DZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0798": {
+        "name": "Modern Agri Services",
+        "sector": "Retail",
+        "gstin": "27NRTOY1318QZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0799": {
+        "name": "Modern Enterprises Group",
+        "sector": "Construction",
+        "gstin": "27EVQFR2595OZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0800": {
+        "name": "Eco Agri Corp",
+        "sector": "Healthcare",
+        "gstin": "27FNMSS8385PZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0801": {
+        "name": "Alpha Systems Group",
+        "sector": "Retail",
+        "gstin": "27SPSDQ2130MZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0802": {
+        "name": "Global Systems India",
+        "sector": "Automotive",
+        "gstin": "27PSJAR5744NZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0803": {
+        "name": "Classic Industries Group",
+        "sector": "Manufacturing",
+        "gstin": "27RCGJV1427BZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0804": {
+        "name": "Modern Industries Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27XXZNO8852LZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0805": {
+        "name": "Eco Logistics Group",
+        "sector": "Manufacturing",
+        "gstin": "27BOWOA5509OZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0806": {
+        "name": "Modern Dynamics Ltd",
+        "sector": "Logistics",
+        "gstin": "27VWEEG5473UZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0807": {
+        "name": "Zenith Dynamics Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27IMABL5679VZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0808": {
+        "name": "Apex Agri Ltd",
+        "sector": "Automotive",
+        "gstin": "27NBIDX8117VZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0809": {
+        "name": "Eco Constro Services",
+        "sector": "Logistics",
+        "gstin": "27WQNGZ1613JZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0810": {
+        "name": "Classic Tech Ltd",
+        "sector": "Retail",
+        "gstin": "27AVQZZ9759XZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0811": {
+        "name": "Modern Tech Group",
+        "sector": "Construction",
+        "gstin": "27XWHCP1542OZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0812": {
+        "name": "Core Constro India",
+        "sector": "Automotive",
+        "gstin": "27HEABB1423HZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0813": {
+        "name": "Universal Systems Group",
+        "sector": "Healthcare",
+        "gstin": "27GSVJJ1230NZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0814": {
+        "name": "Classic Agri Group",
+        "sector": "Information Technology",
+        "gstin": "27BXVKT2598FZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0815": {
+        "name": "Modern Tech Services",
+        "sector": "Information Technology",
+        "gstin": "27TPRND4565XZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0816": {
+        "name": "Apex Solutions Corp",
+        "sector": "Retail",
+        "gstin": "27HNLNU4907TZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0817": {
+        "name": "Alpha Agri Services",
+        "sector": "Agro-processing",
+        "gstin": "27UYGUY2736AZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0818": {
+        "name": "Apex Tech India",
+        "sector": "Retail",
+        "gstin": "27LNIGX4431XZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0819": {
+        "name": "Universal Industries Ltd",
+        "sector": "Construction",
+        "gstin": "27CDUWU6170SZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0820": {
+        "name": "Universal Logistics Corp",
+        "sector": "Logistics",
+        "gstin": "27SEKXJ2924NZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0821": {
+        "name": "Eco Tech Corp",
+        "sector": "Information Technology",
+        "gstin": "27RBAPZ8083ZZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0822": {
+        "name": "Universal Constro India",
+        "sector": "Healthcare",
+        "gstin": "27ZBACK7479OZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0823": {
+        "name": "Alpha Retail Group",
+        "sector": "Education",
+        "gstin": "27DNGLN5824VZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0824": {
+        "name": "Universal Agri Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27PKOEJ9231GZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0825": {
+        "name": "Global Logistics Corp",
+        "sector": "Education",
+        "gstin": "27ICVQG7534EZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0826": {
+        "name": "Swift Industries Ltd",
+        "sector": "Chemicals",
+        "gstin": "27WSMEP6074XZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0827": {
+        "name": "Core Tech Ltd",
+        "sector": "Logistics",
+        "gstin": "27KRTJP6610GZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0828": {
+        "name": "Classic Logistics India",
+        "sector": "Education",
+        "gstin": "27QDOIC8838DZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0829": {
+        "name": "Swift Systems Ltd",
+        "sector": "Chemicals",
+        "gstin": "27BHGDF9628LZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0830": {
+        "name": "Eco Constro Services",
+        "sector": "Information Technology",
+        "gstin": "27DAPMY8938VZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0831": {
+        "name": "Eco Industries Ltd",
+        "sector": "Information Technology",
+        "gstin": "27TEGFT4921HZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0832": {
+        "name": "Classic Systems Services",
+        "sector": "Automotive",
+        "gstin": "27BEGLG9156WZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0833": {
+        "name": "Classic Enterprises Services",
+        "sector": "Education",
+        "gstin": "27AOOBL6697QZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0834": {
+        "name": "Eco Dynamics Services",
+        "sector": "Logistics",
+        "gstin": "27LXPMF9974VZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0835": {
+        "name": "Core Industries Services",
+        "sector": "Logistics",
+        "gstin": "27TRNSD2921LZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0836": {
+        "name": "Universal Dynamics India",
+        "sector": "Education",
+        "gstin": "27JZXZO6293LZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0837": {
+        "name": "Apex Constro Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27KKUVE8028YZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0838": {
+        "name": "Eco Agri Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27GCRAF3470GZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0839": {
+        "name": "Eco Enterprises Group",
+        "sector": "Education",
+        "gstin": "27WCDSG1205HZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0840": {
+        "name": "Universal Agri Services",
+        "sector": "Agro-processing",
+        "gstin": "27NAYIJ8240IZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0841": {
+        "name": "Global Industries Corp",
+        "sector": "Healthcare",
+        "gstin": "27IPHJH9982YZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0842": {
+        "name": "Eco Industries Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27RYJXB4473VZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0843": {
+        "name": "Modern Retail Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27RMIMR2893QZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0844": {
+        "name": "Swift Solutions Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27KOVAS3048QZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0845": {
+        "name": "Core Agri Group",
+        "sector": "Education",
+        "gstin": "27HOFOL9791HZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0846": {
+        "name": "Core Retail Services",
+        "sector": "Education",
+        "gstin": "27AYTQX4420LZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0847": {
+        "name": "Classic Dynamics Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27EBPYE8224VZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0848": {
+        "name": "Zenith Industries Group",
+        "sector": "Education",
+        "gstin": "27CLOKD7551RZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0849": {
+        "name": "Eco Agri Group",
+        "sector": "Healthcare",
+        "gstin": "27EKJKS5442TZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0850": {
+        "name": "Apex Dynamics Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27ZUXMQ8580OZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0851": {
+        "name": "Alpha Retail Ltd",
+        "sector": "Chemicals",
+        "gstin": "27AHSSP9429MZ2",
+        "risk_profile": "Strong"
+    },
+    "CID_0852": {
+        "name": "Swift Logistics Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27AOBKC1270MZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0853": {
+        "name": "Core Tech Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27NVTPC9259EZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0854": {
+        "name": "Universal Tech Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27ATNNL7809KZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0855": {
+        "name": "Universal Constro Ltd",
+        "sector": "Construction",
+        "gstin": "27OLDBV7314GZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0856": {
+        "name": "Universal Industries Corp",
+        "sector": "Information Technology",
+        "gstin": "27QSTZW3196QZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0857": {
+        "name": "Swift Constro Group",
+        "sector": "Education",
+        "gstin": "27AWTLF7998YZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0858": {
+        "name": "Modern Dynamics Corp",
+        "sector": "Information Technology",
+        "gstin": "27DTQKG4726LZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0859": {
+        "name": "Alpha Tech Corp",
+        "sector": "Automotive",
+        "gstin": "27XLBVG7654RZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0860": {
+        "name": "Core Retail Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27EZMWS7079OZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0861": {
+        "name": "Apex Constro Ltd",
+        "sector": "Construction",
+        "gstin": "27VVXIL8512NZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0862": {
+        "name": "Eco Tech Services",
+        "sector": "Manufacturing",
+        "gstin": "27UTQET8817WZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0863": {
+        "name": "Core Solutions India",
+        "sector": "Automotive",
+        "gstin": "27MWDEZ5778FZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0864": {
+        "name": "Alpha Logistics India",
+        "sector": "Chemicals",
+        "gstin": "27ZVGTU7879DZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0865": {
+        "name": "Alpha Enterprises Services",
+        "sector": "Information Technology",
+        "gstin": "27AFWBH3153MZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0866": {
+        "name": "Core Solutions Group",
+        "sector": "Education",
+        "gstin": "27RYUWD3966EZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0867": {
+        "name": "Alpha Retail Corp",
+        "sector": "Agro-processing",
+        "gstin": "27NVCMA4504QZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0868": {
+        "name": "Apex Dynamics Group",
+        "sector": "Agro-processing",
+        "gstin": "27OJPTA8421KZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0869": {
+        "name": "Apex Enterprises Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27NZGBU2742SZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0870": {
+        "name": "Swift Logistics Group",
+        "sector": "Construction",
+        "gstin": "27DVCUD4901RZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0871": {
+        "name": "Global Solutions Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27DRGAF8433XZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0872": {
+        "name": "Core Solutions Group",
+        "sector": "Retail",
+        "gstin": "27TSDSK6924LZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0873": {
+        "name": "Apex Tech Ltd",
+        "sector": "Education",
+        "gstin": "27ELMDT7139NZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0874": {
+        "name": "Classic Solutions India",
+        "sector": "Chemicals",
+        "gstin": "27KFFDA5082WZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0875": {
+        "name": "Core Systems Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27MRGZO8557DZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0876": {
+        "name": "Modern Systems Corp",
+        "sector": "Agro-processing",
+        "gstin": "27KOSIF3788FZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0877": {
+        "name": "Eco Solutions Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27IXHML8002BZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0878": {
+        "name": "Universal Industries Corp",
+        "sector": "Automotive",
+        "gstin": "27IASWM7408HZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0879": {
+        "name": "Zenith Enterprises Ltd",
+        "sector": "Logistics",
+        "gstin": "27VDVZF2388FZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0880": {
+        "name": "Apex Solutions Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27HGOHF7099EZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0881": {
+        "name": "Modern Logistics Corp",
+        "sector": "Healthcare",
+        "gstin": "27CAZJY8869FZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0882": {
+        "name": "Global Industries Group",
+        "sector": "Construction",
+        "gstin": "27DTUKE1606RZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0883": {
+        "name": "Zenith Logistics Corp",
+        "sector": "Healthcare",
+        "gstin": "27JMPDW4611KZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0884": {
+        "name": "Swift Constro Ltd",
+        "sector": "Information Technology",
+        "gstin": "27NKZTN4753HZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0885": {
+        "name": "Core Systems Group",
+        "sector": "Logistics",
+        "gstin": "27BFLWM7731KZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0886": {
+        "name": "Zenith Solutions Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27TWJAM3837EZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0887": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27RUTAN4683SZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0888": {
+        "name": "Core Agri Group",
+        "sector": "Automotive",
+        "gstin": "27OBYSM7289NZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0889": {
+        "name": "Apex Tech Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27VVOTW4744BZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0890": {
+        "name": "Universal Dynamics Corp",
+        "sector": "Chemicals",
+        "gstin": "27CFKYV6983DZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0891": {
+        "name": "Universal Systems India",
+        "sector": "Healthcare",
+        "gstin": "27GUZGD1952XZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0892": {
+        "name": "Zenith Constro Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27BWDHK8213XZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0893": {
+        "name": "Modern Retail Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27DLMTM1526KZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0894": {
+        "name": "Eco Constro Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27AULKU3926PZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0895": {
+        "name": "Core Solutions Group",
+        "sector": "Agro-processing",
+        "gstin": "27YEGXQ2430XZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0896": {
+        "name": "Eco Tech Services",
+        "sector": "Retail",
+        "gstin": "27AIQYZ1429HZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0897": {
+        "name": "Apex Dynamics Group",
+        "sector": "Chemicals",
+        "gstin": "27QUQIC7956NZ8",
+        "risk_profile": "Borderline"
+    },
+    "CID_0898": {
+        "name": "Core Enterprises Group",
+        "sector": "Manufacturing",
+        "gstin": "27NMUQB9974RZ7",
+        "risk_profile": "Strong"
+    },
+    "CID_0899": {
+        "name": "Modern Industries Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27POTNH5503LZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0900": {
+        "name": "Eco Logistics Corp",
+        "sector": "Information Technology",
+        "gstin": "27EFRAL4144IZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0901": {
+        "name": "Alpha Industries Ltd",
+        "sector": "Education",
+        "gstin": "27LGIOC1777LZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0902": {
+        "name": "Zenith Tech Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27RZZVL9544NZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0903": {
+        "name": "Apex Industries Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27IQIJE9895HZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0904": {
+        "name": "Apex Retail India",
+        "sector": "Healthcare",
+        "gstin": "27TVGXZ7587AZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0905": {
+        "name": "Alpha Agri Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27WMEXH8157LZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0906": {
+        "name": "Universal Dynamics Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27DQBBM9189AZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0907": {
+        "name": "Eco Systems India",
+        "sector": "Automotive",
+        "gstin": "27RLXGZ5848YZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0908": {
+        "name": "Core Agri India",
+        "sector": "Chemicals",
+        "gstin": "27ZYCIV9371XZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0909": {
+        "name": "Alpha Dynamics Services",
+        "sector": "Automotive",
+        "gstin": "27UUISC8091EZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0910": {
+        "name": "Core Systems Group",
+        "sector": "Automotive",
+        "gstin": "27OUXKZ5618NZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0911": {
+        "name": "Swift Agri Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27PVGPP7030NZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0912": {
+        "name": "Classic Industries India",
+        "sector": "Chemicals",
+        "gstin": "27ODNVW2362KZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0913": {
+        "name": "Universal Retail Pvt Ltd",
+        "sector": "Healthcare",
+        "gstin": "27SHTLS7750YZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0914": {
+        "name": "Swift Agri Group",
+        "sector": "Healthcare",
+        "gstin": "27ECZMP6784FZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0915": {
+        "name": "Swift Industries Corp",
+        "sector": "Construction",
+        "gstin": "27DBFGA9947VZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0916": {
+        "name": "Core Retail Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27ISHEP2775SZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0917": {
+        "name": "Modern Systems Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27UIOIU5535WZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0918": {
+        "name": "Universal Systems Services",
+        "sector": "Logistics",
+        "gstin": "27TZEAJ3952MZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0919": {
+        "name": "Swift Constro Services",
+        "sector": "Construction",
+        "gstin": "27SGJDZ9500QZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0920": {
+        "name": "Swift Tech Corp",
+        "sector": "Education",
+        "gstin": "27JMSCD2531CZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0921": {
+        "name": "Modern Systems Pvt Ltd",
+        "sector": "Information Technology",
+        "gstin": "27XZVXU6261ZZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0922": {
+        "name": "Universal Industries India",
+        "sector": "Manufacturing",
+        "gstin": "27KNEGP6441IZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0923": {
+        "name": "Alpha Systems Ltd",
+        "sector": "Construction",
+        "gstin": "27JSDJE3731RZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0924": {
+        "name": "Core Industries Services",
+        "sector": "Education",
+        "gstin": "27MNIKK6072DZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0925": {
+        "name": "Universal Enterprises Ltd",
+        "sector": "Automotive",
+        "gstin": "27WQVZP4726IZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0926": {
+        "name": "Zenith Constro Services",
+        "sector": "Automotive",
+        "gstin": "27XDBQU4941DZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0927": {
+        "name": "Alpha Industries Ltd",
+        "sector": "Information Technology",
+        "gstin": "27DKXVI5241DZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0928": {
+        "name": "Universal Solutions Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27MIUBM9769LZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0929": {
+        "name": "Eco Tech Ltd",
+        "sector": "Logistics",
+        "gstin": "27OUEMX5300LZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0930": {
+        "name": "Eco Logistics Ltd",
+        "sector": "Information Technology",
+        "gstin": "27KQZSS1654ZZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0931": {
+        "name": "Swift Retail India",
+        "sector": "Automotive",
+        "gstin": "27TRKKE4764SZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0932": {
+        "name": "Alpha Tech Ltd",
+        "sector": "Retail",
+        "gstin": "27SQMUZ3902MZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0933": {
+        "name": "Core Logistics Ltd",
+        "sector": "Education",
+        "gstin": "27WPVTA9977GZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0934": {
+        "name": "Global Systems Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27BEBAQ2552UZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0935": {
+        "name": "Swift Solutions Pvt Ltd",
+        "sector": "Logistics",
+        "gstin": "27QUYXZ2122GZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0936": {
+        "name": "Universal Agri Ltd",
+        "sector": "Healthcare",
+        "gstin": "27NVJUD8452LZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0937": {
+        "name": "Modern Logistics Corp",
+        "sector": "Agro-processing",
+        "gstin": "27ZCUZV4025DZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0938": {
+        "name": "Apex Solutions Group",
+        "sector": "Automotive",
+        "gstin": "27HLMPI2185OZ3",
+        "risk_profile": "High Risk"
+    },
+    "CID_0939": {
+        "name": "Universal Dynamics India",
+        "sector": "Information Technology",
+        "gstin": "27HDRXN1232PZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0940": {
+        "name": "Classic Agri India",
+        "sector": "Education",
+        "gstin": "27LIMKX4995FZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0941": {
+        "name": "Global Retail Group",
+        "sector": "Retail",
+        "gstin": "27CNDWX7950OZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0942": {
+        "name": "Classic Tech India",
+        "sector": "Chemicals",
+        "gstin": "27WRPMM9002WZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0943": {
+        "name": "Modern Retail Pvt Ltd",
+        "sector": "Automotive",
+        "gstin": "27FLYWO3751BZ3",
+        "risk_profile": "Borderline"
+    },
+    "CID_0944": {
+        "name": "Swift Retail Corp",
+        "sector": "Automotive",
+        "gstin": "27MRMWM5614AZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0945": {
+        "name": "Global Retail Services",
+        "sector": "Healthcare",
+        "gstin": "27JSIQN4007MZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0946": {
+        "name": "Universal Retail Group",
+        "sector": "Education",
+        "gstin": "27HDYDX9627DZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0947": {
+        "name": "Apex Logistics Group",
+        "sector": "Retail",
+        "gstin": "27UXHKU9464UZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0948": {
+        "name": "Alpha Retail Ltd",
+        "sector": "Healthcare",
+        "gstin": "27AUWLK6187NZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0949": {
+        "name": "Swift Systems Services",
+        "sector": "Retail",
+        "gstin": "27SDXCC4495LZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0950": {
+        "name": "Global Industries Pvt Ltd",
+        "sector": "Chemicals",
+        "gstin": "27PSUOL1879KZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0951": {
+        "name": "Universal Agri Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27GOFVU6622CZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0952": {
+        "name": "Alpha Solutions Corp",
+        "sector": "Logistics",
+        "gstin": "27MSWXZ2215WZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0953": {
+        "name": "Classic Solutions Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27KZPJW6322KZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0954": {
+        "name": "Apex Agri Group",
+        "sector": "Logistics",
+        "gstin": "27AGTRF6417EZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0955": {
+        "name": "Apex Enterprises India",
+        "sector": "Automotive",
+        "gstin": "27XFWUJ8498CZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0956": {
+        "name": "Global Logistics Ltd",
+        "sector": "Retail",
+        "gstin": "27SYPBU4818PZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0957": {
+        "name": "Swift Constro Corp",
+        "sector": "Construction",
+        "gstin": "27TKFGA7258IZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0958": {
+        "name": "Global Enterprises India",
+        "sector": "Education",
+        "gstin": "27ZYAXY7278BZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0959": {
+        "name": "Core Retail Services",
+        "sector": "Logistics",
+        "gstin": "27KTDRP4213RZ1",
+        "risk_profile": "Strong"
+    },
+    "CID_0960": {
+        "name": "Apex Enterprises Services",
+        "sector": "Information Technology",
+        "gstin": "27BAHQA9787AZ1",
+        "risk_profile": "Borderline"
+    },
+    "CID_0961": {
+        "name": "Global Solutions Services",
+        "sector": "Information Technology",
+        "gstin": "27XLARU3183EZ4",
+        "risk_profile": "Borderline"
+    },
+    "CID_0962": {
+        "name": "Global Logistics Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27NZDWF2089QZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0963": {
+        "name": "Alpha Constro Group",
+        "sector": "Information Technology",
+        "gstin": "27PGHAH3702GZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0964": {
+        "name": "Alpha Dynamics India",
+        "sector": "Retail",
+        "gstin": "27ZJCXR1487JZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_0965": {
+        "name": "Core Agri Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27HNYNQ3230NZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0966": {
+        "name": "Universal Industries Services",
+        "sector": "Retail",
+        "gstin": "27KXYYQ7443KZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0967": {
+        "name": "Core Agri Pvt Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27SQWAC3708FZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0968": {
+        "name": "Apex Logistics Ltd",
+        "sector": "Healthcare",
+        "gstin": "27RMTCV9158HZ4",
+        "risk_profile": "High Risk"
+    },
+    "CID_0969": {
+        "name": "Global Solutions Pvt Ltd",
+        "sector": "Retail",
+        "gstin": "27OPGIH5100UZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0970": {
+        "name": "Alpha Tech Group",
+        "sector": "Chemicals",
+        "gstin": "27PAFLT9007KZ5",
+        "risk_profile": "Borderline"
+    },
+    "CID_0971": {
+        "name": "Swift Tech Services",
+        "sector": "Construction",
+        "gstin": "27LUSKE1130UZ2",
+        "risk_profile": "Borderline"
+    },
+    "CID_0972": {
+        "name": "Alpha Logistics India",
+        "sector": "Construction",
+        "gstin": "27AGRXA2996MZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0973": {
+        "name": "Global Dynamics Services",
+        "sector": "Automotive",
+        "gstin": "27HFHSL8631IZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0974": {
+        "name": "Apex Dynamics Ltd",
+        "sector": "Chemicals",
+        "gstin": "27NBZUA1883NZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0975": {
+        "name": "Global Agri India",
+        "sector": "Logistics",
+        "gstin": "27PVDAS6209PZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0976": {
+        "name": "Eco Solutions Group",
+        "sector": "Education",
+        "gstin": "27VAMQA6191MZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0977": {
+        "name": "Global Logistics India",
+        "sector": "Construction",
+        "gstin": "27VOTLT3328PZ9",
+        "risk_profile": "Strong"
+    },
+    "CID_0978": {
+        "name": "Classic Solutions India",
+        "sector": "Manufacturing",
+        "gstin": "27HJAYH8416AZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0979": {
+        "name": "Zenith Constro Corp",
+        "sector": "Retail",
+        "gstin": "27FLJEA8929RZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0980": {
+        "name": "Classic Constro Pvt Ltd",
+        "sector": "Agro-processing",
+        "gstin": "27MQWWU7328ZZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0981": {
+        "name": "Modern Solutions Group",
+        "sector": "Chemicals",
+        "gstin": "27CHVPK6375VZ5",
+        "risk_profile": "Strong"
+    },
+    "CID_0982": {
+        "name": "Eco Constro Services",
+        "sector": "Logistics",
+        "gstin": "27AHYXP9065WZ9",
+        "risk_profile": "Borderline"
+    },
+    "CID_0983": {
+        "name": "Zenith Industries Services",
+        "sector": "Chemicals",
+        "gstin": "27OMXXT3066BZ8",
+        "risk_profile": "Strong"
+    },
+    "CID_0984": {
+        "name": "Apex Systems India",
+        "sector": "Manufacturing",
+        "gstin": "27MCHXN3758FZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0985": {
+        "name": "Alpha Constro India",
+        "sector": "Automotive",
+        "gstin": "27QXIOM3271JZ1",
+        "risk_profile": "High Risk"
+    },
+    "CID_0986": {
+        "name": "Classic Industries Services",
+        "sector": "Education",
+        "gstin": "27AWWAO8658ZZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0987": {
+        "name": "Apex Systems Corp",
+        "sector": "Retail",
+        "gstin": "27WDKEQ5770IZ6",
+        "risk_profile": "Borderline"
+    },
+    "CID_0988": {
+        "name": "Modern Dynamics Pvt Ltd",
+        "sector": "Construction",
+        "gstin": "27MGWLQ2163EZ4",
+        "risk_profile": "Strong"
+    },
+    "CID_0989": {
+        "name": "Core Systems Ltd",
+        "sector": "Healthcare",
+        "gstin": "27OFCWR3152WZ6",
+        "risk_profile": "Strong"
+    },
+    "CID_0990": {
+        "name": "Modern Agri Ltd",
+        "sector": "Logistics",
+        "gstin": "27QFRAD1990VZ5",
+        "risk_profile": "High Risk"
+    },
+    "CID_0991": {
+        "name": "Global Solutions Ltd",
+        "sector": "Manufacturing",
+        "gstin": "27HSQBE7181YZ6",
+        "risk_profile": "High Risk"
+    },
+    "CID_0992": {
+        "name": "Classic Agri Pvt Ltd",
+        "sector": "Education",
+        "gstin": "27IAPJB3082CZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0993": {
+        "name": "Modern Industries India",
+        "sector": "Automotive",
+        "gstin": "27EZSKT6980XZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0994": {
+        "name": "Global Enterprises Services",
+        "sector": "Automotive",
+        "gstin": "27FBGAE9715IZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_0995": {
+        "name": "Apex Constro Group",
+        "sector": "Agro-processing",
+        "gstin": "27RWNIZ6233XZ7",
+        "risk_profile": "Borderline"
+    },
+    "CID_0996": {
+        "name": "Alpha Enterprises Ltd",
+        "sector": "Automotive",
+        "gstin": "27UWGLP4704QZ7",
+        "risk_profile": "High Risk"
+    },
+    "CID_0997": {
+        "name": "Global Agri Ltd",
+        "sector": "Healthcare",
+        "gstin": "27GSLFK7555GZ8",
+        "risk_profile": "High Risk"
+    },
+    "CID_0998": {
+        "name": "Eco Enterprises Ltd",
+        "sector": "Education",
+        "gstin": "27MGUFF6370EZ9",
+        "risk_profile": "High Risk"
+    },
+    "CID_0999": {
+        "name": "Swift Constro Corp",
+        "sector": "Construction",
+        "gstin": "27LVQHD4977PZ2",
+        "risk_profile": "High Risk"
+    },
+    "CID_1000": {
+        "name": "Core Agri Services",
+        "sector": "Construction",
+        "gstin": "27DKCAK1920KZ3",
+        "risk_profile": "Strong"
+    },
+    "CID_001": {
+        "name": "Global Tech Solns",
+        "sector": "Information Technology",
+        "gstin": "27GTSSO0001A1Z1",
+        "risk_profile": "Strong"
+    }
+}
