@@ -15,16 +15,42 @@ import { API_BASE_URL } from '../config';
 
 /* --- CompanyListPage --- */
 export const CompanyListPage: React.FC<{ onSelect: (id: string) => void }> = ({ onSelect }) => {
-    const [companies, setCompanies] = useState([]);
+    const [companies, setCompanies] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
+        console.log(`Fetching from: ${API_BASE_URL}/companies`);
         axios.get(`${API_BASE_URL}/companies`)
-            .then(res => setCompanies(res.data))
+            .then(res => {
+                console.log("Data received:", res.data);
+                if (Array.isArray(res.data)) {
+                    setCompanies(res.data);
+                } else {
+                    console.error("Data is not an array:", res.data);
+                }
+            })
+            .catch(err => {
+                console.error("Fetch error:", err);
+                setError(err.message || "Failed to fetch companies.");
+            })
             .finally(() => setLoading(false));
     }, []);
 
-    if (loading) return <div className="flex h-[60vh] items-center justify-center text-emerald-500 animate-pulse font-bold uppercase tracking-widest">Initalizing Intelligence Engine...</div>;
+    if (loading) return <div className="flex h-[60vh] items-center justify-center text-emerald-500 animate-pulse font-bold uppercase tracking-widest">Integrating Engine Data...</div>;
+
+    if (error) return (
+        <div className="flex h-[60vh] flex-col items-center justify-center text-earth gap-4">
+            <div className="text-xl font-bold uppercase italic tracking-tighter">Connection Interrupted</div>
+            <div className="text-sm text-khaki/60">{error}</div>
+            <button
+                onClick={() => window.location.reload()}
+                className="mt-4 px-6 py-2 bg-khaki/10 border border-khaki/30 text-khaki font-bold rounded-lg hover:bg-khaki hover:text-noir transition-all"
+            >
+                RETRY CONNECTION
+            </button>
+        </div>
+    );
 
     return (
         <div className="space-y-12 fade-up">
@@ -49,37 +75,43 @@ export const CompanyListPage: React.FC<{ onSelect: (id: string) => void }> = ({ 
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {companies.map((c: any) => (
-                    <button
-                        key={c.company_id}
-                        onClick={() => onSelect(c.company_id)}
-                        className="glass-card group hover:scale-[1.02] transition-all duration-500 cursor-pointer text-left w-full"
-                    >
-                        <div className="p-8 space-y-6">
-                            <div className="flex justify-between items-start">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-khaki/20 to-transparent flex items-center justify-center text-khaki group-hover:from-khaki group-hover:text-noir transition-all duration-500">
-                                    <Building2 size={28} />
+                {companies.length > 0 ? (
+                    companies.map((c: any) => (
+                        <button
+                            key={c.company_id}
+                            onClick={() => onSelect(c.company_id)}
+                            className="glass-card group hover:scale-[1.02] transition-all duration-500 cursor-pointer text-left w-full"
+                        >
+                            <div className="p-8 space-y-6">
+                                <div className="flex justify-between items-start">
+                                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-khaki/20 to-transparent flex items-center justify-center text-khaki group-hover:from-khaki group-hover:text-noir transition-all duration-500">
+                                        <Building2 size={28} />
+                                    </div>
+                                    <RiskBadge risk={c.risk_class} />
                                 </div>
-                                <RiskBadge risk={c.risk_class} />
-                            </div>
 
-                            <div>
-                                <h3 className="text-2xl font-bold group-hover:text-khaki transition-colors text-white">{c.name}</h3>
-                                <p className="text-khaki/50 text-sm font-medium">{c.sector}</p>
-                            </div>
+                                <div>
+                                    <h3 className="text-2xl font-bold group-hover:text-khaki transition-colors text-white">{c.name}</h3>
+                                    <p className="text-khaki/50 text-sm font-medium">{c.sector}</p>
+                                </div>
 
-                            <div className="pt-4 border-t border-khaki/10 flex justify-between items-center text-khaki/70">
-                                <div className="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
-                                    <ShieldCheck size={12} className="text-khaki" />
-                                    CAM Validated
-                                </div>
-                                <div className="flex items-center gap-1 text-[10px] font-bold group-hover:text-white transition-colors">
-                                    VIEW DASHBOARD <ChevronRight size={14} />
+                                <div className="pt-4 border-t border-khaki/10 flex justify-between items-center text-khaki/70">
+                                    <div className="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
+                                        <ShieldCheck size={12} className="text-khaki" />
+                                        CAM Validated
+                                    </div>
+                                    <div className="flex items-center gap-1 text-[10px] font-bold group-hover:text-white transition-colors">
+                                        VIEW DASHBOARD <ChevronRight size={14} />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </button>
-                ))}
+                        </button>
+                    ))
+                ) : (
+                    <div className="col-span-full py-20 text-center border border-dashed border-khaki/20 rounded-2xl bg-khaki/[0.02]">
+                        <p className="text-khaki/40 font-bold uppercase tracking-widest">No active portfolio companies detected.</p>
+                    </div>
+                )}
             </div>
         </div>
     );
