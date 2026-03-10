@@ -1,0 +1,15 @@
+{
+    "feature_names": [
+        "gst_avg_monthly_sales",
+        "gst_growth_6m",
+        "itr_profit_margin",
+        "itr_leverage_proxy",
+        "bank_emi_bounce_count",
+        "bank_avg_balance"
+    ],
+    "classes": [
+        "low_risk",
+        "medium_risk",
+        "high_risk"
+    ]
+}
