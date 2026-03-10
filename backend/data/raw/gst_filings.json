@@ -1,0 +1,506 @@
+[
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-03",
+        "taxable_value": 7206319.74,
+        "tax_paid": 1297137.55
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-04",
+        "taxable_value": 7347920.83,
+        "tax_paid": 1322625.75
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-05",
+        "taxable_value": 7630119.36,
+        "tax_paid": 1373421.48
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-06",
+        "taxable_value": 6957766.03,
+        "tax_paid": 1252397.89
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-07",
+        "taxable_value": 8540536.7,
+        "tax_paid": 1537296.61
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-08",
+        "taxable_value": 7728200.51,
+        "tax_paid": 1391076.09
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-09",
+        "taxable_value": 9342424.14,
+        "tax_paid": 1681636.35
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-10",
+        "taxable_value": 8575626.95,
+        "tax_paid": 1543612.85
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-11",
+        "taxable_value": 9378778.23,
+        "tax_paid": 1688180.08
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2024-12",
+        "taxable_value": 11007965.83,
+        "tax_paid": 1981433.85
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2025-01",
+        "taxable_value": 10454990.24,
+        "tax_paid": 1881898.24
+    },
+    {
+        "company_id": "CID_001",
+        "gstin": "27AAAAA0011Z5",
+        "month": "2025-02",
+        "taxable_value": 10890805.2,
+        "tax_paid": 1960344.94
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-03",
+        "taxable_value": 7915214.7,
+        "tax_paid": 1424738.65
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-04",
+        "taxable_value": 7597880.58,
+        "tax_paid": 1367618.5
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-05",
+        "taxable_value": 8852231.45,
+        "tax_paid": 1593401.66
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-06",
+        "taxable_value": 9768816.29,
+        "tax_paid": 1758386.93
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-07",
+        "taxable_value": 9203847.6,
+        "tax_paid": 1656692.57
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-08",
+        "taxable_value": 10117082.44,
+        "tax_paid": 1821074.84
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-09",
+        "taxable_value": 10505113.69,
+        "tax_paid": 1890920.46
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-10",
+        "taxable_value": 10819371.23,
+        "tax_paid": 1947486.82
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-11",
+        "taxable_value": 11553998.88,
+        "tax_paid": 2079719.8
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2024-12",
+        "taxable_value": 12885510.04,
+        "tax_paid": 2319391.81
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2025-01",
+        "taxable_value": 12527572.07,
+        "tax_paid": 2254962.97
+    },
+    {
+        "company_id": "CID_002",
+        "gstin": "27AAAAA0021Z5",
+        "month": "2025-02",
+        "taxable_value": 12882144.4,
+        "tax_paid": 2318785.99
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-03",
+        "taxable_value": 2081070.25,
+        "tax_paid": 374592.64
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-04",
+        "taxable_value": 2129028.71,
+        "tax_paid": 383225.17
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-05",
+        "taxable_value": 2400295.43,
+        "tax_paid": 432053.18
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-06",
+        "taxable_value": 2091881.8,
+        "tax_paid": 376538.72
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-07",
+        "taxable_value": 2374298.4,
+        "tax_paid": 427373.71
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-08",
+        "taxable_value": 2100498.79,
+        "tax_paid": 378089.78
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-09",
+        "taxable_value": 2200762.97,
+        "tax_paid": 396137.33
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-10",
+        "taxable_value": 2185771.73,
+        "tax_paid": 393438.91
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-11",
+        "taxable_value": 2191195.74,
+        "tax_paid": 394415.23
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2024-12",
+        "taxable_value": 2334822.48,
+        "tax_paid": 420268.05
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2025-01",
+        "taxable_value": 2275574.23,
+        "tax_paid": 409603.36
+    },
+    {
+        "company_id": "CID_003",
+        "gstin": "27AAAAA0031Z5",
+        "month": "2025-02",
+        "taxable_value": 2041761.24,
+        "tax_paid": 367517.02
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-03",
+        "taxable_value": 3249718.08,
+        "tax_paid": 584949.25
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-04",
+        "taxable_value": 3139906.19,
+        "tax_paid": 565183.11
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-05",
+        "taxable_value": 3256484.33,
+        "tax_paid": 586167.18
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-06",
+        "taxable_value": 2829635.36,
+        "tax_paid": 509334.36
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-07",
+        "taxable_value": 3086071.21,
+        "tax_paid": 555492.82
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-08",
+        "taxable_value": 2820036.19,
+        "tax_paid": 507606.51
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-09",
+        "taxable_value": 3273224.14,
+        "tax_paid": 589180.35
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-10",
+        "taxable_value": 3255077.85,
+        "tax_paid": 585914.01
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-11",
+        "taxable_value": 2765788.51,
+        "tax_paid": 497841.93
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2024-12",
+        "taxable_value": 3146036.04,
+        "tax_paid": 566286.49
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2025-01",
+        "taxable_value": 2862343.47,
+        "tax_paid": 515221.82
+    },
+    {
+        "company_id": "CID_004",
+        "gstin": "27AAAAA0041Z5",
+        "month": "2025-02",
+        "taxable_value": 2831047.12,
+        "tax_paid": 509588.48
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-03",
+        "taxable_value": 1442854.04,
+        "tax_paid": 259713.73
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-04",
+        "taxable_value": 1338632.07,
+        "tax_paid": 240953.77
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-05",
+        "taxable_value": 1448535.88,
+        "tax_paid": 260736.46
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-06",
+        "taxable_value": 1430020.32,
+        "tax_paid": 257403.66
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-07",
+        "taxable_value": 1349843.72,
+        "tax_paid": 242971.87
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-08",
+        "taxable_value": 1243263.74,
+        "tax_paid": 223787.47
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-09",
+        "taxable_value": 1222747.57,
+        "tax_paid": 220094.56
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-10",
+        "taxable_value": 1125983.79,
+        "tax_paid": 202677.08
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-11",
+        "taxable_value": 959687.54,
+        "tax_paid": 172743.76
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2024-12",
+        "taxable_value": 1017696.45,
+        "tax_paid": 183185.36
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2025-01",
+        "taxable_value": 973768.04,
+        "tax_paid": 175278.25
+    },
+    {
+        "company_id": "CID_005",
+        "gstin": "27AAAAA0051Z5",
+        "month": "2025-02",
+        "taxable_value": 902037.75,
+        "tax_paid": 162366.79
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-03",
+        "taxable_value": 1783934.81,
+        "tax_paid": 321108.27
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-04",
+        "taxable_value": 1782820.37,
+        "tax_paid": 320907.67
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-05",
+        "taxable_value": 1783414.24,
+        "tax_paid": 321014.56
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-06",
+        "taxable_value": 1672966.47,
+        "tax_paid": 301133.96
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-07",
+        "taxable_value": 1446538.04,
+        "tax_paid": 260376.85
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-08",
+        "taxable_value": 1364938.99,
+        "tax_paid": 245689.02
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-09",
+        "taxable_value": 1428767.15,
+        "tax_paid": 257178.09
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-10",
+        "taxable_value": 1319049.91,
+        "tax_paid": 237428.98
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-11",
+        "taxable_value": 1393866.81,
+        "tax_paid": 250896.03
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2024-12",
+        "taxable_value": 1167086.3,
+        "tax_paid": 210075.53
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2025-01",
+        "taxable_value": 1176883.35,
+        "tax_paid": 211839.0
+    },
+    {
+        "company_id": "CID_006",
+        "gstin": "27AAAAA0061Z5",
+        "month": "2025-02",
+        "taxable_value": 1046802.54,
+        "tax_paid": 188424.46
+    }
+]
