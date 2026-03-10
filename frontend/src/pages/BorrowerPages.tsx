@@ -6,6 +6,7 @@ import {
     ArrowRight, Landmark, Percent, Info, Briefcase
 } from 'lucide-react';
 import { GlassCard } from '../components/BaseUI';
+import { API_BASE_URL } from '../config';
 
 /* --- LoanApplyPage --- */
 export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = ({ onStatusNav }) => {
@@ -27,7 +28,7 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
         Object.entries(formData).forEach(([k, v]) => data.append(k, v));
 
         try {
-            const res = await axios.post('http://localhost:8000/borrower/applications', data);
+            const res = await axios.post(`${API_BASE_URL}/borrower/applications`, data);
             setResult(res.data);
         } catch (err) {
             alert("Application Error. Please check fields.");
@@ -117,11 +118,11 @@ export const ApplicationStatusPage: React.FC<{ id: string }> = ({ id }) => {
     const [actionMsg, setActionMsg] = useState('');
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/borrower/applications/${id}`).then(res => setData(res.data));
+        axios.get(`${API_BASE_URL}/borrower/applications/${id}`).then(res => setData(res.data));
     }, [id]);
 
     const handleAction = async (action: string) => {
-        const res = await axios.post(`http://localhost:8000/borrower/applications/${id}/${action}`);
+        const res = await axios.post(`${API_BASE_URL}/borrower/applications/${id}/${action}`);
         setActionMsg(res.data.message);
     };
 

@@ -52,7 +52,9 @@ class CAMGenerator:
 
     def get_nlp_snippets(self, company_id):
         try:
-            with open("d:/bank/backend/data/raw/nlp_extractions.json", "r") as f:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            file_path = os.path.join(base_dir, "data", "raw", "nlp_extractions.json")
+            with open(file_path, "r") as f:
                 nlp_data = json.load(f)
             for entry in nlp_data:
                 if entry["company_id"] == company_id:

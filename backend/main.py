@@ -111,7 +111,10 @@ def _get_enriched_summary(cid: str, company_id_label: str, name: str, sector: st
         result = predict_with_shap(cid)
 
     import json as _json
-    with open("d:/bank/backend/data/raw/integrated_feature_vectors.json") as f:
+    import os as _os
+    base_dir = _os.path.dirname(_os.path.abspath(__file__))
+    vectors_path = _os.path.join(base_dir, "data", "raw", "integrated_feature_vectors.json")
+    with open(vectors_path) as f:
         vectors = _json.load(f)
     feat_row = next((v for v in vectors if v["company_id"] == cid), {}).copy()
 
@@ -214,7 +217,10 @@ def simulate(company_id: str, request: SimulationRequest):
 @app.get("/portfolio/stats")
 def get_portfolio_stats():
     import json
-    with open("d:/bank/backend/data/raw/integrated_feature_vectors.json") as f:
+    import os
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    vectors_path = os.path.join(base_dir, "data", "raw", "integrated_feature_vectors.json")
+    with open(vectors_path) as f:
         vectors = json.load(f)
         
     classes = ["low_risk", "medium_risk", "high_risk"]
@@ -264,7 +270,10 @@ def get_portfolio_stats():
 @app.get("/analytics/trends")
 def get_analytics():
     import json
-    with open("d:/bank/backend/data/raw/integrated_feature_vectors.json") as f:
+    import os
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    vectors_path = os.path.join(base_dir, "data", "raw", "integrated_feature_vectors.json")
+    with open(vectors_path) as f:
         vectors = json.load(f)
     avg_growth  = sum(v.get("gst_growth_6m", 0) for v in vectors) / len(vectors)
     avg_bounces = sum(v.get("bank_emi_bounce_count", 0) for v in vectors) / len(vectors)

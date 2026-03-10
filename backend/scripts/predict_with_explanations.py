@@ -5,14 +5,15 @@ import shap
 import os
 
 def load_model_and_data(use_hybrid=True):
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     if use_hybrid:
-        model_path = "d:/bank/backend/models/risk_model_hybrid.pkl"
-        metadata_path = "d:/bank/backend/models/metadata_hybrid.json"
-        features_path = "d:/bank/backend/data/raw/integrated_feature_vectors.json"
+        model_path = os.path.join(base_dir, "models", "risk_model_hybrid.pkl")
+        metadata_path = os.path.join(base_dir, "models", "metadata_hybrid.json")
+        features_path = os.path.join(base_dir, "data", "raw", "integrated_feature_vectors.json")
     else:
-        model_path = "d:/bank/backend/models/risk_model.pkl"
-        metadata_path = "d:/bank/backend/models/metadata.json"
-        features_path = "d:/bank/backend/data/raw/feature_vectors.json"
+        model_path = os.path.join(base_dir, "models", "risk_model.pkl")
+        metadata_path = os.path.join(base_dir, "models", "metadata.json")
+        features_path = os.path.join(base_dir, "data", "raw", "feature_vectors.json")
     
     with open(model_path, "rb") as f:
         model = pickle.load(f)

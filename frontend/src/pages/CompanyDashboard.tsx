@@ -4,6 +4,7 @@ import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 import ReactMarkdown from 'react-markdown';
 import { AlertCircle, CheckCircle2, FlaskConical, LayoutDashboard, FileText, Activity, TrendingUp, AlertTriangle } from 'lucide-react';
+import { API_BASE_URL } from '../config';
 
 interface Props {
     companyId: string;
@@ -26,7 +27,7 @@ const CompanyDashboard: React.FC<Props> = ({ companyId }) => {
     }, [companyId]);
 
     const fetchData = async () => {
-        const res = await axios.get(`http://localhost:8000/companies/${companyId}/summary`);
+        const res = await axios.get(`${API_BASE_URL}/companies/${companyId}/summary`);
         setData(res.data);
 
         // Initialize overrides with current values
@@ -41,14 +42,14 @@ const CompanyDashboard: React.FC<Props> = ({ companyId }) => {
     };
 
     const fetchCam = async () => {
-        const res = await axios.get(`http://localhost:8000/companies/${companyId}/cam`);
+        const res = await axios.get(`${API_BASE_URL}/companies/${companyId}/cam`);
         setCam(res.data);
     };
 
     const handleSimulate = async () => {
         setSimulating(true);
         try {
-            const res = await axios.post(`http://localhost:8000/companies/${companyId}/simulate`, { overrides });
+            const res = await axios.post(`${API_BASE_URL}/companies/${companyId}/simulate`, { overrides });
             setSimResults(res.data);
         } catch (err) {
             console.error(err);

@@ -11,6 +11,7 @@ import {
 import { GlassCard, MetricCard, RiskBadge } from '../components/BaseUI';
 import { FiveCRadarChart, ShapBarChart } from '../components/Charts';
 import { WhatIfPanel, CamViewer } from '../components/Decisioning';
+import { API_BASE_URL } from '../config';
 
 
 /* --- CompanyListPage --- */
@@ -19,7 +20,7 @@ export const CompanyListPage: React.FC<{ onSelect: (id: string) => void }> = ({ 
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/companies')
+        axios.get(`${API_BASE_URL}/companies`)
             .then(res => setCompanies(res.data))
             .finally(() => setLoading(false));
     }, []);
@@ -106,8 +107,8 @@ export const CompanyDashboardPage: React.FC<{ id: string }> = ({ id }) => {
         setError('');
 
         Promise.all([
-            axios.get(`http://localhost:8000/companies/${id}/summary`),
-            axios.get(`http://localhost:8000/companies/${id}/cam`)
+            axios.get(`${API_BASE_URL}/companies/${id}/summary`),
+            axios.get(`${API_BASE_URL}/companies/${id}/cam`)
         ]).then(([sumRes, camRes]) => {
             setBaselineSummary(sumRes.data);
             setCam(camRes.data);
@@ -123,7 +124,7 @@ export const CompanyDashboardPage: React.FC<{ id: string }> = ({ id }) => {
 
     const runSimulation = () => {
         setLoadingSim(true);
-        axios.post(`http://localhost:8000/companies/${id}/simulate`, { overrides })
+        axios.post(`${API_BASE_URL}/companies/${id}/simulate`, { overrides })
             .then(res => {
                 setSimResults(res.data);
                 setSimulatedSummary(res.data.simulated);

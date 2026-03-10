@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import { RiskBadge } from '../components/BaseUI';
 
-const API = 'http://localhost:8000';
+import { API_BASE_URL as API } from '../config';
 
 /* ── Status badges ─────────────────────────────────────────────────────────── */
 const StatusBadge: React.FC<{ status: string }> = ({ status }) => {

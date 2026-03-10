@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Building2, ChevronRight, Search, TrendingUp } from 'lucide-react';
+import { API_BASE_URL } from '../config';
 
 interface Company {
     company_id: string;
@@ -19,7 +20,7 @@ const CompanyList: React.FC<CompanyListProps> = ({ onSelectCompany }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/companies')
+        axios.get(`${API_BASE_URL}/companies`)
             .then(res => {
                 setCompanies(res.data);
                 setLoading(false);
@@ -71,8 +72,8 @@ const CompanyList: React.FC<CompanyListProps> = ({ onSelectCompany }) => {
                             <div className="hidden md:block">
                                 <p className="text-[10px] uppercase tracking-widest text-text-muted mb-1">Status</p>
                                 <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${company.base_risk === 'low_risk' ? 'bg-emerald-500/10 text-emerald-500' :
-                                        company.base_risk === 'medium_risk' ? 'bg-amber-500/10 text-amber-500' :
-                                            'bg-rose-500/10 text-rose-500'
+                                    company.base_risk === 'medium_risk' ? 'bg-amber-500/10 text-amber-500' :
+                                        'bg-rose-500/10 text-rose-500'
                                     }`}>
                                     {company.base_risk.replace('_', ' ').toUpperCase()}
                                 </span>
