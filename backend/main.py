@@ -7,6 +7,8 @@ from datetime import datetime
 
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -447,6 +449,18 @@ def officer_make_decision(application_id: str, body: OfficerDecisionRequest):
         "final_rate": final_rate,
         "message": f"Decision '{body.decision}' recorded successfully.",
     }
+
+# ─── SERVE FRONTEND ───────────────────────────────────────────────────────────
+# Path to the frontend dist folder
+frontend_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "dist")
+
+if os.path.exists(frontend_path):
+    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
+    
+    @app.exception_handler(404)
+    async def not_found_exception_handler(request, exc):
+        # Catch 404s and return index.html (SPA routing)
+        return FileResponse(os.path.join(frontend_path, "index.html"))
 
 if __name__ == "__main__":
     import uvicorn
