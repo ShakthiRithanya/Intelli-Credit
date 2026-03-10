@@ -1,0 +1,14 @@
+[
+    {
+        "company_id": "CID_001",
+        "doc_type": "annual_report",
+        "filename": "CID_001_AR_2024.txt",
+        "content": "The company has maintained a strong focus on corporate governance. Audit reports show no material qualifications. Related party transactions are at arm's length and disclosed in Note 15. Management has stable leadership with key executives serving over 10 years. No material litigation is pending against the company or directors."
+    },
+    {
+        "company_id": "CID_005",
+        "doc_type": "legal_notice",
+        "filename": "CID_005_Legal_Notice_Jan25.txt",
+        "content": "A legal notice was served for non-payment of dues to primary vendor Apex Logistics. Litigation is ongoing in the NCLT for a claim of INR 5Cr. Adverse news reports highlight several management resignations since Nov 2024. Auditors have expressed concern over the company's ability to continue as a going concern in the latest limited review report."
+    }
+]
