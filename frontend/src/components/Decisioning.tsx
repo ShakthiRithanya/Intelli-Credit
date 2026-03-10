@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Play, RotateCcw, TrendingUp, TrendingDown, Info } from 'lucide-react';
-import { GlassCard, RiskBadge } from './BaseUI';
+import { RiskBadge } from './BaseUI';
 
 /* --- WhatIfPanel --- */
 interface WhatIfProps {

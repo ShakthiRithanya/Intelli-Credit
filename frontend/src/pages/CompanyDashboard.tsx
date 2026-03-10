@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import ReactMarkdown from 'react-markdown';
-import { AlertCircle, CheckCircle2, FlaskConical, LayoutDashboard, FileText, Activity, TrendingUp, AlertTriangle } from 'lucide-react';
+import { FlaskConical, LayoutDashboard, FileText, Activity, TrendingUp } from 'lucide-react';
 import { API_BASE_URL } from '../config';
 
 interface Props {
@@ -38,7 +38,7 @@ const CompanyDashboard: React.FC<Props> = ({ companyId }) => {
                 baseOverrides[f.feature] = f.value;
             }
         });
-        setOverrides(prev => ({ ...prev, ...baseOverrides }));
+        setOverrides((prev: any) => ({ ...prev, ...baseOverrides }));
     };
 
     const fetchCam = async () => {

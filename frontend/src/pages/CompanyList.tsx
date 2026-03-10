@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Building2, ChevronRight, Search, TrendingUp } from 'lucide-react';
+import { Building2, ChevronRight, Search } from 'lucide-react';
 import { API_BASE_URL } from '../config';
 
 interface Company {
