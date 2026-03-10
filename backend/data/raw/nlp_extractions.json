@@ -1,0 +1,40 @@
+[
+    {
+        "company_id": "CID_001",
+        "risk_items": [
+            {
+                "risk_type": "management_quality",
+                "severity": "low",
+                "snippet": "Strong focus on corporate governance, no material qualifications.",
+                "source_doc": "CID_001_AR_2024.txt",
+                "page": 1
+            },
+            {
+                "risk_type": "litigation",
+                "severity": "low",
+                "snippet": "No material litigation pending against company.",
+                "source_doc": "CID_001_AR_2024.txt",
+                "page": 1
+            }
+        ]
+    },
+    {
+        "company_id": "CID_005",
+        "risk_items": [
+            {
+                "risk_type": "litigation",
+                "severity": "high",
+                "snippet": "Legal notice for non-payment, NCLT litigation for INR 5Cr.",
+                "source_doc": "CID_005_Legal_Notice_Jan25.txt",
+                "page": 1
+            },
+            {
+                "risk_type": "management_quality",
+                "severity": "high",
+                "snippet": "Several management resignations, auditors concern over 'going concern'.",
+                "source_doc": "CID_005_Legal_Notice_Jan25.txt",
+                "page": 1
+            }
+        ]
+    }
+]
