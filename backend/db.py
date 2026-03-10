@@ -11,8 +11,13 @@ if os.path.exists(REGISTRY_PATH):
     try:
         with open(REGISTRY_PATH, "r") as f:
             MASTER_REGISTRY = json.load(f)
-    except Exception:
+            print(f"INFO: Loaded MASTER_REGISTRY with {len(MASTER_REGISTRY)} items.")
+    except Exception as e:
+        print(f"ERROR: Failed to load registry at {REGISTRY_PATH}: {e}")
         MASTER_REGISTRY = {}
+else:
+    print(f"WARNING: REGISTRY_PATH not found at {REGISTRY_PATH}")
+    MASTER_REGISTRY = {}
 
 # ACTIVE BANK PORTFOLIO (Only these will show in the dashboard/portfolio)
 COMPANIES = {

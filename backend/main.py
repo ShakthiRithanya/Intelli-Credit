@@ -15,7 +15,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from backend.scripts.predict_with_explanations import predict_with_shap, predict_with_overrides
 from backend.scripts.generate_cam import CAMGenerator
-from backend.db import COMPANIES, MASTER_REGISTRY
+from backend.db import COMPANIES, MASTER_REGISTRY, REGISTRY_PATH
 from backend.database import (
     init_db, create_application, update_ai_score, get_application,
     get_all_applications, officer_decide, borrower_accept, borrower_review_request
@@ -448,6 +448,15 @@ def officer_make_decision(application_id: str, body: OfficerDecisionRequest):
         "final_sanctioned": final_sanctioned,
         "final_rate": final_rate,
         "message": f"Decision '{body.decision}' recorded successfully.",
+    }
+
+@app.get("/debug/registry")
+def debug_registry():
+    return {
+        "loaded": len(MASTER_REGISTRY) > 0,
+        "count": len(MASTER_REGISTRY),
+        "first_5_keys": list(MASTER_REGISTRY.keys())[:5],
+        "registry_path": str(REGISTRY_PATH) if 'REGISTRY_PATH' in globals() else "NOT DEFINED"
     }
 
 # ─── SERVE FRONTEND ───────────────────────────────────────────────────────────
