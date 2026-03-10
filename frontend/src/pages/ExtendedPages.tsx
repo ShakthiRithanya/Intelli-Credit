@@ -10,8 +10,7 @@ import {
     Target, AlertTriangle, ShieldCheck, Landmark, Users
 } from 'lucide-react';
 import { GlassCard, MetricCard } from '../components/BaseUI';
-
-const API = 'http://localhost:8000';
+import { API_BASE_URL as API } from '../config';
 
 /* ── Shared loading / error states ─────────────────────────────────────────── */
 const Loading = ({ msg }: { msg: string }) => (
