@@ -7,3 +7,6 @@ xgboost
 shap
 scikit-learn
 jinja2
+gunicorn
+uvloop
+httptools

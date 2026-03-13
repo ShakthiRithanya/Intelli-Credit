@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: intelli-credit-app
+    env: python
+    buildCommand: "bash build.sh"
+    startCommand: "gunicorn -k uvicorn.workers.UvicornWorker backend.main:app --bind 0.0.0.0:$PORT"
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHON_VERSION
+        value: 3.11.0 # Or whatever version is being used
+      - key: VITE_API_BASE_URL
+        value: "" # Empty for relative paths
+    disk:
+      name: intelli-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
+    plan: free # Change this to 'starter' if more resources are needed

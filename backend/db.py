@@ -1,7 +1,10 @@
 import json
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'intellicredit.db')
+RENDER_DISK_PATH = "/opt/render/project/src/data"
+DATA_DIR = RENDER_DISK_PATH if os.path.exists(RENDER_DISK_PATH) else os.path.join(os.path.dirname(__file__), '..', 'data')
+
+DB_PATH = os.path.join(DATA_DIR, 'intellicredit.db')
 # Correct path to the govt registry inside backend/data
 REGISTRY_PATH = os.path.join(os.path.dirname(__file__), 'data', 'govt_registry.json')
 
