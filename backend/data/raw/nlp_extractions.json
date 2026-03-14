@@ -7,14 +7,9 @@
                 "severity": "low",
                 "snippet": "Strong focus on corporate governance, no material qualifications.",
                 "source_doc": "CID_001_AR_2024.txt",
-                "page": 1
-            },
-            {
-                "risk_type": "litigation",
-                "severity": "low",
-                "snippet": "No material litigation pending against company.",
-                "source_doc": "CID_001_AR_2024.txt",
-                "page": 1
+                "page": 1,
+                "extraction_source": "nlp",
+                "source_category": "internal"
             }
         ]
     },
@@ -26,15 +21,98 @@
                 "severity": "high",
                 "snippet": "Legal notice for non-payment, NCLT litigation for INR 5Cr.",
                 "source_doc": "CID_005_Legal_Notice_Jan25.txt",
-                "page": 1
+                "page": 1,
+                "extraction_source": "nlp",
+                "source_category": "internal"
             },
             {
                 "risk_type": "management_quality",
                 "severity": "high",
                 "snippet": "Several management resignations, auditors concern over 'going concern'.",
                 "source_doc": "CID_005_Legal_Notice_Jan25.txt",
-                "page": 1
+                "page": 1,
+                "extraction_source": "nlp",
+                "source_category": "internal"
             }
         ]
+    },
+    {
+        "company_id": "CID_005",
+        "risk_items": [
+            {
+                "risk_type": "litigation",
+                "severity": "high",
+                "snippet": "The company is party to an ongoing NCLT dispute of INR 5,00,00,000",
+                "source_doc": "legal_notice_scanned.pdf",
+                "page": 3,
+                "extraction_source": "ocr",
+                "source_category": "internal",
+                "amount": 50000000
+            }
+        ],
+        "ocr_demo": {
+            "source_doc": "legal_notice_scanned.pdf",
+            "page": 3,
+            "doc_quality": "scanned",
+            "ocr_snippet": "[SCANNED IMAGE DATA - PAGE 3]\n--------------------------------------------------\nCOURT OF THE NATIONAL COMPANY LAW TRIBUNAL\n... DELHI BENCH ...\nNOTICE OF HEARING - CASE NO: NCLT/ND/552/2026\n\nTo,\nLegac...",
+            "raw_ocr": "[SCANNED IMAGE DATA - PAGE 3]\n--------------------------------------------------\nCOUPT OF THE NATIONAL COPMANY LAW TPIBUNAL\n... DELHI BENCH ...\nNOTICE OF HEAPING - CASE NO: NCLT/ND/552/2026\n\nTo,\nLegacy Textiles (CID_005)\nSubject: Notice regarding Ongoing Disput3 of INP 5,00,00,000 (PIVE CPOPES)\n\nThe compnay is party to an ongoign NCLT dispute of INP 5,00,00,000 as per the \nnotice issued by the hon'ble bench. The case involves non-settlement of dues \ntowards credit0rs. Previous heairng on Jan 12 "
+        }
+    },
+    {
+        "company_id": "CID_005",
+        "risk_items": [
+            {
+                "risk_type": "litigation",
+                "severity": "high",
+                "snippet": "NCLT has admitted an insolvency petition of INR 5 crore.",
+                "source_doc": "Financial Daily",
+                "source_category": "external",
+                "extraction_source": "nlp"
+            }
+        ],
+        "external_meta": {
+            "source_type": "NEWS",
+            "source_name": "Financial Daily",
+            "headline": "NCLT admits insolvency plea against Legacy Textiles",
+            "published_date": "2025-11-12"
+        }
+    },
+    {
+        "company_id": "CID_005",
+        "risk_items": [
+            {
+                "risk_type": "management_quality",
+                "severity": "high",
+                "snippet": "Director disqualification under Section 164(2).",
+                "source_doc": "MCA Filing",
+                "source_category": "external",
+                "extraction_source": "nlp"
+            }
+        ],
+        "external_meta": {
+            "source_type": "MCA",
+            "source_name": "MCA Filing",
+            "headline": "Director disqualification under Section 164",
+            "published_date": "2025-10-01"
+        }
+    },
+    {
+        "company_id": "CID_005",
+        "risk_items": [
+            {
+                "risk_type": "litigation",
+                "severity": "medium",
+                "snippet": "Labor dispute judgement for INR 1.2 crore.",
+                "source_doc": "e-Courts India",
+                "source_category": "external",
+                "extraction_source": "nlp"
+            }
+        ],
+        "external_meta": {
+            "source_type": "ECOURT",
+            "source_name": "e-Courts India",
+            "headline": "Labor dispute judgement against Legacy Textiles",
+            "published_date": "2025-12-05"
+        }
     }
 ]
