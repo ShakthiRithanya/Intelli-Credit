@@ -1,0 +1,34 @@
+[
+  {
+    "company_id": "CID_005",
+    "document_id": "DOC_001",
+    "filename": "legal_notice_scanned.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "scanned",
+    "uploaded_at": "2026-03-10T14:20:00Z"
+  },
+  {
+    "company_id": "CID_005",
+    "document_id": "DOC_002",
+    "filename": "annual_report_fy24.pdf",
+    "doc_type": "Annual Report",
+    "doc_quality": "text",
+    "uploaded_at": "2025-10-15T09:00:00Z"
+  },
+  {
+    "company_id": "CID_005",
+    "document_id": "DOC_003",
+    "filename": "bank_statement_h1_25.pdf",
+    "doc_type": "Bank Statement",
+    "doc_quality": "text",
+    "uploaded_at": "2026-02-01T11:30:00Z"
+  },
+  {
+    "company_id": "CID_001",
+    "document_id": "DOC_004",
+    "filename": "CID_001_AR_2024.pdf",
+    "doc_type": "Annual Report",
+    "doc_quality": "text",
+    "uploaded_at": "2025-08-20T10:00:00Z"
+  }
+]
