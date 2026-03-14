@@ -1,8 +1,7 @@
 
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Play, RotateCcw, TrendingUp, TrendingDown, Info } from 'lucide-react';
-import { RiskBadge } from './BaseUI';
+import { Play, RotateCcw } from 'lucide-react';
 
 /* --- WhatIfPanel --- */
 interface WhatIfProps {
@@ -20,104 +19,104 @@ export const WhatIfPanel: React.FC<WhatIfProps> = ({ overrides, setOverrides, on
     };
 
     return (
-        <div className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {/* Sliders Area */}
-                <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="space-y-3">
-                        <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-wider text-khaki/60">
-                            <span>GST Growth (6M)</span>
-                            <span className="text-wasabi">{(overrides.gst_growth_6m * 100).toFixed(0)}%</span>
+        <div className="space-y-8">
+            <div className="space-y-6">
+                {/* GST Growth Slider */}
+                <div className="space-y-3 p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+                    <div className="flex justify-between items-center group">
+                        <div className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 rounded-full bg-wasabi shadow-[0_0_8px_rgba(128,144,118,0.5)]" />
+                            <span className="text-[10px] font-black uppercase tracking-[0.1em] text-khaki/60">GST Growth (6M)</span>
                         </div>
-                        <input
-                            type="range" min="-0.2" max="0.4" step="0.05"
-                            value={overrides.gst_growth_6m}
-                            onChange={(e) => updateField('gst_growth_6m', parseFloat(e.target.value))}
-                            className="w-full h-1.5 bg-white/5 rounded-lg appearance-none cursor-pointer accent-wasabi"
-                        />
+                        <span className="text-sm font-black text-white italic">{(overrides.gst_growth_6m * 100).toFixed(0)}%</span>
                     </div>
-
-                    <div className="space-y-3">
-                        <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-wider text-khaki/60">
-                            <span>EMI Bounces</span>
-                            <span className="text-wasabi">{overrides.bank_emi_bounce_count}</span>
-                        </div>
-                        <input
-                            type="range" min="0" max="10" step="1"
-                            value={overrides.bank_emi_bounce_count}
-                            onChange={(e) => updateField('bank_emi_bounce_count', parseInt(e.target.value))}
-                            className="w-full h-1.5 bg-white/5 rounded-lg appearance-none cursor-pointer accent-wasabi"
-                        />
-                    </div>
-
-                    <div className="space-y-3">
-                        <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-wider text-text-dim">
-                            <span>Litigation Index</span>
-                            <div className="flex gap-1">
-                                {[0, 1, 2, 3].map(v => (
-                                    <button
-                                        key={v}
-                                        onClick={() => updateField('litigation_risk_score', v)}
-                                        className={`w-6 h-6 rounded text-[10px] font-bold transition-all ${overrides.litigation_risk_score === v ? 'bg-wasabi text-noir' : 'bg-white/5 text-khaki/60 hover:bg-white/10'
-                                            }`}
-                                    >
-                                        {v}
-                                    </button>
-                                ))}
-                            </div>
-                        </div>
+                    <input
+                        type="range" min="-0.2" max="0.4" step="0.01"
+                        value={overrides.gst_growth_6m}
+                        onChange={(e) => updateField('gst_growth_6m', parseFloat(e.target.value))}
+                        className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-khaki"
+                    />
+                    <div className="flex justify-between text-[8px] font-bold text-khaki/20 uppercase tracking-tighter">
+                        <span>-20% (Contraction)</span>
+                        <span>+40% (Aggressive)</span>
                     </div>
                 </div>
 
-                {/* Actions */}
-                <div className="flex flex-col gap-3 justify-end">
-                    <button
-                        onClick={onSimulate}
-                        disabled={loading}
-                        className="btn-premium w-full"
-                    >
-                        {loading ? "Calculating..." : <><Play size={16} /> Run Simulation</>}
-                    </button>
-                    {results && (
-                        <button onClick={onReset} className="text-[10px] font-bold uppercase text-khaki/60 hover:text-white flex items-center justify-center gap-2">
-                            <RotateCcw size={12} /> Reset to Baseline
-                        </button>
-                    )}
+                {/* EMI Bounces Slider */}
+                <div className="space-y-3 p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+                    <div className="flex justify-between items-center">
+                        <div className="flex items-center gap-2">
+                            <div className={`w-1.5 h-1.5 rounded-full ${overrides.bank_emi_bounce_count > 0 ? 'bg-earth shadow-[0_0_8px_rgba(184,104,48,0.5)]' : 'bg-wasabi'}`} />
+                            <span className="text-[10px] font-black uppercase tracking-[0.1em] text-khaki/60">Bank EMI Bounces</span>
+                        </div>
+                        <span className="text-sm font-black text-white italic">{overrides.bank_emi_bounce_count}</span>
+                    </div>
+                    <input
+                        type="range" min="0" max="12" step="1"
+                        value={overrides.bank_emi_bounce_count}
+                        onChange={(e) => updateField('bank_emi_bounce_count', parseInt(e.target.value))}
+                        className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-khaki"
+                    />
+                    <div className="flex justify-between text-[8px] font-bold text-khaki/20 uppercase tracking-tighter">
+                        <span>Clean History</span>
+                        <span>Severe Default</span>
+                    </div>
+                </div>
+
+                {/* Litigation Index Selection */}
+                <div className="space-y-3 p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+                    <div className="flex justify-between items-center mb-1">
+                        <div className="flex items-center gap-2">
+                            <div className={`w-1.5 h-1.5 rounded-full ${overrides.litigation_risk_score > 1 ? 'bg-earth shadow-[0_0_8px_rgba(184,104,48,0.5)]' : 'bg-wasabi'}`} />
+                            <span className="text-[10px] font-black uppercase tracking-[0.1em] text-khaki/60">Litigation Risk score</span>
+                        </div>
+                        <span className="text-xs font-black text-white uppercase italic">Level {overrides.litigation_risk_score}</span>
+                    </div>
+                    <div className="flex gap-2">
+                        {[0, 1, 2, 3].map(v => (
+                            <button
+                                key={v}
+                                onClick={() => updateField('litigation_risk_score', v)}
+                                className={`flex-1 py-2 rounded-xl text-[10px] font-black transition-all ${
+                                    overrides.litigation_risk_score === v 
+                                    ? 'bg-khaki text-noir shadow-[0_0_15px_rgba(195,170,113,0.3)]' 
+                                    : 'bg-white/5 text-khaki/40 hover:bg-white/10'
+                                }`}
+                            >
+                                {v === 0 ? 'CLEAN' : v === 1 ? 'MINOR' : v === 2 ? 'MOD.' : 'CRIT.'}
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
 
-            {/* Simulation Results View */}
-            {results && (
-                <div className="glass-panel border-khaki/20 bg-khaki/[0.04] flex flex-col md:flex-row items-center justify-between gap-6 fade-up">
-                    <div className="flex items-center gap-6">
-                        <div className="text-center">
-                            <div className="text-[8px] uppercase tracking-widest text-khaki/60 mb-1">Baseline</div>
-                            <RiskBadge risk={results.baseline.risk_class} className="opacity-60 scale-90" />
-                        </div>
-                        <div className="text-khaki">→</div>
-                        <div className="text-center">
-                            <div className="text-[8px] uppercase tracking-widest text-khaki mb-1">Simulated</div>
-                            <RiskBadge risk={results.simulated.risk_class} />
-                        </div>
-                    </div>
-
-                    <div className="flex-1 max-w-md">
-                        <div className="flex items-start gap-2 text-sm">
-                            <Info size={16} className="text-khaki shrink-0 mt-1" />
-                            <p className="text-white font-medium italic">"{results.summary_text}"</p>
-                        </div>
-                    </div>
-
-                    <div className="text-right">
-                        <div className="text-[10px] text-text-dim uppercase font-bold mb-1">Confidence Change</div>
-                        <div className={`text-lg font-bold flex items-center justify-end gap-1 ${results.simulated.confidence >= results.baseline.confidence ? "text-wasabi" : "text-earth"
-                            }`}>
-                            {results.simulated.confidence >= results.baseline.confidence ? <TrendingUp size={16} /> : <TrendingDown size={16} />}
-                            {(results.simulated.confidence * 100).toFixed(1)}%
-                        </div>
-                    </div>
-                </div>
-            )}
+            {/* Actions area */}
+            <div className="pt-4 space-y-4 border-t border-white/5">
+                <button
+                    onClick={onSimulate}
+                    disabled={loading}
+                    className="w-full py-4 bg-khaki text-noir rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] shadow-[0_10px_30px_rgba(195,170,113,0.2)] hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed group"
+                >
+                    {loading ? (
+                        <div className="w-12 h-1 border-2 border-noir border-t-transparent rounded-full animate-spin" />
+                    ) : (
+                        <>
+                            <Play size={16} className="fill-noir group-hover:scale-125 transition-transform" />
+                            Run Strategic Simulation
+                        </>
+                    )}
+                </button>
+                
+                {results && (
+                    <button 
+                        onClick={onReset} 
+                        className="w-full flex items-center justify-center gap-2 text-[9px] font-black uppercase tracking-widest text-khaki/40 hover:text-white transition-colors"
+                    >
+                        <RotateCcw size={12} />
+                        Revert to Baseline Data
+                    </button>
+                )}
+            </div>
         </div>
     );
 };
