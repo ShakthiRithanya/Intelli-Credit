@@ -5,5 +5,5 @@ const envValue = import.meta.env.VITE_API_BASE_URL;
 const shouldIgnoreEnv = !isLocal && envValue?.includes('localhost');
 
 export const API_BASE_URL = (shouldIgnoreEnv || !envValue)
-    ? (isLocal ? 'http://localhost:8000' : '')
+    ? (isLocal ? 'http://127.0.0.1:8000' : '')
     : envValue;
