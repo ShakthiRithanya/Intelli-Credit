@@ -697,7 +697,12 @@ export const CompanyDashboardPage: React.FC<{
                                 <FileText className="text-khaki" />
                                 Credit Appraisal Memo (Five Cs Framework)
                             </h2>
-                            <button className="px-6 py-2 bg-khaki/10 text-khaki border border-khaki/30 text-[10px] font-black rounded-xl hover:bg-khaki hover:text-noir transition-all">
+                            <button 
+                                onClick={() => {
+                                    window.open(`${API_BASE_URL}/companies/${id}/export-pdf`, '_blank');
+                                }}
+                                className="px-6 py-2 bg-khaki/10 text-khaki border border-khaki/30 text-[10px] font-black rounded-xl hover:bg-khaki hover:text-noir transition-all"
+                            >
                                 EXPORT PDF REPORT
                             </button>
                         </div>

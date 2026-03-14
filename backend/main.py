@@ -23,6 +23,7 @@ from backend.database import (
 )
 
 from backend.processors.explainability import build_explanation, get_feature_snippets
+from backend.utils.pdf_generator import generate_pdf_from_markdown
 
 # ── Init DB on startup ─────────────────────────────────────────────────────────
 init_db()
@@ -389,6 +390,39 @@ def get_cam(company_id: str):
     gen = CAMGenerator()
     cam_data = gen.generate_cam(cid)
     return {"company_id": company_id, "cam_markdown": cam_data["cam_markdown"]}
+
+@app.get("/companies/{company_id}/export-pdf")
+def export_cam_pdf(company_id: str):
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if not row: raise HTTPException(404)
+        cid = row["company_id"]
+        name = row["company_name"]
+    elif company_id in COMPANIES:
+        cid = company_id
+        name = COMPANIES[company_id]["name"]
+    else:
+        raise HTTPException(404)
+        
+    gen = CAMGenerator()
+    cam_data = gen.generate_cam(cid)
+    markdown = cam_data["cam_markdown"]
+    
+    # Generate unique filename
+    filename = f"CAM_{company_id}_{uuid.uuid4().hex[:6]}.pdf"
+    temp_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "temp")
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
+    
+    path = os.path.join(temp_dir, filename)
+    generate_pdf_from_markdown(markdown, path)
+    
+    return FileResponse(
+        path, 
+        media_type="application/pdf", 
+        filename=f"Credit_Memo_{name.replace(' ', '_')}.pdf"
+    )
 
 @app.get("/companies/{company_id}/documents")
 def get_company_documents(company_id: str):

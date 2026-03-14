@@ -11,3 +11,4 @@ gunicorn
 uvloop
 httptools
 psycopg2-binary
+fpdf2
