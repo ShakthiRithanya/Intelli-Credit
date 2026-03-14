@@ -651,12 +651,18 @@ async def create_borrower_application(
 
     # Scoring the twin profile
     try:
+        print(f"DEBUG: Starting AI Scoring for {app_id} (Twin: {mapped_cid})")
         prediction = predict_with_shap(mapped_cid)
+        print(f"DEBUG: Prediction result: {prediction.get('risk_class')}")
+        
         status, sanctioned, rate, summary = ai_pricing(prediction["risk_class"], requested_amount)
+        print(f"DEBUG: Pricing: {status}, {sanctioned}, {rate}")
+        
         update_ai_score(app_id, prediction["risk_class"], prediction["confidence"],
                         sanctioned, rate, summary)
-        
-        # Register documents in the virtual document store
+        print(f"DEBUG: AI Score updated in DB.")
+
+        # --- RESTORED DOCUMENT LOGIC ---
         import json
         import os
         base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -677,14 +683,19 @@ async def create_borrower_application(
             })
 
         if annual_report: add_file(annual_report, "Annual Report")
-        for f in bank_statements: add_file(f, "Bank Statement")
-        for f in legal_docs: add_file(f, "Legal Notice")
+        if bank_statements:
+            for f in bank_statements: add_file(f, "Bank Statement")
+        if legal_docs:
+            for f in legal_docs: add_file(f, "Legal Notice")
         
         with open(docs_path, "w") as fw:
             json.dump(all_docs, fw, indent=2)
-
+        # -------------------------------
+        
     except Exception as e:
-        print(f"Scoring error: {e}")
+        print(f"Scoring error for {app_id}: {e}")
+        import traceback
+        traceback.print_exc()
 
     return {
         "application_id": app_id,

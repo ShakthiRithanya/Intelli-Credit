@@ -24,11 +24,11 @@ else:
 
 # ACTIVE BANK PORTFOLIO (Only these will show in the dashboard/portfolio)
 COMPANIES = {
-    "CID_001": {"name": "Global Tech Solns", "sector": "Information Technology", "gstin": "27GTSSO0001A1Z1"},
-    "CID_002": {"name": "Green Agri Exports", "sector": "Agro-processing", "gstin": "27GAEXP0002B1Z2"},
-    "CID_003": {"name": "Modern Retailers Ltd", "sector": "Retail", "gstin": "27MODRT0003C1Z3"},
-    "CID_004": {"name": "City Constro Works", "sector": "Construction", "gstin": "27CCWOR0004D1Z4"},
-    "CID_005": {"name": "Legacy Textiles", "sector": "Manufacturing", "gstin": "27LEGTE0005E1Z5"},
-    "CID_006": {"name": "Aqua Marine Logistics", "sector": "Logistics", "gstin": "27AMLOG0006F1Z6"}
+    "CID_001": {"name": "Alpha Industries Group", "sector": "Healthcare", "gstin": "27XAKKE2568NZ4"},
+    "CID_002": {"name": "Eco Solutions Group", "sector": "Manufacturing", "gstin": "27ZEMWU3588IZ6"},
+    "CID_003": {"name": "Alpha Agri Pvt Ltd", "sector": "Manufacturing", "gstin": "27WBLZN8984JZ4"},
+    "CID_004": {"name": "Classic Solutions Pvt Ltd", "sector": "Construction", "gstin": "27WHTYM1324QZ9"},
+    "CID_005": {"name": "Apex Constro Corp", "sector": "Information Technology", "gstin": "27FDJRZ4591EZ4"},
+    "CID_006": {"name": "Alpha Tech Ltd", "sector": "Automotive", "gstin": "27XFAAZ9903AZ6"}
 }
 
