@@ -1,0 +1,107 @@
+[
+  {
+    "company_id": "CID_001",
+    "ratios": [
+      {
+        "year": "2021-22",
+        "revenue": 85000000,
+        "ebit_margin": 0.15,
+        "pat_margin": 0.10,
+        "debt_to_equity_proxy": 0.9,
+        "interest_coverage_proxy": 4.1,
+        "dscr_proxy": 2.1,
+        "overall_flag": "OK"
+      },
+      {
+        "year": "2022-23",
+        "revenue": 92000000,
+        "ebit_margin": 0.16,
+        "pat_margin": 0.11,
+        "debt_to_equity_proxy": 0.85,
+        "interest_coverage_proxy": 4.5,
+        "dscr_proxy": 2.3,
+        "overall_flag": "OK"
+      },
+      {
+        "year": "2023-24",
+        "revenue": 105000000,
+        "ebit_margin": 0.17,
+        "pat_margin": 0.12,
+        "debt_to_equity_proxy": 0.8,
+        "interest_coverage_proxy": 4.8,
+        "dscr_proxy": 2.5,
+        "overall_flag": "OK"
+      }
+    ]
+  },
+  {
+    "company_id": "CID_003",
+    "ratios": [
+      {
+        "year": "2021-22",
+        "revenue": 32000000,
+        "ebit_margin": 0.08,
+        "pat_margin": 0.04,
+        "debt_to_equity_proxy": 1.4,
+        "interest_coverage_proxy": 2.2,
+        "dscr_proxy": 1.4,
+        "overall_flag": "WATCH"
+      },
+      {
+        "year": "2022-23",
+        "revenue": 30000000,
+        "ebit_margin": 0.07,
+        "pat_margin": 0.03,
+        "debt_to_equity_proxy": 1.6,
+        "interest_coverage_proxy": 1.8,
+        "dscr_proxy": 1.3,
+        "overall_flag": "WATCH"
+      },
+      {
+        "year": "2023-24",
+        "revenue": 28000000,
+        "ebit_margin": 0.06,
+        "pat_margin": 0.02,
+        "debt_to_equity_proxy": 1.8,
+        "interest_coverage_proxy": 1.6,
+        "dscr_proxy": 1.25,
+        "overall_flag": "WATCH"
+      }
+    ]
+  },
+  {
+    "company_id": "CID_005",
+    "ratios": [
+      {
+        "year": "2021-22",
+        "revenue": 45000000,
+        "ebit_margin": 0.10,
+        "pat_margin": 0.06,
+        "debt_to_equity_proxy": 1.8,
+        "interest_coverage_proxy": 2.5,
+        "dscr_proxy": 1.4,
+        "overall_flag": "WATCH"
+      },
+      {
+        "year": "2022-23",
+        "revenue": 38000000,
+        "ebit_margin": 0.06,
+        "pat_margin": 0.02,
+        "debt_to_equity_proxy": 2.4,
+        "interest_coverage_proxy": 1.6,
+        "dscr_proxy": 1.2,
+        "overall_flag": "WATCH"
+      },
+      {
+        "year": "2023-24",
+        "revenue": 28000000,
+        "ebit_margin": 0.02,
+        "pat_margin": -0.01,
+        "debt_to_equity_proxy": 3.2,
+        "interest_coverage_proxy": 1.1,
+        "dscr_proxy": 1.05,
+        "overall_flag": "RED"
+      }
+    ]
+  }
+]
