@@ -7,6 +7,11 @@
         "itr_leverage_proxy": 1.4413,
         "bank_emi_bounce_count": 0,
         "bank_avg_balance": 4371859.67,
+        "gstr_2a_itc_amount": 1050000.0,
+        "gstr_3b_itc_claimed": 1060000.0,
+        "cibil_commercial_score": 820,
+        "interest_coverage_proxy": 4.8,
+        "dscr_proxy": 2.5,
         "risk_label": 0
     },
     {
@@ -17,6 +22,11 @@
         "itr_leverage_proxy": 1.1445,
         "bank_emi_bounce_count": 1,
         "bank_avg_balance": 4608256.69,
+        "gstr_2a_itc_amount": 1200000.0,
+        "gstr_3b_itc_claimed": 1220000.0,
+        "cibil_commercial_score": 790,
+        "interest_coverage_proxy": 4.2,
+        "dscr_proxy": 2.4,
         "risk_label": 0
     },
     {
@@ -27,6 +37,11 @@
         "itr_leverage_proxy": 1.1315,
         "bank_emi_bounce_count": 2,
         "bank_avg_balance": 1417529.44,
+        "gstr_2a_itc_amount": 500000.0,
+        "gstr_3b_itc_claimed": 540000.0,
+        "cibil_commercial_score": 680,
+        "interest_coverage_proxy": 1.6,
+        "dscr_proxy": 1.25,
         "risk_label": 1
     },
     {
@@ -37,6 +52,11 @@
         "itr_leverage_proxy": 1.4561,
         "bank_emi_bounce_count": 1,
         "bank_avg_balance": 1934603.22,
+        "gstr_2a_itc_amount": 600000.0,
+        "gstr_3b_itc_claimed": 650000.0,
+        "cibil_commercial_score": 650,
+        "interest_coverage_proxy": 1.5,
+        "dscr_proxy": 1.2,
         "risk_label": 1
     },
     {
@@ -47,6 +67,11 @@
         "itr_leverage_proxy": 1.3965,
         "bank_emi_bounce_count": 8,
         "bank_avg_balance": 975944.43,
+        "gstr_2a_itc_amount": 800000.0,
+        "gstr_3b_itc_claimed": 1100000.0,
+        "cibil_commercial_score": 580,
+        "interest_coverage_proxy": 1.1,
+        "dscr_proxy": 1.05,
         "risk_label": 2
     },
     {
@@ -57,6 +82,11 @@
         "itr_leverage_proxy": 1.124,
         "bank_emi_bounce_count": 3,
         "bank_avg_balance": 1162475.94,
+        "gstr_2a_itc_amount": 900000.0,
+        "gstr_3b_itc_claimed": 1050000.0,
+        "cibil_commercial_score": 610,
+        "interest_coverage_proxy": 1.2,
+        "dscr_proxy": 1.1,
         "risk_label": 2
     }
 ]
