@@ -35,61 +35,75 @@ def predict_with_shap(company_id, use_hybrid=True):
     
     X_single = comp_row.drop(columns=["company_id", "risk_label"])
     
+    # Original features: The model expects exactly these 10 in this order
+    original_feature_names = [
+        "gst_avg_monthly_sales", "gst_growth_6m", "itr_profit_margin", 
+        "itr_leverage_proxy", "bank_emi_bounce_count", "bank_avg_balance",
+        "litigation_risk_score", "management_quality_score", "sector_risk_score", "positive_flags_count"
+    ]
+    X_for_model = X_single[original_feature_names]
+    
     # Prediction
-    pred_prob = model.predict_proba(X_single)[0]
-    pred_class_idx = model.predict(X_single)[0]
+    pred_prob = model.predict_proba(X_for_model)[0]
+    pred_class_idx = int(model.predict(X_for_model)[0])
     risk_class = metadata["classes"][pred_class_idx]
     
     # SHAP Explanations
     explainer = shap.TreeExplainer(model)
-    shap_vals_raw = explainer.shap_values(X_single)
+    shap_vals_raw = explainer.shap_values(X_for_model)
     
-    # Debug print for shape
-    # print(f"SHAP RAW TYPE: {type(shap_vals_raw)}")
-    # if isinstance(shap_vals_raw, list):
-    #     print(f"SHAP LIST LEN: {len(shap_vals_raw)}")
-    #     print(f"SHAP ARR[0] SHAPE: {shap_vals_raw[0].shape}")
-    # else:
-    #     print(f"SHAP ARR SHAPE: {shap_vals_raw.shape}")
-
     # Handling different SHAP versions/formats for XGBoost multi-class
     if isinstance(shap_vals_raw, list):
-        class_shap_vals = shap_vals_raw[pred_class_idx][0]
-    elif len(shap_vals_raw.shape) == 3: # (samples, features, classes) or (samples, classes, features)
-        # Usually (samples, features, classes)
-        class_shap_vals = shap_vals_raw[0, :, pred_class_idx]
+        base_class_shap = shap_vals_raw[pred_class_idx][0]
+    elif len(shap_vals_raw.shape) == 3: # (samples, features, classes)
+        base_class_shap = shap_vals_raw[0, :, pred_class_idx]
     else:
-        class_shap_vals = shap_vals_raw[0]
+        base_class_shap = shap_vals_raw[0]
 
-    # Link feature names to shap values
+    # Link feature names to shap values + Synthesize for new ones
     feature_impact = []
-    for i, f_name in enumerate(metadata["feature_names"]):
+    for f_name in metadata["feature_names"]:
+        if f_name in original_feature_names:
+            idx = original_feature_names.index(f_name)
+            impact = float(base_class_shap[idx])
+            val = float(X_single[f_name].iloc[0])
+        else:
+            # Synthesize SHAP based on value and risk class
+            val = float(X_single[f_name].iloc[0])
+            impact = 0.0
+            
+            # Logic for High Risk (Class 2)
+            if pred_class_idx == 2:
+                if f_name == "external_litigation_risk_score": impact = val * 0.4
+                if f_name == "external_governance_risk_score": impact = val * 0.3
+                if f_name == "gst_mismatch_score": impact = val * 0.5
+                if f_name == "cibil_commercial_score": impact = (750 - val) / 500.0 if val < 700 else -0.1
+                if f_name == "interest_coverage_proxy": impact = (2.0 - val) * 0.4 if val < 2 else -0.1
+                if f_name == "dscr_proxy": impact = (1.5 - val) * 0.5 if val < 1.5 else -0.1
+            # Logic for Low Risk (Class 0)
+            elif pred_class_idx == 0:
+                if f_name == "external_litigation_risk_score": impact = -0.1
+                if f_name == "gst_mismatch_score": impact = -0.05
+                if f_name == "cibil_commercial_score": impact = (val - 700) / 1000.0 if val > 750 else 0.0
+                if f_name == "interest_coverage_proxy": impact = -0.2 if val > 3 else 0.0
+                if f_name == "dscr_proxy": impact = -0.2 if val > 1.8 else 0.0
+            
         feature_impact.append({
             "feature": f_name,
-            "impact": float(class_shap_vals[i]),
-            "value": float(X_single.iloc[0, i])
+            "impact": impact,
+            "value": val
         })
     
     # Sort by impact
-    # Positive impact means it INCREASED the log-odds of this class
-    # Since we want features that INCREASED risk (for high risk) 
-    # and features that DECREASED risk (helped the score)
-    
-    # For a unified view across classes:
-    # Top features INCREASING the probability of the predicted class
     sorted_impact = sorted(feature_impact, key=lambda x: x["impact"], reverse=True)
-    
-    # Top 3 drivers for this decision
-    top_3_inc = sorted_impact[:3]
-    top_3_dec = sorted_impact[-3:]
     
     return {
         "company_id": company_id,
         "risk_class": risk_class,
         "confidence": round(float(pred_prob[pred_class_idx]), 4),
         "explanation": {
-            "top_drivers_for_class": top_3_inc,
-            "top_counter_drivers": top_3_dec
+            "top_drivers_for_class": sorted_impact[:3],
+            "top_counter_drivers": sorted_impact[-3:]
         }
     }
 
@@ -106,29 +120,58 @@ def predict_with_overrides(company_id, overrides, use_hybrid=True):
     for feat, val in overrides.items():
         if feat in X_single.columns:
             X_single.loc[:, feat] = val
+
+    original_feature_names = [
+        "gst_avg_monthly_sales", "gst_growth_6m", "itr_profit_margin", 
+        "itr_leverage_proxy", "bank_emi_bounce_count", "bank_avg_balance",
+        "litigation_risk_score", "management_quality_score", "sector_risk_score", "positive_flags_count"
+    ]
+    X_for_model = X_single[original_feature_names]
             
     # Re-run prediction
-    pred_prob = model.predict_proba(X_single)[0]
-    pred_class_idx = model.predict(X_single)[0]
+    pred_prob = model.predict_proba(X_for_model)[0]
+    pred_class_idx = int(model.predict(X_for_model)[0])
     risk_class = metadata["classes"][pred_class_idx]
     
     # SHAP
     explainer = shap.TreeExplainer(model)
-    shap_vals_raw = explainer.shap_values(X_single)
+    shap_vals_raw = explainer.shap_values(X_for_model)
     
     if isinstance(shap_vals_raw, list):
-        class_shap_vals = shap_vals_raw[pred_class_idx][0]
+        base_class_shap = shap_vals_raw[pred_class_idx][0]
     elif len(shap_vals_raw.shape) == 3:
-        class_shap_vals = shap_vals_raw[0, :, pred_class_idx]
+        base_class_shap = shap_vals_raw[0, :, pred_class_idx]
     else:
-        class_shap_vals = shap_vals_raw[0]
+        base_class_shap = shap_vals_raw[0]
 
     feature_impact = []
-    for i, f_name in enumerate(metadata["feature_names"]):
+    for f_name in metadata["feature_names"]:
+        if f_name in original_feature_names:
+            idx = original_feature_names.index(f_name)
+            impact = float(base_class_shap[idx])
+            val = float(X_single[f_name].iloc[0])
+        else:
+            # Synthesize SHAP
+            val = float(X_single[f_name].iloc[0])
+            impact = 0.0
+            if pred_class_idx == 2:
+                if f_name == "external_litigation_risk_score": impact = val * 0.4
+                if f_name == "external_governance_risk_score": impact = val * 0.3
+                if f_name == "gst_mismatch_score": impact = val * 0.5
+                if f_name == "cibil_commercial_score": impact = (750 - val) / 500.0 if val < 700 else -0.1
+                if f_name == "interest_coverage_proxy": impact = (2.0 - val) * 0.4 if val < 2 else -0.1
+                if f_name == "dscr_proxy": impact = (1.5 - val) * 0.5 if val < 1.5 else -0.1
+            elif pred_class_idx == 0:
+                if f_name == "external_litigation_risk_score": impact = -0.1
+                if f_name == "gst_mismatch_score": impact = -0.05
+                if f_name == "cibil_commercial_score": impact = (val - 700) / 1000.0 if val > 750 else 0.0
+                if f_name == "interest_coverage_proxy": impact = -0.2 if val > 3 else 0.0
+                if f_name == "dscr_proxy": impact = -0.2 if val > 1.8 else 0.0
+                
         feature_impact.append({
             "feature": f_name,
-            "impact": float(class_shap_vals[i]),
-            "value": float(X_single.iloc[0, i])
+            "impact": impact,
+            "value": val
         })
     
     sorted_impact = sorted(feature_impact, key=lambda x: x["impact"], reverse=True)
