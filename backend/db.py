@@ -24,11 +24,11 @@ else:
 
 # ACTIVE BANK PORTFOLIO (Only these will show in the dashboard/portfolio)
 COMPANIES = {
-    "CID_0001": {"name": "Global Tech Solns", "sector": "Information Technology", "gstin": "27GTSSO0001A1Z1"},
-    "CID_0002": {"name": "Green Agri Exports", "sector": "Agro-processing", "gstin": "27GAEXP0002B1Z2"},
-    "CID_0003": {"name": "Modern Retailers Ltd", "sector": "Retail", "gstin": "27MODRT0003C1Z3"},
-    "CID_0004": {"name": "City Constro Works", "sector": "Construction", "gstin": "27CCWOR0004D1Z4"},
-    "CID_0005": {"name": "Legacy Textiles", "sector": "Manufacturing", "gstin": "27LEGTE0005E1Z5"},
-    "CID_0006": {"name": "Aqua Marine Logistics", "sector": "Logistics", "gstin": "27AMLOG0006F1Z6"}
+    "CID_001": {"name": "Global Tech Solns", "sector": "Information Technology", "gstin": "27GTSSO0001A1Z1"},
+    "CID_002": {"name": "Green Agri Exports", "sector": "Agro-processing", "gstin": "27GAEXP0002B1Z2"},
+    "CID_003": {"name": "Modern Retailers Ltd", "sector": "Retail", "gstin": "27MODRT0003C1Z3"},
+    "CID_004": {"name": "City Constro Works", "sector": "Construction", "gstin": "27CCWOR0004D1Z4"},
+    "CID_005": {"name": "Legacy Textiles", "sector": "Manufacturing", "gstin": "27LEGTE0005E1Z5"},
+    "CID_006": {"name": "Aqua Marine Logistics", "sector": "Logistics", "gstin": "27AMLOG0006F1Z6"}
 }
 
