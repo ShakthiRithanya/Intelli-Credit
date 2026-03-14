@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ShieldCheck, Users, Cpu, LogOut, ChevronDown, ArrowRight } from 'lucide-react';
 
 import LoginPage from './pages/LoginPage';
-import { CompanyListPage, CompanyDashboardPage } from './pages/AppPages';
+import { CompanyListPage, CompanyDashboardPage, CompanyDocumentsPage } from './pages/AppPages';
 import { PortfolioPage, AnalyticsPage } from './pages/ExtendedPages';
 import { LoanApplyPage, ApplicationStatusPage } from './pages/BorrowerPages';
 import { OfficerApplicationsPage } from './pages/OfficerApplications';
@@ -15,7 +15,7 @@ type UserRole = 'officer' | 'borrower';
 interface AuthUser { role: UserRole; name: string; }
 
 // ─── Officer routes ───────────────────────────────────────────────────────────
-type OfficerRoute = 'dashboard' | 'portfolio' | 'analytics' | 'company' | 'applications';
+type OfficerRoute = 'dashboard' | 'portfolio' | 'analytics' | 'company' | 'applications' | 'company_documents';
 // ─── Borrower routes ──────────────────────────────────────────────────────────
 type BorrowerRoute = 'apply' | 'status';
 
@@ -60,7 +60,7 @@ function OfficerApp({ user, onLogout }: { user: AuthUser; onLogout: () => void }
   const [companyId, setCompanyId] = useState<string | null>(null);
 
   const navigate = (r: OfficerRoute, extra?: string) => {
-    if (r === 'company' && extra) {
+    if ((r === 'company' || r === 'company_documents') && extra) {
       setCompanyId(extra);
     }
     setRoute(r);
@@ -115,17 +115,23 @@ function OfficerApp({ user, onLogout }: { user: AuthUser; onLogout: () => void }
         {route === 'company' && companyId && (
           <OfficerLayout title="Company Risk View" subtitle="Explainable AI scoring, Credit Appraisal Memo, and What-If simulations.">
             <BackBtn label="Back to Dashboard" onClick={() => navigate('dashboard')} />
-            <CompanyDashboardPage id={companyId} />
+            <CompanyDashboardPage id={companyId} onNavigate={(route, id) => navigate(route as OfficerRoute, id)} />
           </OfficerLayout>
         )}
         {route === 'portfolio' && (
           <OfficerLayout title="Portfolio Intelligence" subtitle="Aggregate health metrics, sector concentration, and risk distribution.">
-            <PortfolioPage />
+            <PortfolioPage onSelect={id => navigate('company', id)} />
           </OfficerLayout>
         )}
         {route === 'analytics' && (
           <OfficerLayout title="Macro Analytics" subtitle="Market sentiment, GST growth trends, and sector-wise risk benchmarks.">
             <AnalyticsPage />
+          </OfficerLayout>
+        )}
+        {route === 'company_documents' && companyId && (
+          <OfficerLayout title="Documents & Extraction" subtitle="Raw document registry and neural risk extraction demo.">
+            <BackBtn label="Back to Company Dashboard" onClick={() => navigate('company', companyId)} />
+            <CompanyDocumentsPage id={companyId} />
           </OfficerLayout>
         )}
         {route === 'applications' && (
