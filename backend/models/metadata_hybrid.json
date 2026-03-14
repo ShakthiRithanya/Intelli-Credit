@@ -9,7 +9,14 @@
         "litigation_risk_score",
         "management_quality_score",
         "sector_risk_score",
-        "positive_flags_count"
+        "positive_flags_count",
+        "external_litigation_risk_score",
+        "external_governance_risk_score",
+        "external_headwind_score",
+        "gst_mismatch_score",
+        "cibil_commercial_score",
+        "interest_coverage_proxy",
+        "dscr_proxy"
     ],
     "classes": [
         "low_risk",
