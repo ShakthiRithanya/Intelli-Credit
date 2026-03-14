@@ -61,7 +61,33 @@ class CAMGenerator:
                     return [f"[{item['risk_type'].upper()}] {item['snippet']}" for item in entry["risk_items"]]
         except:
             return []
-        return []
+    def get_external_snippets(self, company_id):
+        try:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            file_path = os.path.join(base_dir, "data", "raw", "nlp_extractions.json")
+            with open(file_path, "r") as f:
+                nlp_data = json.load(f)
+            snippets = []
+            for entry in nlp_data:
+                if entry["company_id"] == company_id and "external_meta" in entry:
+                    snippets.append(f"[{entry['external_meta']['source_type']}] {entry['external_meta']['headline']}: {entry['risk_items'][0]['snippet'] if entry['risk_items'] else ''}")
+            return snippets
+        except:
+            return []
+
+    def get_financial_ratios(self, company_id):
+        try:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            ratios_path = os.path.join(base_dir, "data", "raw", "financial_ratios.json")
+            if not os.path.exists(ratios_path): return []
+            with open(ratios_path) as f:
+                data = json.load(f)
+            for entry in data:
+                if entry["company_id"] == company_id:
+                    return entry["ratios"]
+            return []
+        except:
+            return []
 
     def generate_cam(self, company_id):
         # 1. Get Hybrid Predictions & SHAP
@@ -72,13 +98,22 @@ class CAMGenerator:
         # 2. Prepare Context
         name = self.get_company_name(company_id)
         snippets = self.get_nlp_snippets(company_id)
+        ext_snippets = self.get_external_snippets(company_id)
+        ratios = self.get_financial_ratios(company_id)
+        latest_ratio = ratios[-1] if ratios else {}
         
+        # Get external scores from feature vector
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        vectors_path = os.path.join(base_dir, "data", "raw", "integrated_feature_vectors.json")
+        with open(vectors_path) as f:
+            vectors = json.load(f)
+        feat = next((v for v in vectors if v["company_id"] == company_id), {})
+        
+        ext_litigation = feat.get("external_litigation_risk_score", 0)
+        ext_gov = feat.get("external_governance_risk_score", 0)
+
         # Format metrics and drivers for prompt
         drivers_str = ", ".join([f"{d['feature']} ({round(d['impact'], 2)})" for d in prediction["explanation"]["top_drivers_for_class"]])
-        
-        # Real-world flow: Call LLM API (e.g. Gemini)
-        # For this hackathon step, we provide a sophisticated template-led mock 
-        # that mimics LLM synthesis behavior.
         
         risk_class = prediction["risk_class"]
         
@@ -88,25 +123,36 @@ class CAMGenerator:
 **Date:** March 2026 | **Company ID:** {company_id} | **Rating:** {risk_class.upper()}
 
 ## Executive Summary
-{name} has been evaluated as **{risk_class.upper()}**. The assessment is driven by a combination of {prediction['explanation']['top_drivers_for_class'][0]['feature']} and qualitative signals regarding { 'legal standing' if risk_class == 'high_risk' else 'management stability'}. 
+{name} has been evaluated as **{risk_class.upper()}**. The assessment is driven by a combination of {prediction['explanation']['top_drivers_for_class'][0]['feature']} and qualitative signals regarding { 'legal standing' if (risk_class == 'high_risk' or ext_litigation > 1) else 'management stability'}. 
 
 ## 1. Character
-Based on NLP extractions from annual reports and legal databases:
-- **Governance:** {'Auditors have raised concerns regarding governance' if risk_class == 'high_risk' else 'Strong leadership profile with consistent auditor clearance.'}
-- **Litigation:** {snippets[0] if snippets else 'No record of material litigation found.'}
+Based on NLP extractions from annual reports and external intelligence:
+- **Governance:** {'Auditors and MCA records have raised concerns regarding governance and director standing.' if (risk_class == 'high_risk' or ext_gov > 1) else 'Strong leadership profile with consistent auditor clearance.'}
+- **Litigation:** {snippets[0] if snippets else 'No record of material internal litigation found.'} 
+- **External Intel:** {ext_snippets[0] if ext_snippets else 'No adverse external reports found.'}
+- **Bureau Risk:** Mock CIBIL Commercial score of {feat.get('cibil_commercial_score', 0):.0f}/900 suggests {'significant bureau risk' if feat.get('cibil_commercial_score', 0) < 650 else 'stable bureau profile'}.
 
 ## 2. Capacity
-- **GST Performance:** Average monthly sales of INR {prediction['explanation']['top_drivers_for_class'][0]['value'] if 'sales' in prediction['explanation']['top_drivers_for_class'][0]['feature'] else 'stable'}.
+- **GST Performance:** Average monthly sales of INR {feat.get('gst_avg_monthly_sales', 0)/1e6:.1f}M with a mismatch flag of **{'HIGH' if feat.get('gst_mismatch_score', 0) == 2 else 'LOW'}**.
+- **Tax Compliance:** GSTR-2A vs 3B ITC reconciliation shows a gap of INR {(feat.get('gstr_3b_itc_claimed', 0) - feat.get('gstr_2a_itc_amount', 0))/1e3:.1f}k, indicating {'potential over-claiming of input tax credit' if feat.get('gst_mismatch_score', 0) == 2 else 'clean tax filing history'}.
+- **Repayment Capacity:** Interest Coverage at **{latest_ratio.get('interest_coverage_proxy', 0):.1f}x** and DSCR at **{latest_ratio.get('dscr_proxy', 0):.1f}x** indicate {'deteriorating ability to service debt debt' if risk_class == 'high_risk' else 'comfortable cushion for debt servicing'}.
 - **Cash Flow:** {'High volatility observed in bank balances with multiple EMI bounces.' if risk_class == 'high_risk' else 'Smooth credit/debit cycles matched with consistent GST filings.'}
 
 ## 3. Capital
-- **Leverage:** Debt-to-Equity proxy suggests {'high leveraging' if risk_class == 'high_risk' else 'conservative borrowing'} relative to industry peers.
+- **Leverage:** Debt-to-Equity proxy suggests {'high leveraging (' + str(latest_ratio.get('debt_to_equity_proxy', 0)) + 'x)' if risk_class == 'high_risk' else 'conservative borrowing'} relative to industry peers.
+- **Financial Trend:** {'Negative PAT margins and falling interest coverage observed over 3 years.' if risk_class == 'high_risk' else 'Improving margins and healthy equity base.'}
 
 ## 4. Collateral
 - Standard floating charge on current assets and receivables. {'Higher margin requirements recommended due to risk profile.' if risk_class == 'high_risk' else 'Standard LTV applied.'}
 
 ## 5. Conditions
 - **Sector Outlook:** { 'Exposure to sector headwinds and NCLT disputes creates a cautious outlook.' if risk_class == 'high_risk' else 'Stable growth in the current macro environment.'}
+
+## 6. Model Rationale
+The AI engine based its **{risk_class.upper()}** rating on the following factors:
+- **Primary Risk Driver:** {prediction['explanation']['top_drivers_for_class'][0]['feature'].replace('_', ' ').title()} had the highest positive impact on the risk score ({round(prediction['explanation']['top_drivers_for_class'][0]['impact'], 2)}).
+- **Secondary Signals:** Presence of {prediction['explanation']['top_drivers_for_class'][1]['feature'].replace('_', ' ').title()} was identified as a material contributing factor.
+- **Decision Logic:** The combination of {ext_litigation > 1 and "adverse external litigation" or "quantitative trends"} and {ext_gov > 1 and "governance anomalies" or "operational metrics"} outweighed potential mitigants like {prediction['explanation']['top_counter_drivers'][0]['feature'].replace('_', ' ').title()}.
 
 ---
 
