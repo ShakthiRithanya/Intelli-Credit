@@ -10,5 +10,12 @@
         "doc_type": "legal_notice",
         "filename": "CID_005_Legal_Notice_Jan25.txt",
         "content": "A legal notice was served for non-payment of dues to primary vendor Apex Logistics. Litigation is ongoing in the NCLT for a claim of INR 5Cr. Adverse news reports highlight several management resignations since Nov 2024. Auditors have expressed concern over the company's ability to continue as a going concern in the latest limited review report."
+    },
+    {
+        "company_id": "CID_005",
+        "doc_type": "legal_notice",
+        "filename": "legal_notice_scanned.pdf",
+        "doc_quality": "scanned",
+        "content_path": "d:/bank/backend/data/unstructured/legal_notice_scanned.txt"
     }
 ]
