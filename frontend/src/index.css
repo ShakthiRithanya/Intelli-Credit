@@ -201,6 +201,10 @@ h4 {
   accent-color: var(--wasabi-primary);
 }
 
+.accent-khaki {
+  accent-color: var(--khaki-primary);
+}
+
 .mono {
   font-family: 'JetBrains Mono', monospace;
 }
