@@ -2,6 +2,7 @@
 import sys
 import os
 import uuid
+import json
 from typing import List, Dict, Any, Optional
 from datetime import datetime
 
@@ -20,6 +21,8 @@ from backend.database import (
     init_db, create_application, update_ai_score, get_application,
     get_all_applications, officer_decide, borrower_accept, borrower_review_request
 )
+
+from backend.processors.explainability import build_explanation, get_feature_snippets
 
 # ── Init DB on startup ─────────────────────────────────────────────────────────
 init_db()
@@ -68,6 +71,20 @@ def get_companies():
     # 1. Add static enterprise portfolio
     for cid, info in COMPANIES.items():
         pred = predict_with_shap(cid)
+        if "risk_class" not in pred:
+            print(f"Error predicting for {cid}: {pred.get('error', 'Unknown Error')}")
+            # Fallback to some defaults so the UI doesn't crash
+            results.append({
+                "company_id": cid,
+                "name": info["name"],
+                "sector": info["sector"],
+                "risk_class": "medium_risk",
+                "confidence": 0.5,
+                "cam_ready": False,
+                "is_new_application": False
+            })
+            continue
+
         results.append({
             "company_id": cid,
             "name": info["name"],
@@ -134,13 +151,21 @@ def _get_enriched_summary(cid: str, company_id_label: str, name: str, sector: st
     itr_margin  = float(feat_row.get("itr_profit_margin", 0))
     pos_flags   = float(feat_row.get("positive_flags_count", 0))
     mgmt_qual   = float(feat_row.get("management_quality_score", 0))
+    
+    ext_litigation = float(feat_row.get("external_litigation_risk_score", 0))
+    ext_gov = float(feat_row.get("external_governance_risk_score", 0))
+    ext_headwind = float(feat_row.get("external_headwind_score", 0))
+    
+    gst_mismatch = int(feat_row.get("gst_mismatch_score", 0))
+    mismatch_labels = {0: "LOW", 1: "MEDIUM", 2: "HIGH"}
+    cibil = float(feat_row.get("cibil_commercial_score", 0))
 
     five_c = {
-        "character":  clamp(0.5 + mgmt_qual * 0.1 + pos_flags * 0.05 - litigation * 0.15),
-        "capacity":   clamp(0.4 + gst_growth * 1.5 + itr_margin * 0.5),
+        "character":  clamp(0.5 + mgmt_qual * 0.1 + pos_flags * 0.05 - litigation * 0.15 - ext_litigation * 0.1 - ext_gov * 0.1 - (0.1 if cibil < 600 else 0)),
+        "capacity":   clamp(0.4 + gst_growth * 1.5 + itr_margin * 0.5 - gst_mismatch * 0.1),
         "capital":    clamp(0.55 - litigation * 0.1 - emi_bounce * 0.1),
         "collateral": clamp(0.5 + gst_growth * 0.5),
-        "conditions": clamp(0.6 + gst_growth * 0.4 - emi_bounce * 0.05),
+        "conditions": clamp(0.6 + gst_growth * 0.4 - emi_bounce * 0.05 - ext_headwind * 0.1),
     }
 
     return {
@@ -155,6 +180,14 @@ def _get_enriched_summary(cid: str, company_id_label: str, name: str, sector: st
             "bank_emi_bounce_count":  int(emi_bounce),
             "litigation_risk_score":  int(litigation),
             "itr_profit_margin":      itr_margin,
+            "external_litigation_risk_score": int(ext_litigation),
+            "external_governance_risk_score": int(ext_gov),
+            "external_headwind_score": int(ext_headwind),
+            "gst_mismatch_score": gst_mismatch,
+            "gst_mismatch_flag": mismatch_labels.get(gst_mismatch, "LOW"),
+            "cibil_commercial_score": cibil,
+            "gstr_2a_itc_amount": float(feat_row.get("gstr_2a_itc_amount", 0)),
+            "gstr_3b_itc_claimed": float(feat_row.get("gstr_3b_itc_claimed", 0))
         },
         "shap":          result["explanation"],
         "five_c_scores": five_c,
@@ -171,9 +204,177 @@ def get_summary(company_id: str):
     elif company_id in COMPANIES:
         name, sector, cid = COMPANIES[company_id]["name"], COMPANIES[company_id]["sector"], company_id
     else:
-        raise HTTPException(status_code=404, detail="ID not found")
+        # Fallback for dynamic companies
+        row = next((c for c in get_all_applications() if c["application_id"] == company_id), None)
+        if row:
+             name, sector, cid = row["company_name"], row["sector"], row["company_id"]
+        else:
+            raise HTTPException(status_code=404, detail="ID not found")
 
     return _get_enriched_summary(cid, company_id, name, sector)
+
+@app.get("/companies/{company_id}/external-intel")
+def get_external_intel(company_id: str):
+    import json
+    import os
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    nlp_path = os.path.join(base_dir, "data", "raw", "nlp_extractions.json")
+    with open(nlp_path) as f:
+        data = json.load(f)
+    
+    # Use real CID if it's an app
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if row: cid = row["company_id"]
+
+    # Filter for external items with meta
+    results = []
+    for entry in data:
+        if entry["company_id"] == cid and "external_meta" in entry:
+            results.append({
+                "source_type": entry["external_meta"]["source_type"],
+                "source_name": entry["external_meta"]["source_name"],
+                "headline": entry["external_meta"]["headline"],
+                "published_date": entry["external_meta"]["published_date"],
+                "risk_summary": entry["risk_items"][0]["snippet"] if entry["risk_items"] else "No specific risk extracted."
+            })
+    
+    return results
+
+@app.get("/companies/{company_id}/explanation")
+def get_company_explanation(company_id: str):
+    # Use real CID if it's an app
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if row: cid = row["company_id"]
+    return build_explanation(cid)
+
+@app.get("/companies/{company_id}/feature-snippets")
+def get_company_feature_snippets(company_id: str, feature: str):
+    # Use real CID if it's an app
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if row: cid = row["company_id"]
+    return get_feature_snippets(cid, feature)
+
+@app.get("/companies/{company_id}/ratios")
+def get_company_ratios(company_id: str):
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if row: cid = row["company_id"]
+    
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    ratios_path = os.path.join(base_dir, "data", "raw", "financial_ratios.json")
+    if os.path.exists(ratios_path):
+        with open(ratios_path) as f:
+            data = json.load(f)
+        for entry in data:
+            if entry["company_id"] == cid:
+                return entry["ratios"]
+    return []
+
+@app.get("/portfolio/companies")
+def get_portfolio_companies():
+    """Returns a list of all companies with portfolio-relevant metrics."""
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    vectors_path = os.path.join(base_dir, "data", "raw", "integrated_feature_vectors.json")
+    ratios_path = os.path.join(base_dir, "data", "raw", "financial_ratios.json")
+    
+    if not os.path.exists(vectors_path):
+        return []
+
+    with open(vectors_path) as f:
+        vectors = json.load(f)
+    
+    ratios_lookup = {}
+    if os.path.exists(ratios_path):
+        with open(ratios_path) as f:
+            ratios_data = json.load(f)
+            for entry in ratios_data:
+                # Get the latest ratio entry
+                if entry.get("ratios"):
+                    ratios_lookup[entry["company_id"]] = entry["ratios"][-1]
+                
+    portfolio = []
+    # Mocking some exposure data for demo
+    exposures = {
+        "CID_001": {"req": 120000000, "sanc": 110000000},
+        "CID_002": {"req": 80000000, "sanc": 80000000},
+        "CID_003": {"req": 45000000, "sanc": 35000000},
+        "CID_004": {"req": 30000000, "sanc": 25000000},
+        "CID_005": {"req": 50000000, "sanc": 40000000},
+        "CID_006": {"req": 60000000, "sanc": 45000000}
+    }
+    
+    for v in vectors:
+        cid = v["company_id"]
+        pred = predict_with_shap(cid, use_hybrid=True)
+        
+        if "risk_class" not in pred:
+            continue
+
+        # Risk Score Mapping: 0-100
+        # Low=0-33, Med=34-66, High=67-100
+        conf = pred["confidence"]
+        if pred["risk_class"] == "low_risk":
+            score = (1 - conf) * 33
+        elif pred["risk_class"] == "medium_risk":
+            score = 33 + (1 - conf) * 33
+        else:
+            score = 66 + conf * 34
+            
+        ratio = ratios_lookup.get(cid, {})
+        exp = exposures.get(cid, {"req": 0, "sanc": 0})
+        
+        info = COMPANIES.get(cid, {"name": f"Enterprise_{cid}", "sector": "General Manufacturing"})
+        
+        portfolio.append({
+            "company_id": cid,
+            "name": info["name"],
+            "sector": info["sector"],
+            "risk_class": pred["risk_class"],
+            "risk_score": round(score, 1),
+            "requested_amount": exp["req"],
+            "sanctioned_amount": exp["sanc"],
+            "cibil_commercial_score": v.get("cibil_commercial_score", 0),
+            "gst_mismatch_flag": {0: "LOW", 1: "MEDIUM", 2: "HIGH"}.get(v.get("gst_mismatch_score", 0), "LOW"),
+            "external_litigation_risk_score": v.get("external_litigation_risk_score", 0),
+            "dscr_proxy": ratio.get("dscr_proxy", 0),
+            "interest_coverage_proxy": ratio.get("interest_coverage_proxy", 0)
+        })
+    return portfolio
+
+@app.get("/portfolio/summary")
+def get_portfolio_summary():
+    """Returns aggregated high-level portfolio metrics."""
+    companies = get_portfolio_companies()
+    
+    total_exposure = sum(c["sanctioned_amount"] for c in companies)
+    risk_counts = {"low_risk": 0, "medium_risk": 0, "high_risk": 0}
+    cibil_sum = 0
+    high_gst_count = 0
+    
+    for c in companies:
+        rc = c["risk_class"]
+        if rc in risk_counts:
+            risk_counts[rc] += 1
+        cibil_sum += c["cibil_commercial_score"]
+        if c["gst_mismatch_flag"] == "HIGH":
+            high_gst_count += 1
+            
+    avg_cibil = round(cibil_sum / len(companies)) if companies else 0
+            
+    return {
+        "total_exposure": total_exposure,
+        "company_count": len(companies),
+        "by_risk_class": risk_counts,
+        "avg_cibil_score": avg_cibil,
+        "high_gst_mismatch_count": high_gst_count
+    }
 
 @app.get("/companies/{company_id}/cam")
 def get_cam(company_id: str):
@@ -188,6 +389,81 @@ def get_cam(company_id: str):
     gen = CAMGenerator()
     cam_data = gen.generate_cam(cid)
     return {"company_id": company_id, "cam_markdown": cam_data["cam_markdown"]}
+
+@app.get("/companies/{company_id}/documents")
+def get_company_documents(company_id: str):
+    import json
+    import os
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    docs_path = os.path.join(base_dir, "data", "documents.json")
+    
+    if not os.path.exists(docs_path):
+        return []
+        
+    with open(docs_path) as f:
+        all_docs = json.load(f)
+        
+    # Use real CID if it's an app
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if row: cid = row["company_id"]
+
+    return [d for d in all_docs if d["company_id"] == cid or d["company_id"] == company_id]
+
+@app.get("/companies/{company_id}/document-extraction-demo")
+def get_extraction_demo(company_id: str):
+    import json
+    import os
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    nlp_path = os.path.join(base_dir, "data", "raw", "nlp_extractions.json")
+    with open(nlp_path) as f:
+        data = json.load(f)
+    
+    # Use real CID if it's an app
+    cid = company_id
+    if company_id.startswith("APP_"):
+        row = get_application(company_id)
+        if row: cid = row["company_id"]
+
+    # 1. Look for specific OCR demo match (Legacy Textiles etc)
+    match = next((item for item in data if item["company_id"] == cid and "ocr_demo" in item), None)
+    
+    if match:
+        risk_item = match["risk_items"][0] if match.get("risk_items") else None
+        return {
+            "company_id": company_id,
+            "document": {
+                "document_id": "DEMO_OCR",
+                "filename": match["ocr_demo"]["source_doc"],
+                "doc_type": "Legal Notice",
+                "doc_quality": match["ocr_demo"]["doc_quality"],
+                "page": match["ocr_demo"]["page"]
+            },
+            "ocr_snippet": match["ocr_demo"]["raw_ocr"],
+            "clean_snippet": risk_item["snippet"] if risk_item else match["ocr_demo"]["ocr_snippet"],
+            "risk_item": risk_item
+        }
+
+    # 2. Look for any NLP risk item for this company that isn't external
+    match = next((item for item in data if item["company_id"] == cid and "external_meta" not in item), None)
+    if match and match.get("risk_items"):
+        risk_item = match["risk_items"][0]
+        return {
+            "company_id": company_id,
+            "document": {
+                "document_id": "DEMO_NLP",
+                "filename": risk_item.get("source_doc", "Internal Document"),
+                "doc_type": risk_item.get("risk_type", "Operational"),
+                "doc_quality": "text",
+                "page": risk_item.get("page", 1)
+            },
+            "ocr_snippet": "[OCR LAYER NOT ACTIVE FOR BORN-DIGITAL PDF]",
+            "clean_snippet": risk_item["snippet"],
+            "risk_item": risk_item
+        }
+    
+    return {"no_extraction_demo_available": True}
 
 @app.post("/companies/{company_id}/simulate")
 def simulate(company_id: str, request: SimulationRequest):
@@ -303,7 +579,9 @@ async def create_borrower_application(
     requested_amount: float = Form(...),
     loan_purpose: str = Form(...),
     contact_email: str = Form(...),
-    files: List[UploadFile] = File(None)
+    annual_report: Optional[UploadFile] = File(None),
+    bank_statements: List[UploadFile] = File(None),
+    legal_docs: List[UploadFile] = File(None)
 ):
     app_id = f"APP_{uuid.uuid4().hex[:8].upper()}"
 
@@ -322,7 +600,7 @@ async def create_borrower_application(
             "loan_purpose": loan_purpose, "contact_email": contact_email,
         }
         create_application(app_id, data)
-        officer_decide(app_id, "reject", "Auto-rejected: GSTIN not found in digital registry. Deep financial profile missing.", 0, 0)
+        # officer_decide(app_id, "reject", "Auto-rejected: GSTIN not found in digital registry. Deep financial profile missing.", 0, 0)
         return {
             "application_id": app_id,
             "status": "rejected",
@@ -343,13 +621,42 @@ async def create_borrower_application(
         status, sanctioned, rate, summary = ai_pricing(prediction["risk_class"], requested_amount)
         update_ai_score(app_id, prediction["risk_class"], prediction["confidence"],
                         sanctioned, rate, summary)
+        
+        # Register documents in the virtual document store
+        import json
+        import os
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        docs_path = os.path.join(base_dir, "data", "documents.json")
+        all_docs = []
+        if os.path.exists(docs_path):
+            with open(docs_path) as f: all_docs = json.load(f)
+        
+        def add_file(f, category):
+            if not f or not f.filename: return
+            all_docs.append({
+                "company_id": app_id, 
+                "document_id": f"DOC_{uuid.uuid4().hex[:6].upper()}",
+                "filename": f.filename,
+                "doc_type": category,
+                "doc_quality": "text" if f.filename.lower().endswith(".pdf") else "scanned",
+                "uploaded_at": datetime.utcnow().isoformat()
+            })
+
+        if annual_report: add_file(annual_report, "Annual Report")
+        for f in bank_statements: add_file(f, "Bank Statement")
+        for f in legal_docs: add_file(f, "Legal Notice")
+        
+        with open(docs_path, "w") as fw:
+            json.dump(all_docs, fw, indent=2)
+
     except Exception as e:
         print(f"Scoring error: {e}")
 
     return {
         "application_id": app_id,
         "status": "under_review",
-        "message": "Financial profile verified. AI scoring engine is processing your application."
+        "message": "Financial profile verified. AI scoring engine is processing your application. Documents uploaded will be visible to the Credit Officer.",
+        "estimated_decision_time": "AI Decisioning Complete. Final review pending with Credit Officer."
     }
 
 @app.get("/borrower/applications/{application_id}")
