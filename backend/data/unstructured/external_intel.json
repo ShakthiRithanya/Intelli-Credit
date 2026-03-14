@@ -1,0 +1,29 @@
+[
+  {
+    "company_id": "CID_005",
+    "source_type": "NEWS",
+    "source_name": "Financial Daily",
+    "headline": "NCLT admits insolvency plea against Legacy Textiles",
+    "url": "https://example.com/legacy-textiles-nclt",
+    "text": "The National Company Law Tribunal (NCLT) has admitted an insolvency petition of INR 5 crore filed against Legacy Textiles by one of its operational creditors. The bench has appointed an IRP to oversee the process.",
+    "published_date": "2025-11-12"
+  },
+  {
+    "company_id": "CID_005",
+    "source_type": "MCA",
+    "source_name": "MCA Filing",
+    "headline": "Director disqualification under Section 164",
+    "url": null,
+    "text": "MCA records show that one of the directors of Legacy Textiles was disqualified under Section 164(2) of the Companies Act, 2013, for failure to file financial statements for a continuous period of three financial years.",
+    "published_date": "2025-10-01"
+  },
+  {
+    "company_id": "CID_005",
+    "source_type": "ECOURT",
+    "source_name": "e-Courts India",
+    "headline": "Labor dispute judgement against Legacy Textiles",
+    "url": "https://ecourts.gov.in/case/12345",
+    "text": "The specialized labor court has ruled in favor of the workers union, ordering Legacy Textiles to pay pending dues and bonuses amounting to INR 1.2 crore within 60 days.",
+    "published_date": "2025-12-05"
+  }
+]
