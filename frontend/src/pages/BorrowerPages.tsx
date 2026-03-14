@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
     FileText, Send, CheckCircle, Clock, AlertCircle,
-    ArrowRight, Landmark, Percent, Info, Briefcase
+    ArrowRight, Landmark, Percent, Info, Briefcase,
+    Upload, FolderOpen, Gavel
 } from 'lucide-react';
 import { GlassCard } from '../components/BaseUI';
 import { API_BASE_URL } from '../config';
@@ -18,6 +19,10 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
         loan_purpose: '',
         contact_email: ''
     });
+    const [annualReport, setAnnualReport] = useState<File | null>(null);
+    const [bankStatements, setBankStatements] = useState<FileList | null>(null);
+    const [legalDocs, setLegalDocs] = useState<FileList | null>(null);
+
     const [loading, setLoading] = useState(false);
     const [result, setResult] = useState<any>(null);
 
@@ -25,10 +30,23 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
         e.preventDefault();
         setLoading(true);
         const data = new FormData();
+        
+        // Append text fields
         Object.entries(formData).forEach(([k, v]) => data.append(k, v));
+        
+        // Append files
+        if (annualReport) data.append('annual_report', annualReport);
+        if (bankStatements) {
+            Array.from(bankStatements).forEach(f => data.append('bank_statements', f));
+        }
+        if (legalDocs) {
+            Array.from(legalDocs).forEach(f => data.append('legal_docs', f));
+        }
 
         try {
-            const res = await axios.post(`${API_BASE_URL}/borrower/applications`, data);
+            const res = await axios.post(`${API_BASE_URL}/borrower/applications`, data, {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            });
             setResult(res.data);
         } catch (err) {
             alert("Application Error. Please check fields.");
@@ -47,9 +65,14 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
                     <h2 className="text-4xl font-bold">Application Submitted</h2>
                     <p className="text-text-dim">Your reference ID is <span className="text-emerald-500 font-mono">{result.application_id}</span></p>
                 </div>
-                <div className="glass-panel p-6 border-emerald-500/20 text-sm text-text-dim italic">
-                    <Clock size={16} className="inline mr-2 mb-1" />
-                    {result.estimated_decision_time}
+                <div className="glass-panel p-6 border-emerald-500/10 space-y-3">
+                    <div className="text-sm text-text-dim italic">
+                        <Clock size={16} className="inline mr-2 mb-1" />
+                        {result.estimated_decision_time}
+                    </div>
+                    <p className="text-[11px] text-emerald-400 font-bold uppercase tracking-widest">
+                        Note: Uploaded documents are now visible to the Credit Officer for analysis.
+                    </p>
                 </div>
                 <button
                     onClick={() => onStatusNav ? onStatusNav(result.application_id) : undefined}
@@ -99,6 +122,35 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
                     <div className="space-y-2">
                         <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Contact Email</label>
                         <input required type="email" className="input-field" placeholder="cfo@company.in" onChange={e => setFormData({ ...formData, contact_email: e.target.value })} />
+                    </div>
+
+                    <div className="col-span-full border-t border-white/5 pt-8 mt-4">
+                        <div className="text-xs font-black uppercase tracking-[0.2em] text-khaki mb-6 flex items-center gap-2">
+                            <Upload size={14} /> Document Uploads (KYC & Financials)
+                        </div>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <FileInput 
+                                label="Annual Report (FY24)" 
+                                icon={<FileText size={18} />} 
+                                onChange={e => setAnnualReport(e.target.files?.[0] || null)}
+                                fileName={annualReport?.name}
+                            />
+                            <FileInput 
+                                label="Bank Statements" 
+                                icon={<FolderOpen size={18} />} 
+                                onChange={e => setBankStatements(e.target.files)}
+                                multiple
+                                fileName={bankStatements ? `${bankStatements.length} files selected` : undefined}
+                            />
+                            <FileInput 
+                                label="Legal / Sanctions" 
+                                icon={<Gavel size={18} />} 
+                                onChange={e => setLegalDocs(e.target.files)}
+                                multiple
+                                fileName={legalDocs ? `${legalDocs.length} files selected` : undefined}
+                            />
+                        </div>
                     </div>
 
                     <div className="col-span-full pt-8">
@@ -203,3 +255,37 @@ export const ApplicationStatusPage: React.FC<{ id: string }> = ({ id }) => {
         </div>
     );
 };
+
+/* --- FileInput Component --- */
+const FileInput: React.FC<{
+    label: string,
+    icon: React.ReactNode,
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+    multiple?: boolean,
+    fileName?: string
+}> = ({ label, icon, onChange, multiple, fileName }) => (
+    <div className="space-y-2">
+        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim block mb-2">{label}</label>
+        <div className="relative group">
+            <input
+                type="file"
+                multiple={multiple}
+                onChange={onChange}
+                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+            />
+            <div className={`h-12 w-full rounded-xl border border-white/10 bg-white/[0.03] group-hover:bg-white/[0.07] transition-all flex items-center px-4 gap-3 ${fileName ? 'border-khaki/30 bg-khaki/5' : ''}`}>
+                <div className={`${fileName ? 'text-khaki' : 'text-khaki/40'}`}>
+                    {icon}
+                </div>
+                <div className="flex-1 min-w-0">
+                    {fileName ? (
+                        <div className="text-[10px] font-bold text-white truncate">{fileName}</div>
+                    ) : (
+                        <div className="text-[10px] font-bold text-khaki/40 uppercase tracking-widest">Upload File</div>
+                    )}
+                </div>
+                <Upload size={14} className="text-khaki/40 group-hover:text-khaki" />
+            </div>
+        </div>
+    </div>
+);
