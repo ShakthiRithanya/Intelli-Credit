@@ -26,9 +26,81 @@
   {
     "company_id": "CID_001",
     "document_id": "DOC_004",
-    "filename": "CID_001_AR_2024.pdf",
+    "filename": "LITIGATION_NOTICE_ALPHA_001.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "scanned",
+    "uploaded_at": "2026-03-12T10:00:00Z"
+  },
+  {
+    "company_id": "CID_002",
+    "document_id": "DOC_005",
+    "filename": "TAX_LIEN_ECO_GROUP.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "scanned",
+    "uploaded_at": "2026-03-11T14:30:00Z"
+  },
+  {
+    "company_id": "CID_003",
+    "document_id": "DOC_006",
+    "filename": "WAREHOUSE_LEASE_AGREEMENT.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "text",
+    "uploaded_at": "2026-01-20T09:15:00Z"
+  },
+  {
+    "company_id": "CID_004",
+    "document_id": "DOC_007",
+    "filename": "BOARD_RESOLUTION_LOAN_2026.pdf",
     "doc_type": "Annual Report",
     "doc_quality": "text",
-    "uploaded_at": "2025-08-20T10:00:00Z"
+    "uploaded_at": "2026-03-05T16:45:00Z"
+  },
+  {
+    "company_id": "CID_006",
+    "document_id": "DOC_008",
+    "filename": "PATENT_INFRINGEMENT_CLAIM_SCAN.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "scanned",
+    "uploaded_at": "2026-03-14T08:00:00Z"
+  },
+  {
+    "company_id": "CID_007",
+    "document_id": "DOC_009",
+    "filename": "AUDITED_FINANCIALS_FY25.pdf",
+    "doc_type": "Annual Report",
+    "doc_quality": "text",
+    "uploaded_at": "2025-12-10T12:00:00Z"
+  },
+  {
+    "company_id": "CID_008",
+    "document_id": "DOC_010",
+    "filename": "POLLUTION_CONTROL_BOARD_NOTICE.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "scanned",
+    "uploaded_at": "2026-03-08T11:20:00Z"
+  },
+  {
+    "company_id": "CID_001",
+    "document_id": "DOC_011",
+    "filename": "HDFC_Stmt_Alpha.pdf",
+    "doc_type": "Bank Statement",
+    "doc_quality": "text",
+    "uploaded_at": "2026-03-01T09:00:00Z"
+  },
+  {
+    "company_id": "CID_002",
+    "document_id": "DOC_012",
+    "filename": "Audit_FY25_Eco.pdf",
+    "doc_type": "Audit Report",
+    "doc_quality": "text",
+    "uploaded_at": "2025-11-20T11:00:00Z"
+  },
+  {
+    "company_id": "CID_012",
+    "document_id": "DOC_013",
+    "filename": "ICICI_Overdue_Universal.pdf",
+    "doc_type": "Legal Notice",
+    "doc_quality": "text",
+    "uploaded_at": "2026-03-10T15:00:00Z"
   }
 ]

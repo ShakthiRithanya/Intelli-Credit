@@ -114,8 +114,11 @@ function OfficerApp({ user, onLogout }: { user: AuthUser; onLogout: () => void }
         )}
         {route === 'company' && companyId && (
           <OfficerLayout title="Company Risk View" subtitle="Explainable AI scoring, Credit Appraisal Memo, and What-If simulations.">
-            <BackBtn label="Back to Dashboard" onClick={() => navigate('dashboard')} />
-            <CompanyDashboardPage id={companyId} onNavigate={(route, id) => navigate(route as OfficerRoute, id)} />
+            <BackBtn 
+              label={companyId.startsWith('APP_') ? "Back to Applications" : "Back to Dashboard"} 
+              onClick={() => navigate(companyId.startsWith('APP_') ? 'applications' : 'dashboard')} 
+            />
+            <CompanyDashboardPage id={companyId} onNavigate={id => navigate('company_documents', id)} />
           </OfficerLayout>
         )}
         {route === 'portfolio' && (
@@ -136,7 +139,7 @@ function OfficerApp({ user, onLogout }: { user: AuthUser; onLogout: () => void }
         )}
         {route === 'applications' && (
           <OfficerLayout title="Borrower Applications" subtitle="Review AI-scored loan applications submitted via the Borrower Portal. Approve or reject with custom terms.">
-            <OfficerApplicationsPage />
+            <OfficerApplicationsPage onNavigate={(r, id) => navigate(r as OfficerRoute, id)} />
           </OfficerLayout>
         )}
       </main>

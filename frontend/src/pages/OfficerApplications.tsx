@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
     ClipboardList, ChevronDown, ChevronUp, CheckCircle2,
-    XCircle, Clock, AlertTriangle, Send, RefreshCw
+    XCircle, Clock, AlertTriangle, Send, RefreshCw, FileSearch
 } from 'lucide-react';
 import { RiskBadge } from '../components/BaseUI';
 
@@ -27,7 +27,7 @@ const StatusBadge: React.FC<{ status: string }> = ({ status }) => {
 };
 
 /* ── Officer decision panel ────────────────────────────────────────────────── */
-const DecisionPanel: React.FC<{ app: any; onDecided: () => void }> = ({ app, onDecided }) => {
+const DecisionPanel: React.FC<{ app: any; onDecided: () => void; onNavigate?: (route: string, id: string) => void }> = ({ app, onDecided, onNavigate }) => {
     const [decision, setDecision] = useState<'approve' | 'reject' | ''>('');
     const [notes, setNotes] = useState('');
     const [finalSanctioned, setFinalSanctioned] = useState(app.ai_sanctioned_amount?.toString() || '');
@@ -102,6 +102,14 @@ const DecisionPanel: React.FC<{ app: any; onDecided: () => void }> = ({ app, onD
                     </div>
 
                     <div className="flex gap-3">
+                        {onNavigate && (
+                            <button
+                                onClick={() => onNavigate('company', app.application_id)}
+                                className="flex-1 h-11 bg-white/5 border border-white/10 text-white font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+                            >
+                                <FileSearch size={14} /> Full Analysis
+                            </button>
+                        )}
                         <button
                             onClick={() => { setDecision('approve'); }}
                             className={`flex-1 h-11 rounded-xl font-bold text-xs uppercase tracking-widest border transition-all ${decision === 'approve' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-500/8 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20'}`}
@@ -130,7 +138,7 @@ const DecisionPanel: React.FC<{ app: any; onDecided: () => void }> = ({ app, onD
 };
 
 /* ── Main Applications Page ────────────────────────────────────────────────── */
-export const OfficerApplicationsPage: React.FC = () => {
+export const OfficerApplicationsPage: React.FC<{ onNavigate?: (route: string, id: string) => void }> = ({ onNavigate }) => {
     const [apps, setApps] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [expanded, setExpanded] = useState<string | null>(null);
@@ -212,7 +220,7 @@ export const OfficerApplicationsPage: React.FC = () => {
                         </button>
 
                         {expanded === app.application_id && (
-                            <DecisionPanel app={app} onDecided={fetchApps} />
+                            <DecisionPanel app={app} onDecided={fetchApps} onNavigate={onNavigate} />
                         )}
                     </div>
                 ))}

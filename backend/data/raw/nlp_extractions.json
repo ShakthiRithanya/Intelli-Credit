@@ -1,44 +1,80 @@
 [
     {
         "company_id": "CID_001",
+        "ocr_demo": {
+            "source_doc": "LITIGATION_NOTICE_ALPHA_001.pdf",
+            "doc_quality": "scanned",
+            "page": 4,
+            "raw_ocr": "NOTICE OF PENDING LITIGATION\nRE: Liability for environmental non-compliance\nAMOUNT: ₹3,20,00,000 (Three Crores Twenty Lakhs)\nIn the matter of State vs. Alpha Industries Group...\n[OCR LAYER ACTIVATED] - High Noise Detected\n[NEURAL CLEANUP] - Recovering lost characters...",
+            "ocr_snippet": "Detected: Litigation for ₹3.2Cr liability notice related to environmental non-compliance."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Alpha Industries Group indicates stable operations in the Healthcare sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Positive",
-                "page": 1
+                "snippet": "Verified digital footprint for Alpha Industries Group indicates stable operations in the Healthcare sector, though a ₹3.2Cr litigation notice was detected in historical scans.",
+                "risk_type": "Litigation",
+                "severity": "High",
+                "amount": 32000000,
+                "sentiment": "Negative",
+                "page": 4
             }
         ]
     },
     {
         "company_id": "CID_002",
+        "ocr_demo": {
+            "source_doc": "TAX_LIEN_ECO_GROUP.pdf",
+            "doc_quality": "scanned",
+            "page": 1,
+            "raw_ocr": "GOVERNMENT OF INDIA - INCOME TAX DEPT\nSubject: Final Demand Notice / Lien Attachment\nProperty situated at: Pune Hub...\n[SCAN QUALITY: LOW]\n[OCR LAYER ACTIVATED] - Bypassing noise...",
+            "ocr_snippet": "Detected: Tax Lien attachment notice for unpaid liabilities."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Eco Solutions Group indicates stable operations in the Manufacturing sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Neutral",
+                "snippet": "Eco Solutions Group shows strong manufacturing output, but neural scans of regulatory filings identified a pending tax lien on their Pune facility.",
+                "risk_type": "Taxation",
+                "severity": "High",
+                "amount": 12500000,
+                "sentiment": "Negative",
                 "page": 1
             }
         ]
     },
     {
         "company_id": "CID_003",
+        "ocr_demo": {
+            "source_doc": "WAREHOUSE_LEASE_AGREEMENT.pdf",
+            "doc_quality": "text",
+            "page": 12,
+            "raw_ocr": "[DIGITAL TEXT STREAM] - Alpha Agri Pvt Ltd\nSection 14.2: Termination on Default\n'Lessor reserves the right to terminate lease if environmental cleanup costs exceed ₹85,00,000...'",
+            "ocr_snippet": "Detected: Contingent termination clause based on environmental cleanup limits."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Alpha Agri Pvt Ltd indicates stable operations in the Manufacturing sector.",
-                "risk_type": "Neutral",
+                "snippet": "Alpha Agri's warehouse lease contains a high-risk termination clause triggered if environmental maintenance costs exceed ₹85L.",
+                "risk_type": "Contractual",
+                "severity": "Medium",
+                "amount": 8500000,
                 "sentiment": "Neutral",
-                "page": 1
+                "page": 12
             }
         ]
     },
     {
         "company_id": "CID_004",
+        "ocr_demo": {
+            "source_doc": "BOARD_RESOLUTION_LOAN_2026.pdf",
+            "doc_quality": "text",
+            "page": 1,
+            "raw_ocr": "CERTIFIED TRUE COPY OF RESOLUTION\nPassed at Board Meeting on Feb 28, 2026\nRESOLVED THAT the company borrow up to ₹15,00,00,000 (Fifteen Crores) from Private Lenders...",
+            "ocr_snippet": "Detected: Board approval for significant off-balance sheet borrowing (₹15Cr)."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Classic Solutions Pvt Ltd indicates stable operations in the Construction sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Neutral",
+                "snippet": "Board resolution for Classic Solutions indicates a plan to raise ₹15Cr high-interest private debt, potentially stressing future cash flows.",
+                "risk_type": "leverage",
+                "severity": "High",
+                "amount": 150000000,
+                "sentiment": "Negative",
                 "page": 1
             }
         ]
@@ -56,33 +92,60 @@
     },
     {
         "company_id": "CID_006",
+        "ocr_demo": {
+            "source_doc": "PATENT_INFRINGEMENT_CLAIM_SCAN.pdf",
+            "doc_quality": "scanned",
+            "page": 2,
+            "raw_ocr": "INTELLECTUAL PROPERTY TRIBUNAL\nComplainant: Global Chipsets Inc.\nRespondent: Alpha Tech Ltd\nRE: Infringement of Patent #992-B (AI Processing)\n[NEURAL CLEANUP] - Identified claim for damages: ₹5.5Cr",
+            "ocr_snippet": "Detected: Intellectual property dispute with ₹5.5Cr potential claim."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Alpha Tech Ltd indicates stable operations in the Automotive sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Neutral",
-                "page": 1
+                "snippet": "Alpha Tech is facing a patented technology infringement claim from Global Chipsets Inc., with a quantified risk of ₹5.5Cr.",
+                "risk_type": "Litigation",
+                "severity": "High",
+                "amount": 55000000,
+                "sentiment": "Negative",
+                "page": 2
             }
         ]
     },
     {
         "company_id": "CID_007",
+        "ocr_demo": {
+            "source_doc": "AUDITED_FINANCIALS_FY25.pdf",
+            "doc_quality": "text",
+            "page": 44,
+            "raw_ocr": "[FINANCIAL TABLE EXTRACTOR]\nNote 22: Related Party Transactions\nLoans to Director: ₹4,20,00,000 (Interest-free)\nReceivables from Sister concern: ₹12.5Cr",
+            "ocr_snippet": "Detected: Significant related party lending and interest-free loans to management."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Universal Tech Services indicates stable operations in the Manufacturing sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Neutral",
-                "page": 1
+                "snippet": "Universal Tech's audited financials reveal ₹4.2Cr in interest-free loans to directors, flagged as a fund diversion risk.",
+                "risk_type": "Compliance",
+                "severity": "Medium",
+                "amount": 42000000,
+                "sentiment": "Negative",
+                "page": 44
             }
         ]
     },
     {
         "company_id": "CID_008",
+        "ocr_demo": {
+            "source_doc": "POLLUTION_CONTROL_BOARD_NOTICE.pdf",
+            "doc_quality": "scanned",
+            "page": 1,
+            "raw_ocr": "STATE POLLUTION CONTROL BOARD\nFINAL WARNING: NON-OPERATIONAL EFFLUENT PLANT\nORDER: Cease operations within 15 days until compliant.\nPenalty Quote: ₹25,00,000 per month of delay.",
+            "ocr_snippet": "Detected: Operational halt order due to pollution non-compliance."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Eco Logistics Pvt Ltd indicates stable operations in the Logistics sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Positive",
+                "snippet": "Eco Logistics received a 'Cease Operations' order from the pollution control board, creating a critical business continuity risk.",
+                "risk_type": "Operational",
+                "severity": "Critical",
+                "amount": 25000000,
+                "sentiment": "Negative",
                 "page": 1
             }
         ]
@@ -122,11 +185,20 @@
     },
     {
         "company_id": "CID_012",
+        "ocr_demo": {
+            "source_doc": "ICICI_Overdue_Universal.pdf",
+            "doc_quality": "text",
+            "page": 1,
+            "raw_ocr": "[URGENT] ICICI BANK - DEBT RECOVERY DEPT\nFinal Demand Notice - Ref #LN-8829\nAccount 44 Days Past Due (DPD).\nTotal default amount detected: Rs. 9,75,000.",
+            "ocr_snippet": "Detected: Critical 44-day payment default for Universal Logistics."
+        },
         "risk_items": [
             {
-                "snippet": "Verified digital footprint for Universal Logistics Pvt Ltd indicates stable operations in the Agro-processing sector.",
-                "risk_type": "Neutral",
-                "sentiment": "Neutral",
+                "snippet": "Universal Logistics (CID_012) is currently in technical default with ICICI Bank for a business loan. DPD stands at 44 days with a total overdue of ₹9.75L.",
+                "risk_type": "Repayment",
+                "severity": "Critical",
+                "amount": 975000,
+                "sentiment": "Negative",
                 "page": 1
             }
         ]

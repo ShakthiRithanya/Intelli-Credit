@@ -123,6 +123,19 @@ def get_companies():
             
     return results
 
+@app.get("/registry")
+def get_registry():
+    """Returns the full master registry for dropdown lookups."""
+    results = []
+    for cid, info in MASTER_REGISTRY.items():
+        results.append({
+            "company_id": cid,
+            "name": info["name"],
+            "sector": info["sector"],
+            "gstin": info["gstin"]
+        })
+    return results
+
 def _get_enriched_summary(cid: str, company_id_label: str, name: str, sector: str, overrides: Dict[str, Any] = None):
     """Helper to build the standard enriched company summary with metrics, SHAP, and 5C scores."""
     if overrides:
@@ -492,7 +505,7 @@ def get_extraction_demo(company_id: str):
                 "doc_quality": "text",
                 "page": risk_item.get("page", 1)
             },
-            "ocr_snippet": "[OCR LAYER NOT ACTIVE FOR BORN-DIGITAL PDF]",
+            "ocr_snippet": f"[PROCESS] Initiating Neural Text Handoff...\n[INFO] Document is digital-native. OCR Layer bypassed for 100% data integrity.\n--------------------------------------\nPRIMARY TEXT STREAM:\n{risk_item['snippet']}\n--------------------------------------\n[STATUS] Neural extraction complete. Context mapped to Risk Score.",
             "clean_snippet": risk_item["snippet"],
             "risk_item": risk_item
         }

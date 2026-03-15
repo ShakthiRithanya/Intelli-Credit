@@ -19,6 +19,10 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
         loan_purpose: '',
         contact_email: ''
     });
+    const [registry, setRegistry] = useState<any[]>([]);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [showDropdown, setShowDropdown] = useState(false);
+
     const [annualReport, setAnnualReport] = useState<File | null>(null);
     const [bankStatements, setBankStatements] = useState<FileList | null>(null);
     const [legalDocs, setLegalDocs] = useState<FileList | null>(null);
@@ -26,8 +30,31 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
     const [loading, setLoading] = useState(false);
     const [result, setResult] = useState<any>(null);
 
+    useEffect(() => {
+        axios.get(`${API_BASE_URL}/registry`).then(res => setRegistry(res.data));
+    }, []);
+
+    const filteredRegistry = registry.filter(item => 
+        item.gstin.toLowerCase().includes(searchTerm.toLowerCase())
+    ).slice(0, 20);
+
+    const handleSelectCompany = (item: any) => {
+        setFormData({
+            ...formData,
+            gstin: item.gstin,
+            company_name: item.name,
+            sector: item.sector
+        });
+        setSearchTerm(item.gstin);
+        setShowDropdown(false);
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!formData.gstin) {
+            alert("Please select a valid GSTIN from the registry.");
+            return;
+        }
         setLoading(true);
         const data = new FormData();
         
@@ -91,37 +118,78 @@ export const LoanApplyPage: React.FC<{ onStatusNav?: (id: string) => void }> = (
                 <p className="text-text-dim text-lg">Apply for a smart-credit line powered by Intelli-Credit AI.</p>
             </div>
 
-            <GlassCard title="Business Details" icon={<FileText size={18} />}>
+            <GlassCard title="Application Form" icon={<FileText size={18} />}>
                 <form onSubmit={handleSubmit} className="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* GSTIN Dropdown - FIRST QUESTION */}
+                    <div className="col-span-full space-y-2 relative">
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Search GSTIN (Primary Look-up)</label>
+                        <div className="relative z-20">
+                            <input 
+                                required 
+                                className="input-field pr-10 focus:border-khaki/50" 
+                                placeholder="Start typing GSTIN (e.g. 27XAK...)" 
+                                value={searchTerm}
+                                onChange={e => {
+                                    setSearchTerm(e.target.value);
+                                    setShowDropdown(true);
+                                    if (!e.target.value) setFormData({...formData, gstin: '', company_name: '', sector: ''});
+                                }}
+                                onFocus={() => setShowDropdown(true)}
+                            />
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 text-khaki animate-pulse">
+                                <Info size={16} />
+                            </div>
+                        </div>
+
+                        {showDropdown && filteredRegistry.length > 0 && (
+                            <div className="absolute z-[100] left-0 right-0 mt-2 bg-[#0a0f0a] border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] max-h-80 overflow-y-auto ring-1 ring-emerald-500/20">
+                                {filteredRegistry.map(item => (
+                                    <div 
+                                        key={item.company_id}
+                                        onClick={() => handleSelectCompany(item)}
+                                        className="p-4 hover:bg-khaki/10 cursor-pointer border-b border-white/5 transition-all group flex flex-col gap-1"
+                                    >
+                                        <div className="text-sm font-black text-white group-hover:text-khaki font-mono tracking-wider">{item.gstin}</div>
+                                        <div className="text-[10px] text-text-dim uppercase tracking-widest flex items-center gap-2">
+                                            <span className="text-khaki/60 font-bold">{item.name}</span>
+                                            <span className="text-white/10">•</span>
+                                            <span>{item.sector}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                        {showDropdown && searchTerm && filteredRegistry.length === 0 && (
+                            <div className="absolute z-[100] left-0 right-0 mt-2 bg-[#1a0a0a] border border-rose-500/20 p-5 rounded-2xl text-xs text-rose-400 shadow-2xl">
+                                <div className="flex items-center gap-3">
+                                    <AlertCircle size={14} />
+                                    No matching GSTIN found in digital registry.
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
                     <div className="space-y-2">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Company Name</label>
-                        <input required className="input-field" placeholder="e.g. Legacy Textiles" onChange={e => setFormData({ ...formData, company_name: e.target.value })} />
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Company Name (Auto-filled)</label>
+                        <input readOnly className="input-field border-white/5 bg-white/[0.02] text-white/50 cursor-not-allowed font-medium" value={formData.company_name} placeholder="Select GSTIN above" />
                     </div>
                     <div className="space-y-2">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Sector</label>
-                        <select className="input-field" onChange={e => setFormData({ ...formData, sector: e.target.value })}>
-                            <option value="">Select Sector</option>
-                            <option value="IT">IT & Tech</option>
-                            <option value="Textiles">Textiles</option>
-                            <option value="Retail">Retail</option>
-                            <option value="Manufacturing">Manufacturing</option>
-                        </select>
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Type of Business (Auto-filled)</label>
+                        <input readOnly className="input-field border-white/5 bg-white/[0.02] text-white/50 cursor-not-allowed font-medium" value={formData.sector} placeholder="Select GSTIN above" />
                     </div>
-                    <div className="space-y-2">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">GSTIN</label>
-                        <input required className="input-field" placeholder="27AAAAA0000A1Z5" onChange={e => setFormData({ ...formData, gstin: e.target.value })} />
-                    </div>
-                    <div className="space-y-2">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Requested Amount (₹)</label>
-                        <input required type="number" className="input-field" placeholder="e.g. 50000000" onChange={e => setFormData({ ...formData, requested_amount: e.target.value })} />
-                    </div>
-                    <div className="col-span-full space-y-2">
-                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Loan Purpose</label>
-                        <textarea className="input-field min-h-[100px]" placeholder="Explain how you will use the capital..." onChange={e => setFormData({ ...formData, loan_purpose: e.target.value })} />
-                    </div>
+
                     <div className="space-y-2">
                         <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Contact Email</label>
                         <input required type="email" className="input-field" placeholder="cfo@company.in" onChange={e => setFormData({ ...formData, contact_email: e.target.value })} />
+                    </div>
+                    <div className="space-y-2">
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Requested Amount (₹)</label>
+                        <input required type="number" className="input-field" placeholder="e.g. 5000000" onChange={e => setFormData({ ...formData, requested_amount: e.target.value })} />
+                    </div>
+
+                    <div className="col-span-full space-y-2">
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-text-dim">Loan Purpose</label>
+                        <textarea className="input-field min-h-[100px]" placeholder="Explain how you will use the capital..." onChange={e => setFormData({ ...formData, loan_purpose: e.target.value })} />
                     </div>
 
                     <div className="col-span-full border-t border-white/5 pt-8 mt-4">

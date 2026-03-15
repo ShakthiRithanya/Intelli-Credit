@@ -431,7 +431,7 @@ export const CompanyListPage: React.FC<{ onSelect: (id: string) => void }> = ({ 
 /* --- CompanyDashboardPage --- */
 export const CompanyDashboardPage: React.FC<{ 
     id: string; 
-    onNavigate?: (route: string, id: string) => void 
+    onNavigate?: (id: string) => void 
 }> = ({ id, onNavigate }) => {
     const [activeTab, setActiveTab] = useState('overview');
     const [mode, setMode] = useState<'baseline' | 'simulated'>('baseline');
@@ -728,7 +728,7 @@ export const CompanyDashboardPage: React.FC<{
                                         The system has successfully scanned <span className="text-white font-bold">2 multi-page PDF documents</span>. OCR layers detected a potential "litigation" keyword linked to a ₹3.2Cr liability notice. 
                                     </p>
                                     <button 
-                                        onClick={() => onNavigate?.('company_documents', id)}
+                                        onClick={() => onNavigate?.(id)}
                                         className="inline-flex items-center gap-2 text-[10px] font-black uppercase text-earth hover:text-white transition-colors"
                                     >
                                         ENTER DEEP EXTRACTION Cockpit <ChevronRight size={14} />
@@ -940,7 +940,7 @@ export const CompanyDashboardPage: React.FC<{
 /* --- DocumentsExtractionCard --- */
 const DocumentsExtractionCard: React.FC<{ 
     id: string; 
-    onNavigate?: (route: string, id: string) => void 
+    onNavigate?: (id: string) => void 
 }> = ({ id, onNavigate }) => {
     const [docs, setDocs] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
@@ -985,7 +985,7 @@ const DocumentsExtractionCard: React.FC<{
 
                 <div className="pt-2">
                     <button 
-                        onClick={() => onNavigate?.('company_documents', id)}
+                        onClick={() => onNavigate?.(id)}
                         className="w-full py-3 bg-earth/10 border border-earth/20 rounded-xl text-earth font-black text-[10px] uppercase tracking-[0.2em] hover:bg-earth hover:text-white transition-all flex items-center justify-center gap-2"
                     >
                         <Activity size={14} />
@@ -1009,10 +1009,12 @@ export const CompanyDocumentsPage: React.FC<{ id: string }> = ({ id }) => {
             axios.get(`${API_BASE_URL}/companies/${id}/documents`),
             axios.get(`${API_BASE_URL}/companies/${id}/document-extraction-demo`)
         ]).then(([docsRes, extRes]) => {
-            setDocs(docsRes.data);
-            setExtraction(extRes.data);
+            setDocs(Array.isArray(docsRes.data) ? docsRes.data : []);
+            setExtraction(extRes.data || { no_extraction_demo_available: true });
         }).catch(err => {
             console.error("Failed to load documents:", err);
+            setDocs([]);
+            setExtraction({ no_extraction_demo_available: true });
         }).finally(() => setLoading(false));
     }, [id]);
 
@@ -1038,7 +1040,7 @@ export const CompanyDocumentsPage: React.FC<{ id: string }> = ({ id }) => {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-white/5">
-                                            {docs.map((doc, idx) => (
+                                            {Array.isArray(docs) && docs.map((doc, idx) => (
                                                 <tr key={idx} className="group hover:bg-white/[0.02] transition-colors">
                                                     <td className="px-4 py-4">
                                                         <div className="flex items-center gap-3">
@@ -1064,7 +1066,7 @@ export const CompanyDocumentsPage: React.FC<{ id: string }> = ({ id }) => {
                                                     </td>
                                                     <td className="px-4 py-4 text-right">
                                                         <div className="text-[10px] font-mono text-khaki/40">
-                                                            {new Date(doc.uploaded_at).toLocaleDateString()}
+                                                            {doc.uploaded_at ? new Date(doc.uploaded_at).toLocaleDateString() : 'Pending'}
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -1084,11 +1086,13 @@ export const CompanyDocumentsPage: React.FC<{ id: string }> = ({ id }) => {
                             <div className="space-y-8 p-2">
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between">
-                                        <div className="text-[10px] font-black uppercase text-khaki/40 tracking-widest">Raw Document Stream (OCR LAYER)</div>
+                                        <div className="text-[10px] font-black uppercase text-khaki/40 tracking-widest">
+                                            {extraction.document?.doc_quality === 'text' ? 'Raw Document Stream (Neural Text Extraction)' : 'Raw Document Stream (OCR LAYER)'}
+                                        </div>
                                         <div className="text-[9px] font-bold text-earth animate-pulse">● NEURAL SCANNING ACTIVE</div>
                                     </div>
                                     <div className="p-6 rounded-2xl bg-black/60 border border-white/5 font-mono text-[11px] leading-relaxed italic text-khaki/60 h-[250px] overflow-y-auto custom-scrollbar relative">
-                                        <p className="whitespace-pre-wrap">{extraction.ocr_snippet}</p>
+                                        <p className="whitespace-pre-wrap">{extraction.ocr_snippet || 'No OCR data available in current stream.'}</p>
                                     </div>
                                 </div>
 
@@ -1102,17 +1106,17 @@ export const CompanyDocumentsPage: React.FC<{ id: string }> = ({ id }) => {
                                             <div className="space-y-2 flex-1">
                                                 <div className="flex items-center justify-between">
                                                     <span className="text-[11px] font-black uppercase text-white tracking-widest">Interpreted Intent</span>
-                                                    <span className="text-[10px] font-black bg-earth text-white px-2 py-0.5 rounded italic">SEVERITY: {extraction.risk_item?.severity.toUpperCase()}</span>
+                                                    <span className="text-[10px] font-black bg-earth text-white px-2 py-0.5 rounded italic">SEVERITY: {extraction.risk_item?.severity?.toUpperCase() || 'NORMAL'}</span>
                                                 </div>
                                                 <p className="text-sm font-bold text-white leading-relaxed italic">
-                                                    "{extraction.clean_snippet}"
+                                                    "{extraction.clean_snippet || 'Document interpreted as regular business correspondence.'}"
                                                 </p>
                                             </div>
                                         </div>
                                         {extraction.risk_item?.amount && (
                                             <div className="pt-4 border-t border-earth/20 flex items-center justify-between">
                                                 <span className="text-[10px] font-black uppercase text-khaki/40">Quantified Liability</span>
-                                                <span className="text-2xl font-black text-earth italic tracking-tighter">₹{(extraction.risk_item.amount / 1e7).toFixed(1)} Cr</span>
+                                                <span className="text-2xl font-black text-earth italic tracking-tighter">₹{((extraction.risk_item?.amount || 0) / 1e7).toFixed(1)} Cr</span>
                                             </div>
                                         )}
                                     </div>
